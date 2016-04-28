@@ -5,7 +5,7 @@
 @import "neat/neat";
 
 // Colors
-$header:              #153E56;
+$header:              #000000;
 $white:               #ffffff;
 $mid-gray:            #75787b;
 $border-gray:         #babbbd;
@@ -17,8 +17,8 @@ $header-height:        80px;
 $header-height-mobile: 95px;
 
 // Fonts
-$serif:               "Merriweather", "Georgia", "Times New Roman", serif;
-$sans-serif:          "Open Sans", Arial, sans-serif;
+$serif:               "Courier";
+$sans-serif:          "Arial";
 
 // Mobile Breakpoints
 $mobile: new-breakpoint(min-width 0px max-width 640px 4);
@@ -44,14 +44,13 @@ Typography
 */
 
 body {
-    font-family: $serif;
     font-weight: 400;
     font-style: normal;
     line-height: 1.9em;
 }
 
 header h1 {
-    font-family: $serif;
+    font-family: $sans-serif;
     font-weight: normal;
 }
 
@@ -177,10 +176,6 @@ article {
       }
     }
 }
-
-/* todo: errrr */
-img {width: 700px;}
-
 
 /* Lists */
 

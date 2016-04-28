@@ -1,34 +1,76 @@
 ---
 layout: page
-title: Federal Source Code Policy | Introduction
-permalink: /introduction/
-description: ""
+title: NZGOAL-SE Introduction
+permalink: /introduction
+description: "NZGOAL-SE Introduction"
 ---
 
 ## Introduction
 
-The U.S. Government is committed to improving the way Federal agencies buy, build, and deliver information technology (IT) and software solutions to better support cost efficiency, mission effectiveness, and the consumer experience with core Government programs. Each year, the Federal Government spends more than $9 billion on software through more than 50,000 transactions.<sup id="fnr1"><a href="#fn1">1</a></sup> A large portion of Government software—including proprietary, open source, and mixed source options—is commercially-available "off the shelf" (COTS) software<sup id="fnr2"><a href="#fn2">2</a></sup> that is developed and owned by either private vendors or an open source provider, requiring no additional custom code to be written for its use in the Federal Government.<sup id="fnr3"><a href="#fn3">3</a></sup>
+### Purpose
 
-However, when Federal agencies are unable to identify an existing Federal or COTS software solution that satisfies their specific needs, an agency may choose to develop a custom software solution on its own or pay for its development. When agencies procure custom-developed code, they are not always in a position to make their new code broadly available for Federal Government-wide reuse.<sup id="fnr4"><a href="#fn4">4</a></sup>
+##### 1
 
-In some cases, agencies may have difficulty establishing under the terms of the contract that the software was produced in the performance of a Federal Government agreement. Furthermore, even when agencies are in a position to make their code available on a Government-wide basis, they do not routinely make their source code discoverable and usable to other agencies in a consistent manner. These shortcomings can result in duplicative acquisitions for the same code and inefficient spending of taxpayer dollars. This policy seeks to address these challenges by laying out steps to help ensure that new custom-developed Federal source code be made broadly available for reuse across the Federal Government.<sup id="fnr5"><a href="#fn5">5</a></sup> This is consistent with the Digital Government Strategy's "Shared Platform" approach, which enables Federal employees to work together—both within and across agencies—to reduce costs, streamline development, apply uniform standards, and ensure consistency in creating and delivering information.<sup id="fnr6"><a href="#fn6">6</a></sup>  Enhanced reuse of custom-developed code across the Federal Government can have significant benefits for American taxpayers, such as reducing Federal vendor lock-in,<sup id="fnr7"><a href="#fn7">7</a></sup> decreasing duplicative costs for the same code, increasing transparency across the Federal Government, and minimizing the challenges associated with integrating large blocks of code from multiple sources.
+Government agencies invest significantly in software development and often own the copyright in the software that they develop or that is developed for them. Public sharing and open source licensing of this government-owned software has the potential to:
 
-While the benefits of enhanced Federal code reuse are significant, additional benefits can accrue when code is also made available to the public as Open Source Software (OSS). Making code available with an OSS license can enable continual improvement of Federal code projects when a broader community of users implements the code for its own purposes and publishes bugs and improvements. A number of private sector companies have already shifted some of their software development projects to an open source model,<sup id="fnr8"><a href="#fn8">8</a></sup> in which the source code of the software is made broadly available to the public for inspection, improvement, and reuse. In fact, several Federal agencies and component organizations also have already begun publishing custom-developed code under open source licenses or in the public domain, as discussed further below. Moreover, the Administration made a commitment, as part of its Second Open Government National Action Plan,<sup id="fnr9"><a href="#fn9">9</a></sup> to develop an Open Source Software policy that, together with the U.S. Digital Services Playbook,<sup id="fnr10"><a href="#fn10">10</a></sup> will support improved access to custom code developed for the Federal Government. This policy fulfills that commitment in an effort to improve U.S. Government software development and make the Government more open, transparent, and accessible to the public. Just as the Administration's Open Data Policy<sup id="fnr11"><a href="#fn11">11</a></sup> contributed to the creation of valuable and successful private businesses and services based upon open data released by the Government,<sup id="fnr12"><a href="#fn12">12</a></sup> improving access to taxpayer-funded source code can help facilitate similar results predicated on OSS.
+(a) save agencies time and money, resulting in a more efficient use of scarce resources;
 
-### Footnotes
+(b) encouarge open innovation on the part of both the public and private sectors;
 
-<ul style="list-style-type:none">
-<li id="fn1"><sup>1</sup><em>Building on Progress: Improving the Way the Government Buys IT</em>, Office of Management and Budget, Executive Office of the President, December 21, 2015. <a href="https://www.whitehouse.gov/blog/2015/12/21/building-progress-improving-way-government-buys-it">https://www.whitehouse.gov/blog/2015/12/21/building-progress-improving-way-government-buys-it</a> <a href="#fnr1">&#8617;</a></li>
-<li id="fn2"><sup>2</sup>For purposes of this policy, the term "COTS" also generally encompasses commercial item solutions.<a href="#fnr2">&#8617;</a></li>
-<li id="fn3"><sup>3</sup><em>See</em> "Appendix A: Definitions" for definitions of many of the technical terms used in this section and throughout this policy.<a href="#fnr3">&#8617;</a></li>
-<li id="fn4"><sup>4</sup>Additional contract guidance will be available through Project Open Source.<a href="#fnr4">&#8617;</a></li>
-<li id="fn5"><sup>5</sup>Limited exceptions may apply. <em>See</em> “Exceptions” section for additional information.<a href="#fnr5">&#8617;</a></li>
-<li id="fn6"><sup>6</sup><em>Digital Government: Building A 21st Century Platform To Better Serve The American People</em>, Office of Management and Budget, Executive Office of the President, May 23, 2012. <a href="https://www.whitehouse.gov/sites/default/files/omb/egov/digital-government/digital-government.html">https://www.whitehouse.gov/sites/default/files/omb/egov/digital-government/digital-government.html</a><a href="#fnr6">&#8617;</a></li>
-<li id="fn7"><sup>7</sup>"Vendor lock-in" refers to a situation in which the customer depends on a single supplier for a product and cannot easily move to another vendor without sustaining substantial cost or inconvenience. Vendor lock-in can potentially raise costs and reduce innovation within that service, and it can result in reduced competition on future related software acquisitions.<a href="#fnr7">&#8617;</a></li>
-<li id="fn8"><sup>8</sup>For example, Microsoft has released the .NET software framework--used by millions of developers to build and operate websites and other large online applications--under an OSS license (<em>see</em> <a href="https://blogs.msdn.com/b/dotnet/archive/2014/11/12/net-core-is-open-source.aspx">https://blogs.msdn.com/b/dotnet/archive/2014/11/12/net-core-is-open-source.aspx</a>). Additionally, Apple Computer, Inc. made the Swift programming language--used to develop applications on Apple operating systems such as OS X and iOS--available as OSS (<em>see</em> <a href="https://developer.apple.com/swift/blog/?id=34">https://developer.apple.com/swift/blog/?id=34</a>). A third example is Google's recent decision to open source its artificial intelligence system TensorFlow, which is utilized by applications such as Google Search, Google's voice recognition application, and Google Translate (<em>see</em> <a href="https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html">https://googleblog.blogspot.com/2015/11/tensorflow-smarter-machine-learning-for.html</a>)<a href="#fnr8">&#8617;</a></li>
-<li id="fn9"><sup>9</sup><em>The Open Government Partnership: Announcing New Open Government Initiatives as part of the Second Open Government National Action Plan for The United States of America.</em> September, 2014. Page 2. <a href="https://www.whitehouse.gov/sites/default/files/microsites/ostp/new_nap_commitments_report_092314.pdf">https://www.whitehouse.gov/sites/default/files/microsites/ostp/new_nap_commitments_report_092314.pdf</a><a href="#fnr9">&#8617;</a></li>
-<li id="fn10"><sup>10</sup>The Digital Services Playbook consists of key “plays” drawn from successful practices from the private sector and Government that, if followed together, will help Government build effective digital services. It encourages agencies to “default to open” and seek contracts that specify that “software and data generated by third parties remains under [the U.S. Government’s] control, and can be reused and released to the public as appropriate and in accordance with the law. It also requires an explanation “[i]f the codebase has not been released under an open source license.” <a href="https://playbook.cio.gov/">https://playbook.cio.gov</a>.<a href="#fnr10">&#8617;</a></li>
-<li id="fn11"><sup>11</sup><em>Open Data Policy-Managing Information as an Asset.</em> May 9, 2013. <a href="https://www.whitehouse.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf">https://www.whitehouse.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf</a><a href="#fnr11">&#8617;</a></li>
-<li id="fn12"><sup>12</sup><em>See</em> <a href="https://www.data.gov/impact">https://data.gov/impact</a> for examples of Federal open data being used in various methods and industries.<a href="#fnr12">&#8617;</a></li>
+(c) contribute to economic growth, primarily through the private sector being able to leverage and support government investment in the software it openly releases for re-use;
 
-</ul>
+(d) contribute to the formation of trusted communities of users whose public and private sector members have common or similar goals or interests;
+
+(e) result in continuous and ongoing maintenance of the released software code through these communities of users in a way that may not be achievable by a single agency alone; 
+
+(f) enable agencies to better align their operational and strategic activities with relevant aspects of the Government ICT Strategy and Action Plan to 2017 (as revised in 2015); and 
+
+(g) in some cases, foster transparency – for those who can read software code – as to the methods or algorithms used for the creation or delivery of public data and services, thereby enabling critical analysis and potentially the provision of improvements back to the releasing agency
+
+##### 2
+
+This NZGOAL Software Extension (**NZGOAL-SE**) provides agencies with a means of realising this potential. It:
+
+(a) explains the legal and policy context that is relevant to agencies’ open source licensing of software;
+
+(b) sets out a series of policy principles to guide agencies in their open sharing of software code;
+
+(c) advocates the use of particular open source software licences for this purpose; and
+
+(d) sets out a review and release process to guide agencies through the review of the software they propose to release for re-use, the purpose of which is to help agencies make decisions that are legally robust and practically useful. 
+
+### Open source software and open source software licences
+
+##### 3
+
+For the purposes of NZGOAL-SE, open source software (**OSS**) is software that is released on terms that make it freely available for others to use, modify and distribute, for either non-commercial or commercial purposes, as long as they comply with the applicable licensing conditions. The licensing conditions that users of the software need to comply with depend on the form of open source software licence applied to the software.
+
+##### 4
+
+There are two main forms of open source software licence:
+
+(a) **fully permissive licences** (also known as academic licences) that confer broad freedoms and minimal obligations on those who wish to use, adapt and distribute the software (e.g., the MIT licence, the BSD licence and the Apache 2.0 licence); and
+
+(b) **sharelike licences** (also known as copyleft licences) that confer similar freedoms but require those who adapt the licensed software to license their adaptations with the same licence if they distribute them (e.g., the GNU General Public License, or GPL for short).
+
+### Approach and scope
+
+##### 5
+
+NZGOAL-SE is an extension of, and is modelled in part on the approach to, the open licensing of government copyright works set out in the New Zealand Government Open Access and Licensing framework (**NZGOAL**). NZGOAL-SE is a self-contained extension or framework, rather than being part of the original NZGOAL framework, because certain considerations are different to those relating to open information and data. Incorporating both frameworks under a single roof would unduly complicate matters for agencies and others interested in the frameworks.
+
+##### 6
+
+NZGOAL-SE is not concerned with the proprietary versus open source debate or with the considerations that agencies may wish to take into account when using existing open source software for their own internal purposes.[^1] Its sole focus is on the public release and open source licensing by agencies of software they own or are authorised to release and license.
+
+[^1]: On these topics, see the Australian Government’s _A Guide to Open Source Software for Australian Government Agencies_ (version 2.0, June 2011) at [http://www.finance.gov.au/files/2012/04/AGuidetoOpenSourceSoftware.pdf](http://www.finance.gov.au/files/2012/04/AGuidetoOpenSourceSoftware.pdf)
+
+### Additional guidance notes
+
+##### 7
+
+Additional guidance notes may be released over time which:
+
+(a) explore, in greater detail, some of the issues addressed or raised in NZGOAL-SE; and
+
+(b) address operational or technical issues which arise in practice.
