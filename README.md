@@ -1,22 +1,24 @@
-## Federal Source Code Policy
-#### Achieving Efficiency, Transparency, and Innovation through Reusable and Open Source Software
+# Introduction for transperant revision process of NZGOAL-SE
 
-The White House committed to adopting a Government-wide Open Source Software policy in its [Second Open Government National Action Plan](https://www.whitehouse.gov/sites/default/files/microsites/ostp/new_nap_commitments_report_092314.pdf) (NAP) that “will support improved access to custom software code developed for the Federal Government,” emphasizing that using and contributing back to open source software can fuel innovation, lower costs, and benefit the public. In light of that commitment, the [White House Office of Management and Budget (OMB)](https://www.whitehouse.gov/omb/) is accepting public comments on a draft policy to improve the way custom-developed Government code is acquired and distributed moving forward. 
+The public consultation period has ended (30 April) but that's not the end of the process for NZGOAL-SE. Firstly, we'd like to say thank you for your comments. We will analyse all feedback submitted during the public comment period and revise the policy as necessary.
 
-The public comment period has ended. Thank you for your comments. OMB will analyze all feedback submitted during the public comment period and revise the policy as necessary. All issues submitted during the public comment period will be closed. Please open new issues to start or continue any further discussion. ~~The proposed guidance is now open for public comment on this page. The public comment period will begin on March 10, 2016 and end on April 11, 2016. The public comment period has been extended by 7 days. The new deadline for public feedback is 11:59pm Eastern Time on April 18, 2016. Following the public comment period, OMB will analyze all submitted feedback and revise the policy as necessary.~~
-### Public domain
+We are going to be carrying this out in a transparent manner on the [Open Data NZ GitHub account](https://github.com/opendatanz/nzgoal-se/). Revisions will be subject to a lot of change during this first two weeks so please bear with us. We will raise proposals of change (_pull requests_) and where possible provide links back to the original online public conversations that guided the revisions and give inline supporting comments behind decisions.
+ 
+For the first two weeks of the revision process (2 - 15 May, 2016) we will refrain from reviewing any publicly submitted pull requests on GitHub (though you are welcome to make them). This is to give us time to review the conversations from the [Loomio public consultation](https://www.loomio.org/g/NohQxyr9/nzgoal-software-extension-discussion-of-draft) (carried out 30 March - 30 April) and work out how to best incorporate these into the revision from a practical and legal point of view. 
+ 
+Once all major revisions are complete, for a period of one week starting the 16 May 2016, we will review any final public direct contributions via _pull requests_ (See below on how to make a _pull request_).
+ 
+Alternatively, the revised draft will be posted (once initial revisions are completed) on [ict.govt.nz](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-se/) and you can email your proposed change to [opendata@linz.govt.nz](mailto:opendata@linz.govt.nz).
 
-This project is in the worldwide [public domain](LICENSE.md):
+## License
 
-> This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
->
-> All contributions to this project will be released under the CC0 dedication. By submitting a pull request, you are agreeing to comply with this waiver of copyright interest.
+See [LICENSE](LICENSE.md) for content and source code license information.
 
-### Privacy
+## Contributions
 
-All comments, messages, pull requests, and other submissions received through official White House pages including this GitHub page may be subject to archiving requirements. See the https://www.whitehouse.gov/privacy for more information.
+See [CONTRIBUTING](CONTRIBUTING.md) for contributing information, code of conduct and moderation policy.
 
-### Developing on the site locally
+## Developing on the site locally
 
 This site uses [Jekyll](http://jekyllrb.com), [Sass](http://sass-lang.com), [Bourbon](http://bourbon.io), [Neat](http://neat.bourbon.io), and requires **Ruby 2.x**.
 
@@ -29,7 +31,7 @@ bundle install
 And run the site with Jekyll:
 
 ```
-bundle exec jekyll serve --watch --baseurl ''
+jekyll serve
 ```
 
-If all goes well, visit the site at `http://localhost:4000`.
+If all goes well, visit the site at `http://localhost:4000/nzgoal-se/`.

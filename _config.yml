@@ -1,8 +1,8 @@
 # markdown 
-markdown: redcarpet
-redcarpet:
-  extensions: ["superscript","tables","with_toc_data","strikethrough","smart"]
-highlighter: pygments
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+  toc_levels: "2,3"
 
 exclude:
 - ".ruby-version"
@@ -20,40 +20,30 @@ exclude:
 - LICENSE.md
 
 # Site metadata
-name: "Source Code Policy"
-description: "Achieving Efficiency, Transparency, and Innovation through Reusable and Open Source Software"
-baseurl: https://sourcecode.cio.gov
-# Uncomment the following line for localhost development at http://127.0.0.1:4000/software/
-# baseurl: /software
+name: "NZGOAL Software Extension (Revision May 2016)"
+description: "Transperant revision of NZGOAL-SE"
+#baseurl: https://sourcecode.cio.gov
+# Uncomment the following line for localhost development at http://127.0.0.1:4000/nzgoal
+baseurl: /nzgoal-se/
 
 # GitHub information
-org_name: whitehouse
-repo_name: source-code-policy
-branch: gh-pages
+org_name: opendatanz
+repo_name: nzgoal-se
+branch: master
 
 # Navigation
 # List links that should appear in the site sidebar here
 navigation:
-- text: Home
-  url: /
+- text: About the revision process
+  url: /nzgoal-se
 - text: Introduction
-  url: /introduction/
-- text: Objectives
-  url: /Objectives/
-- text: Scope and Applicability
-  url: /Scope/
-- text: Software Procurement Considerations
-  url: /Procurement/
-- text: Government-Wide Code Reuse
-  url: /Reuse/
-- text: Federally Funded Custom Code as OSS
-  url: /OSS/
-- text: Implementation
-  url: /Implementation/
-- text: Appendix A - Definitions
-  url: /Appendixa/
-- text: Appendix B - Procurement Analysis
-  url: /Appendixb/
+  url: /nzgoal-se/introduction
+- text: Legal and policy context
+  url: /nzgoal-se/legal-and-policy-context
+- text: Policy principles
+  url: /nzgoal-se/policy-principles
+- text: Review and release process
+  url: /nzgoal-se/review-and-release-process
 
 # sass
 sass:

@@ -1,72 +1,45 @@
 ---
 layout: page
-title: Federal Source Code Policy
+title: NZGOAL Software Extension transperant revision process
 permalink: /
-description: "Introduction for Public Comment"
+description: "Introduction for transperant revision process of NZGOAL-SE"
 ---
+<div class="intro">
 
-## Introduction for Public Comment
+# Introduction for transperant revision process of NZGOAL-SE
 
-The White House committed to adopting a Government-wide Open Source Software policy in its [Second Open Government National Action Plan](https://www.whitehouse.gov/sites/default/files/microsites/ostp/new_nap_commitments_report_092314.pdf) that "will support improved access to custom software code developed for the Federal Government," emphasizing that using and contributing back to open source software can fuel innovation, lower costs, and benefit the public.<sup id="fnr1"><a href="#fn1">1</a></sup>  In support of that commitment, today the [White House Office of Management and Budget (OMB)](https://www.whitehouse.gov/omb/) is releasing a draft policy to improve the way custom-developed Government code is acquired and distributed moving forward. This policy is consistent with the Federal Government’s long-standing policy of ensuring that "Federal investments in IT (information technology) are merit-based, improve the performance of our Government, and create value for the American people."<sup id="fnr2"><a href="#fn2">2</a></sup>
+The public consultation period has ended (30 April) but that's not the end of the process for NZGOAL-SE. Firstly, we'd like to say thank you for your comments. We will analyse all feedback submitted during the public comment period and revise the policy as necessary.
 
-This policy requires that, among other things: (1) new custom code whose development is paid for by the Federal Government be made available for reuse across Federal agencies; and (2) a portion of that new custom code be released to the public as Open Source Software (OSS).
+We are going to be carrying this out in a transparent manner on the [Open Data NZ GitHub account](https://github.com/opendatanz/nzgoal-se/). Revisions will be subject to a lot of change during this first two weeks so please bear with us. We will raise proposals of change (_pull requests_) and where possible provide links back to the original online public conversations that guided the revisions and give inline supporting comments behind decisions.
+ 
+For the first two weeks of the revision process (2 - 15 May, 2016) we will refrain from reviewing any publicly submitted pull requests on GitHub (though you are welcome to make them). This is to give us time to review the conversations from the [Loomio public consultation](https://www.loomio.org/g/NohQxyr9/nzgoal-software-extension-discussion-of-draft) (carried out 30 March - 30 April) and work out how to best incorporate these into the revision from a practical and legal point of view. 
+ 
+Once all major revisions are complete, for a period of one week starting the 16 May 2016, we will review any final public direct contributions via _pull requests_ (See below on how to make a _pull request_).
+ 
+Alternatively, the revised draft will be posted (once initial revisions are completed) on [ict.govt.nz](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-se/) and you can email your proposed change to [opendata@linz.govt.nz](mailto:opendata@linz.govt.nz).
 
-We welcome your input on this innovative draft policy. We are especially interested in your comments on considerations regarding the release of custom code as OSS. The draft policy proposes a pilot program requiring covered agencies to release at least 20 percent of their newly-developed custom code, in addition to the release of all custom code developed by Federal employees at covered agencies as part of their official duties, subject to certain exceptions as noted in the main body of the policy.<sup id="fnr3"><a href="#fn3">3</a></sup>
+## Contributions considered
 
-Considerations regarding releasing custom code as Open Source Software include:
+All contributions are subject to the code of conduct, [please see the information on contributing](https://github.com/opendatanz/nzgoal-se/blob/gh-pages/CONTRIBUTING.md)
 
-<div class="custom_code">
+Please feel free to raise changes for any: 
 
-<h4><span>Considerations Regarding Releasing Custom Code as Open Source Software</span></h4>
+ >* Typos and iterative improvements
+ >* Sentence structures that could be clearer 
+ >* Minor line changes
 
-<ul>
-  <li>To what extent is the proposed pilot an effective means to fuel innovation, lower costs, benefit the public, and meet the operational and mission needs of covered agencies?</li>
+ We won't be considering any:
 
-  <ul>
+ >* New sections (unless they we already raised as part of the initial public consulation)
+ >* Major rewrites of sections (as we'll have to run these past a legal eye each time)
+ >* Complete overhauls of the document (because we're in the process of iteration not overhaul at this time)
 
-    <li>Would a different minimum percentage be more or less effective in achieving the goals above?</li>
+You may provide feedback during the transperant revision process in two ways. We ask that you do not submit the same content more than once. Please be aware that while we will consider your pull request, we may not necessrily merge it into the final revision. We will close all open pull requests at the end of the process and these will still be publically avialalbe via GitHub. 
 
-    <li>Would an "open source by default" approach that required all new Federal custom code to be released as OSS, subject to exceptions for things like national security, be more or less effective in achieving the goals above?</li>
+## Options to contribute
 
-    <li>Is there an alternative approach that OMB should consider?</li>
-  </ul>
+1. Direct changes and line edits to the content are welcome through [_pull requests_](https://help.github.com/articles/creating-a-pull-request) by clicking "Edit this page" in the side menu. If prompted, follow the instructions to “Fork this repository and propose changes” (you'll need a GitHub account). You do not need to install any software to suggest a change. You can use GitHub's in-browser editor to edit files and submit a pull request for your changes to be considered for merging into the document. Directions on how to submit a pull request can be found [here](https://help.github.com/articles/creating-a-pull-request). Pull requests that have already been submitted for the proposed revisions can be found [here](https://github.com/opendatanz/nzgoal-se/pulls).
 
-  <li>What are the advantages and disadvantages associated with implementing this type of pilot program? To what extent could this policy have an effect on the software development market? For example, could such a policy increase or decrease competition among vendors, dollar amounts bid on Federal contracts, or total life-cycle cost to the Federal Government? How could it impact new products developed or transparency in quality of vendor-produced code?</li>
-
-  <li>What metrics should be used to determine the impact and effectiveness of the pilot proposed in this draft policy, and of an open source policy more generally?</li>
-
-  <li>What opportunities and challenges exist in Government-wide adoption of an open source policy?</li>
-
-  <li>How broadly should an open source policy apply across the Government? Would a focus on particular agencies be more or less effective?</li>
-
-  <li>This policy addresses custom code that is created by Federal Government employees as well as custom code that is Federally-procured. To what extent would it be appropriate and desirable for aspects of this draft policy to be applied in the context of Federal grants and cooperative agreements?</li>
-
-  <li>How can the policy achieve its objectives for code that is developed with Government funds while at the same time enabling Federal agencies to select suitable software solutions on a case-by-case basis to meet the particular operational and mission needs of the agency? How should agencies consider factors such as performance, total life-cycle cost of ownership, security and privacy protections, interoperability, ability to share or reuse, resources required to later switch vendors, and availability of support?</li>
-
-</ul>
+2. We are also accepting proposed revisions through emails sent to [opendata@linz.govt.nz](mailto:opendata@linz.govt.nz).
 
 </div>
-
-Thank you for taking the time to participate in the development of this Federal policy. We look forward to receiving your comments and working together to solidify our commitment to efficiency and openness in Government.
-
-The public comment period has ended. Thank you for your comments. OMB will analyze all feedback submitted during the public comment period and revise the policy as necessary. All issues submitted during the public comment period will be closed. Please open new issues to start or continue any further discussion. ~~The proposed guidance is now open for public comment on this page. The public comment period will last 30 days, closing on April 11, 2016. The public comment period has been extended by 7 days. The new deadline for public feedback is 11:59pm EDT on April 18, 2016. Following the public comment period, feedback received will be analyzed to help inform the development of any final policy.~~
-
-## Instructions for Public Comment
-
-You may provide feedback in one of three ways. We ask that you do not submit the same comment more than once.
-
-1. Content suggestions and discussions are welcome via GitHub "issues." Each issue is a conversation initiated by a member of the public. We encourage you to browse and [participate in discussions](https://github.com/whitehouse/source-code-policy/issues) on existing issues, or start a new conversation by opening a new issue.
-
-2. Direct changes and line edits to the content are welcome through ["pull requests"](https://help.github.com/articles/creating-a-pull-request) by clicking ["Edit this page"](https://github.com/whitehouse/source-code-policy/edit/gh-pages/pages/index.md) (if prompted, follow the instructions to “Fork this repository and propose changes”). You do not need to install any software to suggest a change. You can use GitHub's in-browser editor to edit files and submit a pull request for your changes to be merged into the document. Directions on how to submit a pull request can be found [here](https://help.github.com/articles/creating-a-pull-request). Pull requests that have already been submitted for the proposed guidance can be found [here](https://github.com/whitehouse/source-code-policy/pulls).
-
-3. We are also accepting content suggestions or proposed revisions through emails sent to the OMB Office of the Federal Chief Information Officer at [sourcecode@omb.eop.gov](mailto:sourcecode@omb.eop.gov). Please note that **all** comments received will be posted publicly [here](https://github.com/whitehouse/source-code-policy/issues/).
-
-### Footnotes
-
-<ul style="list-style-type:none">
-
-<li id="fn1"><sup>1</sup> Fact Sheet: Announcing New U.S. Open Government Commitments on the Third Anniversary of the Open Government Partnership, THE WHITE HOUSE (September 24, 2014), available at: <a href="https://www.whitehouse.gov/the-press-office/2014/09/24/fact-sheet-announcing-new-us-open-government-commitments-third-anniversa">https://www.whitehouse.gov/the-press-office/2014/09/24/fact-sheet-announcing-new-us-open-government-commitments-third-anniversa</a><a href="#fnr1">&#8617;</a></li>
-<li id="fn2"><sup>2</sup> Memorandum for Chief Information Officers and Senior Procurement Executives on Technology Neutrality, Vivek Kundra, Daniel I. Gordon, Victoria A. Espinel (January 7, 2011), available at: <a href="https://www.whitehouse.gov/sites/default/files/omb/assets/egov_docs/memotociostechnologyneutrality.pdf">https://www.whitehouse.gov/sites/default/files/omb/assets/egov_docs/memotociostechnologyneutrality.pdf</a><a href="#fnr2">&#8617;</a></li>
-<li id="fn3"><sup>3</sup> See “Exceptions” in the Implementation section in the main body of this policy.<a href="#fnr3">&#8617;</a></li>
-
-</ul>
