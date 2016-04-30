@@ -27,7 +27,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ### Original United States Government public domain/CC0 declaration
 
-In the spirit of open source collaboration, we are reusing the [Jekyll website codebase utilised during the United States Federal Government public consultation of their Open Source Software policy](https://github.com/whitehouse/source-code-policy/), closed April 11, 2016. It was released under a CC0 license worldwide. While not required to do so, to respect the fine work carried out by the orignal authors we have reprodeced the CC0 declaration below:
+In the spirit of open source collaboration, we are reusing the [Jekyll website codebase utilised during the United States Federal Government public consultation of their Open Source Software policy](https://github.com/whitehouse/source-code-policy/), closed April 11, 2016. It was released under a CC0 license worldwide. While not required to do so, to respect the fine work carried out by the original authors we have reprodeced the CC0 declaration below:
 
 
 >_As a work of the United States Government, this project is in the
