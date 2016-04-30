@@ -20,7 +20,7 @@ Alternatively, the revised draft will be posted (once initial revisions are comp
 
 ## Contributions considered
 
-All contributions are subject to the code of conduct, [please see the information on contributing](https://github.com/opendatanz/nzgoal-se/blob/gh-pages/CONTRIBUTING.md)
+All contributions are subject to the code of conduct, [please see the information on contributing](https://github.com/opendatanz/nzgoal-se/blob/master/CONTRIBUTING.md)
 
 Please feel free to raise changes for any: 
 
