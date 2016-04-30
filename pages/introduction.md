@@ -15,7 +15,7 @@ Government agencies invest significantly in software development and often own t
 
 (a) save agencies time and money, resulting in a more efficient use of scarce resources;
 
-(b) encouarge open innovation on the part of both the public and private sectors;
+(b) encourage open innovation on the part of both the public and private sectors;
 
 (c) contribute to economic growth, primarily through the private sector being able to leverage and support government investment in the software it openly releases for re-use;
 
