@@ -1,7 +1,7 @@
 ---
 layout: page
 title: NZGOAL-SE Policy principles
-permalink: /policy-principles
+permalink: /policy-principles/
 description: "NZGOAL-SE Policy principles"
 ---
 {::options footnote_nr="6" /}

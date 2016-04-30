@@ -37,13 +37,13 @@ navigation:
 - text: About the revision process
   url: /nzgoal-se
 - text: Introduction
-  url: /nzgoal-se/introduction
+  url: /nzgoal-se/introduction/
 - text: Legal and policy context
-  url: /nzgoal-se/legal-and-policy-context
+  url: /nzgoal-se/legal-and-policy-context/
 - text: Policy principles
-  url: /nzgoal-se/policy-principles
+  url: /nzgoal-se/policy-principles/
 - text: Review and release process
-  url: /nzgoal-se/review-and-release-process
+  url: /nzgoal-se/review-and-release-process/
 
 # sass
 sass:

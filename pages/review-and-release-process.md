@@ -1,7 +1,7 @@
 ---
 layout: page
 title: NZGOAL-SE Review and release process
-permalink: /review-and-release-process
+permalink: /review-and-release-process/
 description: "NZGOAL-SE Review and release process"
 ---
 {::options footnote_nr="11" /}

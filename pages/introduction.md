@@ -1,7 +1,7 @@
 ---
 layout: page
 title: NZGOAL-SE Introduction
-permalink: /introduction
+permalink: /introduction/
 description: "NZGOAL-SE Introduction"
 ---
 
