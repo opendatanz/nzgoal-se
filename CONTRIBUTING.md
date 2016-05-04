@@ -2,7 +2,9 @@
 
 ## Your contributions
 
-Any contributions you make via pull requests and subsequently merged into NZGOAL-SE will be released under CC-BY 4.0 International license as per the original NZGOAL-SE draft. See [LICENSE](LICENSE.md).
+Please raise pull requests against the master branch.
+
+Any contributions made via pull requests, you agree to give Land Information New Zealand the authority to license these revisions under CC-BY 4.0 International license on your behalf in the final policy. See [LICENSE](LICENSE.md).
 
 ## Code of conduct 
 
