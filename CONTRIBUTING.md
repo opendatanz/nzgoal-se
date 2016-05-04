@@ -6,6 +6,30 @@ Please raise pull requests against the master branch.
 
 Any contributions made via pull requests, you agree to give Land Information New Zealand the authority to license these revisions under CC-BY 4.0 International license on your behalf in the final policy. See [LICENSE](LICENSE.md).
 
+## Contributions considered
+
+All contributions are subject to the code of conduct (see below).
+
+Please feel free to raise changes for any: 
+
+ >* Typos and iterative improvements
+ >* Sentence structure that could be clearer 
+ >* Minor line changes
+
+ We won't be considering any:
+
+ >* New sections (unless they we already raised as part of the initial public consulation)
+ >* Major rewrites of sections (as we'll have to run these past a legal eye each time)
+ >* Complete overhauls of the document (because we're in the process of iteration not overhaul at this time)
+
+You may provide feedback during the transperant revision process in two ways. We ask that you do not submit the same content more than once. Please be aware that while we will consider your pull request, we may not necessrily merge it into the final revision. We will close all open pull requests at the end of the process and these will still be publically avialalbe via GitHub. 
+
+## Options to contribute
+
+1. Direct changes and line edits to the content are welcome through [_pull requests_](https://help.github.com/articles/creating-a-pull-request) by clicking "Edit this page" in the side menu. If prompted, follow the instructions to “Fork this repository and propose changes” (you'll need a GitHub account). You do not need to install any software to suggest a change. You can use GitHub's in-browser editor to edit files and submit a pull request for your changes to be considered for merging into the document. Directions on how to submit a pull request can be found [here](https://help.github.com/articles/creating-a-pull-request). Pull requests that have already been submitted for the proposed revisions can be found [here](https://github.com/opendatanz/nzgoal-se/pulls).
+
+2. We are also accepting proposed revisions through emails sent to [opendata@linz.govt.nz](mailto:opendata@linz.govt.nz).
+
 ## Code of conduct 
 
 Messages and images on this discussion forum must always be polite, appropriate and relevant.
