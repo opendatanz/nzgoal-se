@@ -47,11 +47,11 @@ For the purposes of NZGOAL-SE, open source software (**OSS**) is software that i
 
 ##### 4
 
-There are two main forms of open source software licence:
+There are two main forms of free and open source software licence:
 
-(a) **fully permissive licences** (also known as academic licences) that confer broad freedoms and minimal obligations on those who wish to use, adapt and distribute the software (e.g., the MIT licence, the BSD licence and the Apache 2.0 licence); and
+(a) **permissive licences** that confer broad freedoms and minimal obligations on those who wish to use, adapt and distribute the software (e.g., the MIT licence, the BSD licence and the Apache 2.0 licence); and
 
-(b) **sharelike licences** (also known as copyleft licences) that confer similar freedoms but require those who adapt the licensed software to license their adaptations with the same licence if they distribute them (e.g., the GNU General Public License, or GPL for short).
+(b) **sharealike licences** (also known as copyleft licences) that confer similar freedoms and require those who adapt the licensed software to license their adaptations with the same licence **if they distribute them** (e.g., the GNU General Public License, or GPL for short).
 
 ### Approach and scope
 
