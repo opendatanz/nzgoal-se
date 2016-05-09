@@ -10,7 +10,7 @@ description: "NZGOAL-SE Review and release process"
 
 ### Introduction 
 
-##### 38
+##### 36
 
 It is recommended that government agencies follow the review and release process set out below before releasing software for re-use under an open source software licence, with assistance where required from their technical and legal teams. The process consists of five main stages:
 
@@ -24,11 +24,11 @@ It is recommended that government agencies follow the review and release process
 
 (e) release of the software.
 
-##### 39
+##### 37
 
 Each stage contains one or more issues that may need to be worked through. The stages and the issues within them reflect a mixture of the NZGOAL-SE Policy Principles, legal requirements and practical considerations. 
 
-##### 40 
+##### 38 
 
 It can be important to work through these steps to ensure that the agency:
 
@@ -38,15 +38,15 @@ It can be important to work through these steps to ensure that the agency:
 
 (c) does not expose either itself or those who may re-use the released software to liability or related risk.
 
-##### 41
+##### 39
 
-A decision tree diagram for the review and release process is set out at paragraph 63 below. 
+A decision tree diagram for the review and release process is set out at paragraph 61 below. 
 
 ### Stage 1: Copyright-related rights evaluation 
 
 #### What the stage involves
 
-##### 42
+##### 40
 
 The first stage involves:
 
@@ -56,13 +56,13 @@ The first stage involves:
 
 (c) evaluating whether the agency has sufficient rights to license the software under the MIT licence in accordance with the Permissive Licensing Principle. 
 
-##### 43
+##### 41
 
 In the vast majority of cases, software that an agency wishes to license will constitute or contain one or more copyright works. In the unlikely event that a given piece of software does not constitute or contain one or more copyright works, an agency could, if no exception in Stage 2 applies, release it into the public domain using an NZGOAL-style “no known rights” statement. See NZGOAL for that statement. It is not discussed further in NZGOAL-SE.
 
 #### Issues where agency does not own all copyright
 
-##### 44
+##### 42
 
 When an agency is in the situation of not owning all copyright in the software it would like to release and license for re-use and needs permission from the copyright owner(s), it is important to appreciate that the software may:
 
@@ -72,7 +72,7 @@ When an agency is in the situation of not owning all copyright in the software i
 
 [^12]: For example, the software could be a deliverable under a services contract the agency has with a vendor, but the contract may confer copyright ownership on the service provider and only license the software to the agency.
 
-##### 45
+##### 43
 
 The analysis for these two scenarios is different:
 
@@ -98,7 +98,7 @@ Depending on the number of pre-existing owners, the licences (if any) under whic
 
 #### Common scenarios where agency will not be able to license software under the MIT licence
 
-##### 46
+##### 44
 
 There are certain scenarios in which, from a copyright perspective, an agency will not be able to license software under the MIT licence. Three common scenarios are as follows: 
 
@@ -110,19 +110,19 @@ There are certain scenarios in which, from a copyright perspective, an agency wi
 
 ### Stage 2: Evaluation of exceptions
 
-##### 47
+##### 45
 
 If an agency has completed Stage 1 and concluded that it does have sufficient rights to license the software under the MIT licence, then the NZGOAL-SE Policy Principles recommend that the software be licensed with the MIT licence unless an exception set out in paragraph 20 applies.
 
-##### 48
+##### 46
 
 For each proposed release, the exceptions need to be considered in the light of all the surrounding circumstances relevant to the specific software and its release. 
 
-##### 49
+##### 47
 
 In many instances, the exercise will be quick as none of the restrictions will apply. In that event, the agency can move to Stage 4 (Application of chosen licence) below. This is because the Permissive Licensing Principle will not have been displaced.
 
-##### 50
+##### 48
 
 If one or more of the exceptions applies, the Permissive Licensing Principle will be displaced and not apply. One of two consequences will follow:
 
@@ -132,11 +132,11 @@ If one or more of the exceptions applies, the Permissive Licensing Principle wil
 
 ### Stage 3: Alternative OSS licensing
 
-##### 51
+##### 49
 
 Stage 3 only applies where the exception in paragraph 18(d) applies (sharealike required) and no other exceptions apply. If no exception applies, the agency should move to Stage 4 (Application of chosen licence).
 
-##### 52
+##### 50
 
 As noted in paragraph 18(d), a sharealike open source software licence may need to be applied either because:
 
@@ -144,11 +144,11 @@ As noted in paragraph 18(d), a sharealike open source software licence may need 
 
 (b) because the agency has a genuine need for developments to the software to be shared with the developer community.
 
-##### 53
+##### 51
 
 If the agency is required to license the software under a particular sharealike licence, it must license the software under that licence (failure to do so would likely result in the agency breaching third party rights). Where this is the case, the agency should proceed to Stage 4 (Application of chosen licence).
 
-##### 54
+##### 52
 
 If a sharealike open source software licence is to be applied because the agency has a genuine need for developments to the software to be shared with the developer community, the agency is encouraged to use either:
 
@@ -156,7 +156,7 @@ If a sharealike open source software licence is to be applied because the agency
 
 (b) a sharealike OSS licence that is GPL-compatible. 
 
-##### 55
+##### 53
 
 GPL-compatibility is important given the large volume of software that has been released under the GPL. The Free Software Foundation maintains a list of licences it considers to be GPL-compatible. Note that only some of these are sharealike (copyleft) licences.
 
@@ -166,13 +166,13 @@ GPL-compatibility is important given the large volume of software that has been 
 
 #### Introduction
 
-##### 56
+##### 54
 
 Stage 4 explains how agencies apply their chosen open source software licence to the software they’re releasing.
 
 #### Applying the MIT licence
 
-##### 57
+##### 55
 
 This is the standard MIT licence:
 
@@ -188,7 +188,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
-##### 58
+##### 56
 
 Agencies can apply the MIT licence in one of two ways:
 
@@ -230,7 +230,7 @@ SpatialZone Project, Crown copyright (c) 2015, Land Information New Zealand on b
 
 #### Applying the GPL
 
-##### 59
+##### 57
 
 Full instructions on how to apply can be found on the Free Software Foundation’s [website](http://www.gnu.org/licenses/gpl-howto.html).[^15]
 
@@ -238,13 +238,13 @@ Full instructions on how to apply can be found on the Free Software Foundation�
 
 #### Other licences
 
-##### 60
+##### 58
 
 If for some reason you are applying an alternative open source software licence, you may wish to check whether the entity that maintains the licence has instructions on how to apply it. Alternatively, you could follow the approach suggested above for the MIT licence or the Free Software Foundation’s suggested approach for the GPL. 
 
 ### Stage 5: Release the software
 
-##### 61
+##### 59
 
 Once the chosen licence has been applied to the software files, release the software for re-use into one or more relevant code repositories and/or on the agency’s website. Consider:
 
@@ -259,7 +259,7 @@ Once the chosen licence has been applied to the software files, release the soft
 
 ### Review and release process decision tree
 
-##### 62
+##### 60
 
 The decision tree diagram below illustrates the Review and Release Process explained above. It is intended to be read in conjunction with the explanations above for each stage.
 

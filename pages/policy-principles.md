@@ -21,7 +21,6 @@ Government agencies are strongly encouraged to apply the following Policy Princi
 | Exceptions                                                                       | The default MIT licensing does not apply where an exception applies.                                                                                                                                                                                                    |
 | Adaptations                                                                      | Be careful when considering whether you’re adapting pre-existing software.                                                                                                                                                                                              |
 | Alternative OSS licensing                                                        | Where the default MIT licensing does not apply due to an upstream OSS licensing obligation (e.g., under the GPL), license with upstream licence. Where the agency has a compelling reason for sharealike licensing, license with the GPL (or a GPL-compatible licence). |
-| Potential stifling effect of sharealike licensing                                | Beware that sharealike licensing (when not required) may appear paternalistic and/or be commercially inhibiting.                                                                                                                                                        |
 | Security code review                                                             | Consider whether a security code review is required to identify sensitive elements that may need to be removed.                                                                                                                                                         |
 | No additional controls or discrimination                                         | Do not seek to impose requirements that are inconsistent with the freedoms in the chosen OSS licence.                                                                                                                                                                   |
 | No charging                                                                      | Do not charge people for access to OSS-licensed software.                                                                                                                                                                                                               |
@@ -113,23 +112,9 @@ Whilst versions 2 and 3 of the GPL differ in certain respects, in essence the GP
 
 [^9]: See [http://www.gnu.org/licenses/gpl-3.0.en.html](http://www.gnu.org/licenses/gpl-3.0.en.html)
 
-### Potential stifling effect of sharealike licensing
-
-##### 22
-
-When considering whether the second limb of the "sharealike required" exception to the Permissive Licensing Principle applies (the ‘genuine need’ limb), agencies should take into account the potential of a sharealike licence to:
-
-(a) come across as paternalistic, in that the licensing agency is telling users what they can and cannot do with software that was developed with public funds (i.e., “you can use and develop the software but you can’t distribute your developments unless you allow others to do what they want with your developments”); and 
-
-(b) have the adverse effect of stifling commercial development of the software by licensees. 
-
-##### 23
-
-In theory, sharealike obligations can inhibit commercial development because the licence would require the commercial developer to license its adapted software to others under the same terms when the software is distributed or conveyed. The concern some businesses (and others) have is that this would then enable anyone who obtains a copy of the software to copy, distribute, modify and/or sell it. That, in turn, could harm the developer’s commercial interests. In _some_ instances this concern may be overstated, in that what customers are really purchasing could be access to the developer’s support and maintenance and updates to the software, but this issue is one that divides segments of the open source community. It is for each agency to consider the veracity of such concerns in the context of the software in question and the circumstances surrounding its use.
-
 ### Security code review
 
-##### 24
+##### 22
 
 Before releasing software for re-use, agencies should:
 
@@ -139,19 +124,19 @@ Before releasing software for re-use, agencies should:
 
 ### No additional controls or discrimination
 
-##### 25
+##### 23
 
 When releasing developed software under an open source software licence, agencies must not seek to impose controls or requirements, whether contractual or otherwise, that are inconsistent with the freedoms or permissions granted by the selected OSS licence. For example, agencies are _not_ able to license software under an open source software licence and then seek to discriminate between individual, not-for-profit and commercial uses of the software.
 
 ### No charging
 
-##### 26
+##### 24
 
 Government agencies that release software under open source software licences should not seek to charge people for access to the software.
 
 ### Updating open source licensed software
 
-##### 27
+##### 25
 
 If an agency:
 
@@ -159,13 +144,13 @@ If an agency:
 
 (b) subsequently identifies a bug or other issue with the software that could have a material adverse effect on users of the software, 
 
-the agency should (subject to paragraph 29):
+the agency should (subject to paragraph 26):
  
-(a) consider whether to inform users of the software of the bug or other issue (e.g., by adding a notice to the repository, site or service that contains the software files); and
+(c) consider whether to inform users of the software of the bug or other issue (e.g., by adding a notice to the repository, site or service that contains the software files); and
 
-(b) if the agency has rectified the bug or other issue for its own purposes, release the updated file(s) to the relevant repository, site or service.
+(d) if the agency has rectified the bug or other issue for its own purposes, release the updated file(s) to the relevant repository, site or service.
 
-##### 28
+##### 26
 
 If the agency is aware:
 
@@ -179,11 +164,11 @@ the agency should inform the Government Chief Information Officer (and where rel
 
 ### Code forking[^11]
 
-##### 29
+##### 27
 
 Code forking occurs when agencies make changes to the code of open source software without publishing the code back to the software’s development community. The fork is the split between the agency’s version of the software and the version published by the community. Any further changes made by either the agency or the community will increase the fork. This can make it difficult for the agency to upgrade to a new published version, as the agency would have to reapply all its changes. This risk may be mitigated by contributing modified source code back to the open source software community. 
 
-##### 30
+##### 28
 
 Where an agency has taken and modified open source software, it should contribute the modified software back to the open source community unless there is a compelling reason not to do so.
 
@@ -191,7 +176,7 @@ Where an agency has taken and modified open source software, it should contribut
 
 ### Obtaining rights when procuring or commissioning the development of software
 
-##### 31
+##### 29
 
 When procuring or commissioning the development of software, government agencies should consider whether the software should, in accordance with these Policy Principles, be released to the public for re-use under an open source software licence. If the software should be released to the public for re-use under an open source software licence, government agencies should consider the steps that may be required as part of their procurement and contracting processes to ensure that either:
 
@@ -217,17 +202,17 @@ Taking these steps may require:
 
 (i) ensuring that the contract does not include confidentiality provisions that would inadvertently prevent release of the software under an open source software licence.
 
-##### 32
+##### 30
 
-Paragraph 31 is subject to any statutory, policy or commercial imperatives to the contrary. 
+Paragraph 29 is subject to any statutory, policy or commercial imperatives to the contrary. 
 
-##### 33
+##### 31
 
 The Guidelines for the Treatment of Intellectual Property Rights in ICT Contracts are _not_ a policy imperative to the contrary. Rather, they – like NZGOAL-SE – are government policy for agencies to take into account at the time of procuring software. As explained at paragraph 11 above, those Guidelines and NZGOAL-SE are complimentary.
 
 ### Act fairly towards developers when drafting IP warranties and indemnities
 
-##### 34
+##### 32
 
 If:
 
@@ -237,18 +222,18 @@ If:
 
 the agency should act fairly towards the service provider in relation to the drafting of intellectual property warranties and indemnities. 
 
-##### 35
+##### 33
 
 In particular, it is generally considered unreasonable to expect a service provider to give an unqualified IP warranty and an unqualified IP indemnity in relation to third party open source software that the agency agrees can be used by the service provider in developing software for the agency. This is especially so when the agency will be releasing the developed software under an open source software licence or requires the service provider to do so on its behalf.
 
 ### Liability
 
-##### 36
+##### 34
 
 The MIT licence and the GPL both contain broad disclaimers of warranties and exclusions of liability that are widely known and acknowledged and ought to protect releasing agencies from liability in connection with the software they have released. In essence, people use open source software at their own risk. Agencies should ensure that all disclaimers and exclusions contained in the MIT licence or the GPL (as applicable) are replicated when they release software under these licences.
 
 ### Review and Release Process
 
-##### 37
+##### 35
 
 Government agencies should follow the NZGOAL-SE Review and Release Process before publicly releasing and licensing their software for re-use under an open source software licence. The Review and Release Process is set out below.
