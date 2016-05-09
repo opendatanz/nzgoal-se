@@ -173,9 +173,11 @@ If the agency is aware:
 
 (b) that other government agencies are using the software,
 
-the agency should inform the Government Chief Information Officer (and where relevant the Government Chief Privacy Officer and Office of the Privacy Commissioner) as soon as possible, take all reasonable steps to inform the other agencies of the risk and give them time to mitigate the risk before making any public announcement that could result in hackers or others exploiting the bug or other issue.
+the agency should inform the Government Chief Information Officer (and where relevant the Government Chief Privacy Officer and Office of the Privacy Commissioner) as soon as possible, take all reasonable steps to inform the other agencies of the risk and give them time to mitigate the risk before making any public announcement that could result in malicious adversaries or crackers[^10] exploiting the bug or other issue.
 
-### Code forking[^10]
+[^10]: See the Internet Security Glossary, Version 2 on Crackers [https://tools.ietf.org/html/rfc4949#page-84](https://tools.ietf.org/html/rfc4949#page-84)
+
+### Code forking[^11]
 
 ##### 29
 
@@ -185,7 +187,7 @@ Code forking occurs when agencies make changes to the code of open source softwa
 
 Where an agency has taken and modified open source software, it should contribute the modified software back to the open source community unless there is a compelling reason not to do so.
 
-[^10]: This principle is based in part on a discussion of code forking in the Australian Government's *A Guide to Open Source Software for Australian Government Agencies*, above n 1, but has been modified for the purposes of NZGOAL-SE. Most of the Australian Guide has been released under a Creative Commons Attribution 3.0 Australia licence: [http://creativecommons.org/licenses/by/3.0/au/](http://creativecommons.org/licenses/by/3.0/au/).
+[^11]: This principle is based in part on a discussion of code forking in the Australian Government's *A Guide to Open Source Software for Australian Government Agencies*, above n 1, but has been modified for the purposes of NZGOAL-SE. Most of the Australian Guide has been released under a Creative Commons Attribution 3.0 Australia licence: [http://creativecommons.org/licenses/by/3.0/au/](http://creativecommons.org/licenses/by/3.0/au/).
 
 ### Obtaining rights when procuring or commissioning the development of software
 
