@@ -263,4 +263,4 @@ Once the chosen licence has been applied to the software files, release the soft
 
 The decision tree diagram below illustrates the Review and Release Process explained above. It is intended to be read in conjunction with the explanations above for each stage.
 
-![NZGOAL-SE Review and release process - decision tree](/nzgoal-se/assets/images/nzgoal-se-decision-tree-draft.png)
+![NZGOAL-SE Review and release process - decision tree](/nzgoal-se/assets/images/nzgoal-se-decision-tree-revision.png)
