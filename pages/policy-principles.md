@@ -24,7 +24,7 @@ Government agencies are strongly encouraged to apply the following Policy Princi
 | No additional controls or discrimination                                         | Do not seek to impose requirements that are inconsistent with the freedoms in the chosen OSS licence.                                                                                                                                                                   |
 | No charging                                                                      | Do not charge people for access to OSS-licensed software.                                                                                                                                                                                                               |
 | Updating open source licensed software                                           | If you spot a bug with software you’ve licensed, consider informing users and, if you fix the bug, release the updated files. Take appropriate action if there’s a security risk.                                                                                       |
-| Code forking                                                                     | If you take and modify open source licensed software, you should contribute the modified software back to the open source community.                                                                                                                                    |
+| Contributions                                                                     | Adapted, pre-existing open source licensed software should be contributed back to the open source community. Agencies should provide guidance as to how it will accept external contributions to it's released source code.                                                                                                                                    |
 | Obtaining rights when procuring or commissioning the development of software     | If you commission the development of software that you want to OSS-license, make sure you obtain the rights to license it on OSS terms.                                                                                                                                 |
 | Act fairly towards developers when drafting IP warranties and indemnities        | If you commission the development of software that uses pre-existing third party OSS-licensed software and/or that you may OSS-license, act fairly in relation to IP warranties and indemnities.                                                                        |
 | Liability                                                                        | Replicate all disclaimers and exclusions contained in the relevant OSS licence when you release software under that licence.                                                                                                                                            |
@@ -166,23 +166,116 @@ If the agency is aware:
 
 (b) that other government agencies are using the software,
 
-the agency should inform the Government Chief Information Officer (and where relevant the Government Chief Privacy Officer and Office of the Privacy Commissioner) as soon as possible, take all reasonable steps to inform the other agencies of the risk and give them time to mitigate the risk before making any public announcement that could result in malicious adversaries or crackers[^12] exploiting the bug or other issue. Agencies should also consider including a **Coordinated Disclosure Policy**[^11] in an accompanying "contributing" file in order to responsibly coordinate any subsequent security disclosures with external contributors and the agency.
+the agency should inform the Government Chief Information Officer (and where relevant the Government Chief Privacy Officer and Office of the Privacy Commissioner) as soon as possible, take all reasonable steps to inform the other agencies of the risk and give them time to mitigate the risk before making any public announcement that could result in malicious adversaries or crackers[^11] exploiting the bug or other issue. Agencies should also consider including a **Coordinated Disclosure Policy**[^12] in an accompanying "contributing" file in order to responsibly coordinate any subsequent security disclosures with external contributors and the agency.
 
-[^11]: Coordinated disclosures ensure there is clear and explicit process for both external contributors and agencies for the reporting of secruity bugs and issues in publicly released software. Guidance for the New Zealand context can be found on the NZITF website at [http://www.nzitf.org.nz/pdf/NZITF_Disclosure_Guidelines_2014.pdf](http://www.nzitf.org.nz/pdf/NZITF_Disclosure_Guidelines_2014.pdf).
+[^11]: See the Internet Security Glossary, Version 2 on Crackers [https://tools.ietf.org/html/rfc4949#page-84](https://tools.ietf.org/html/rfc4949#page-84)
 
-[^12]: See the Internet Security Glossary, Version 2 on Crackers [https://tools.ietf.org/html/rfc4949#page-84](https://tools.ietf.org/html/rfc4949#page-84)
+[^12]: Coordinated disclosures ensure there is clear and explicit process for both external contributors and agencies for the reporting of secruity bugs and issues in publicly released software. Guidance for the New Zealand context can be found on the NZITF website at [http://www.nzitf.org.nz/pdf/NZITF_Disclosure_Guidelines_2014.pdf](http://www.nzitf.org.nz/pdf/NZITF_Disclosure_Guidelines_2014.pdf).
 
-### Code forking[^13]
+### Contributions
+
+#### Agency contribution to FOSS communities
 
 ##### 26
+Where an agency has re-used and adapted pre-existing free and open source software source code or has developed new
+code to interact with free and open source software source code, the agency should:
 
-Code forking occurs when agencies make changes to the code of open source software without publishing the code back to the software’s development community. The fork is the split between the agency’s version of the software and the version published by the community. Any further changes made by either the agency or the community will increase the fork. This can make it difficult for the agency to upgrade to a new published version, as the agency would have to reapply all its changes. This risk may be mitigated by contributing modified source code back to the open source software community.
+(a) consider asking the free and open source software community or the software source code owners whether any agencyadapted
+feature or improvements or the agency's new source code would generally be re-usable by others (if this isn't
+already clear);
+
+(b) if so, contribute their adapted or new source code back to the free and open source software community project unless
+an exception listed in paragraph 18 applies; and
+
+(c) avoid using a diverging fork[^12] copy of the software source code when it could reasonably use the upstream source
+code and contribute agency adaptions to this software for general re-use
+
+(the **Contribute to FOSS Communities Principle**).
+
+#### Agency acceptance of contributions from others
 
 ##### 27
 
-Where an agency has taken and modified open source software, it should contribute the modified software back to the open source community unless there is a compelling reason not to do so.
+**Contribution guidance and files**
 
-[^13]: This principle is based in part on a discussion of code forking in the Australian Government's *A Guide to Open Source Software for Australian Government Agencies*, above n 1, but has been modified for the purposes of NZGOAL-SE. Most of the Australian Guide has been released under a Creative Commons Attribution 3.0 Australia licence: [http://creativecommons.org/licenses/by/3.0/au/](http://creativecommons.org/licenses/by/3.0/au/).
+Part of the value of releasing free and open source software in accordance with the Open Access and Licensing Principle is
+that external contributors can re-use and contribute back improvements to agency-released software source code. To
+accept contributions from external contributors in a manner that enables contributions to be licensed properly and shared
+with others, agencies should consider providing explicit contribution guidance to users that:
+
+(a) explains any technical aspects of making the contributions;
+
+(b) sets expectations for users as to how the agency will review and accept contributions of source code;
+
+(c) sets out any code of conduct, moderation policy or terms of use that apply when external contributors engage publicly in
+discussions about the agency-released software source code;
+
+(d) indicates whether external contributors need to physically sign and return a contributor licence agreement[^13] or other
+document before the agency will accept contributions from them, or specifies that the act of contributing source code
+means the contributing user is agreeing to license his or her contributions to the agency and others under a specified free
+and open source software licence; and
+
+(e) ensures that users know that they must own the copyright in their contributions or be permitted to license them to the
+agency and others under the licence that the agency specifies (this is important as it seeks to mitigate the risk of the agency
+accepting and publishing external contributions that, for copyright reasons, should not be accepted and published).
+
+In the open source software context, a common means of providing this contribution guidance to users is by including a
+'contributing' file in documentation that accompanies the source code. It is important that this file (or other document if an
+alternative approach is used) is brought to the attention of users before or at the time they submit contributions. Some
+source code repositories bring the existence of a 'contributing' file to the attention of users at the time of submission but if
+an agency is not using such a respository it should take care to ensure the terms of contribution are brought to users'
+attention.
+
+Whilst this is a decision for agencies, NZGOAL-SE suggests that it will usually be unnecessary, administratively burdensome
+and potentially counterproductive to require contributing users to physically sign and return a formal contributor licence agreement or other document. In most cases agencies will be able to secure the rights they need, with sufficient confidence, by including the 'contributing' file mentioned above in documentation accompanying the source code and ensuring that this file is brought to users' attention before or at the time of submitting their contributions. Agencies should seek advice from their legal teams if required.
+
+**Comment on assignment versus licensing**
+Agencies may wish to note that there are two ways in which an agency could obtain the rights it needs from contributors. An
+agency could require contributing users to assign (i.e., transfer) any copyright in their contributions to the agency or it could
+require contributors to license their contributions to the agency and others under a specified free and open source software
+licence. The advantage of seeking assignments of copyright is that this enables the party maintaining the source code to
+own it all. That makes it easier to take action against a user who does not comply with the applicable free and open source
+software licence terms. The significant disadvantage of seeking assignments of copyright is that it can inhibit contributions
+(as developers may wish to retain their copyright). In a government context, it could also be seen as 'over-reaching'. An
+assignment also needs to be "in writing signed by or on behalf of the assignor" (section 114 of the Copyright Act 1994). It
+will be evident from the approach suggested above that NZGOAL-SE does _not_ recommend that agencies seek to obtain
+assignments of copyright in users' contributions. Rather, the suggested approach allows contributors to retain their own
+copyright and only requires them to license their contributions under a specified free and open source software licence.
+
+**Suggested licensing text for 'contributing' file**
+NZGOAL-SE suggests that agencies include the following kind of licensing text in their 'contributing' file or other
+documentation that they bring to the attention of users before or at the time of source code submission (the content in
+square brackets need to be completed):
+
+```
+Copyright and licensing
+
+The source code for this [name of project or software] is licensed under the [insert name of applicable free and open source
+software licence]. By contributing source code to this [name of project or software], you are agreeing to license your
+contributions under and on the terms of the [insert name of same licence]. Please note that your licence is irrevocable and
+royalty-free. You or your licensors retain any copyright in your contributions while allowing others to re-use the source code
+in any way they like as long as they meet the requirements of the licence.
+```
+
+Agencies may also wish to ensure that the 'contributing' file, or other document that is brought to the attention of users,
+contains the matters referred to in paragraph 27(a)-(e) above.[^14]
+
+[^12]: A diverging code fork occurs when agencies make changes to the code of open source software without publishing
+the code back to the software’s development community. The fork is the split between the agency’s version of the software
+and the version published by the community. Any further changes made by either the agency or the community will increase
+the differences of the source code. This can make it difficult for the agency to upgrade to a new published version, as the
+agency would have to reapply all its changes. This risk may be mitigated by contributing modified source code back to the
+open source software community if appropriate.
+
+[^13]: A Contributor Licence Agreement, or CLA, is an agreement that sets out the terms under which a person or entity
+makes contributions to the project or software. A CLA will deal with licensing terms and can also agree with topics such as
+warranties and indemnities.
+
+[^14]: The 'contributing' file could also seek to obtain a warranty (promise) from contributors that they have all the rights
+they require to submit their contributions on the terms of the specified licence and an indemnity in favour of the agency
+should it turn out that the contributor does not have the required rights. The indemnity clause would seek to enable the agency to recover, from a contributor, loss the agency incurs as a result of the contributor's breach of the warranty.
+NZGOAL-SE suggests, however, that including an indemnity could be unnecessary and/or counter-productive. Not only could it inhibit contributions but it could pose difficulties for government departments given restrictions on the granting of
+indemnities under the Public Finance Act 1989.
 
 ### Obtaining rights when procuring or commissioning the development of software
 
