@@ -21,9 +21,9 @@ Government agencies invest significantly in software development and often own t
 
 (d) contribute to the formation of trusted communities of users whose public and private sector members have common or similar goals or interests;
 
-(e) result in continuous and ongoing maintenance of the released software code through these communities of users in a way that may not be achievable by a single agency alone; 
+(e) result in continuous and ongoing maintenance of the released software code through these communities of users in a way that may not be achievable by a single agency alone;
 
-(f) enable agencies to better align their operational and strategic activities with relevant aspects of the Government ICT Strategy and Action Plan to 2017 (as revised in 2015); and 
+(f) enable agencies to better align their operational and strategic activities with relevant aspects of the Government ICT Strategy and Action Plan to 2017 (as revised in 2015); and
 
 (g) in some cases, foster transparency – for those who can read software code – as to the methods or algorithms used for the creation or delivery of public data and services, thereby enabling critical analysis and potentially the provision of improvements back to the releasing agency
 
@@ -37,7 +37,7 @@ This NZGOAL Software Extension (**NZGOAL-SE**) provides agencies with a means of
 
 (c) advocates the use of particular open source software licences for this purpose; and
 
-(d) sets out a review and release process to guide agencies through the review of the software they propose to release for re-use, the purpose of which is to help agencies make decisions that are legally robust and practically useful. 
+(d) sets out a review and release process to guide agencies through the review of the software they propose to release for re-use, the purpose of which is to help agencies make decisions that are legally robust and practically useful.
 
 ### Open source software and open source software licences
 
@@ -73,4 +73,6 @@ Additional guidance notes may be released over time which:
 
 (a) explore, in greater detail, some of the issues addressed or raised in NZGOAL-SE; and
 
-(b) address operational or technical issues which arise in practice.
+(b) address operational or technical issues which arise in practice; and
+
+(c) indicate the processes for agency released, open source software to be listed in any discovery tools to promote re-use.
