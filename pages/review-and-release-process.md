@@ -4,7 +4,7 @@ title: NZGOAL-SE Review and release process
 permalink: /review-and-release-process/
 description: "NZGOAL-SE Review and release process"
 ---
-{::options footnote_nr="13" /}
+{::options footnote_nr="14" /}
 
 ## NZGOAL-SE Review and Release Process
 
@@ -66,11 +66,11 @@ In the vast majority of cases, software that an agency wishes to license will co
 
 When an agency is in the situation of not owning all copyright in the software it would like to release and license for re-use and needs permission from the copyright owner(s), it is important to appreciate that the software may:
 
-(a) comprise all new code (i.e., be a completely new copyright work);[^13] or
+(a) comprise all new code (i.e., be a completely new copyright work);[^14] or
 
 (b) build on pre-existing code (i.e., be an adaptation / derivative of pre-existing code).
 
-[^13]: For example, the software could be a deliverable under a services contract the agency has with a vendor, but the contract may confer copyright ownership on the service provider and only license the software to the agency.
+[^14]: For example, the software could be a deliverable under a services contract the agency has with a vendor, but the contract may confer copyright ownership on the service provider and only license the software to the agency.
 
 ##### 42
 
@@ -90,11 +90,11 @@ The analysis for these two scenarios is different:
 
 >(ii) to the extent that the agency does not own the copyright in the adaptation / derivative work, have permission from the other copyright owner(s) for their parts of the overall new work to be licensed under the open source software licence the agency wishes to use.
 
-To understand this, one needs to appreciate that an adaptation / derivative work consists of property (copyright) owned by the original licensor(s) (let’s call them A) plus new and separate property (copyright) over the new original parts of the adaptation / derivative work that are created by B. The derivative work is a distinct copyright work in its own right but B doesn’t obtain property rights that are greater than B’s own contribution. As a United States court has put it, "[t]he aspects of a derivative work added by the derivative author are that author’s property, but the element drawn from the pre-existing work remains on grant from the owner of the pre-existing work".[^14]
+To understand this, one needs to appreciate that an adaptation / derivative work consists of property (copyright) owned by the original licensor(s) (let’s call them A) plus new and separate property (copyright) over the new original parts of the adaptation / derivative work that are created by B. The derivative work is a distinct copyright work in its own right but B doesn’t obtain property rights that are greater than B’s own contribution. As a United States court has put it, "[t]he aspects of a derivative work added by the derivative author are that author’s property, but the element drawn from the pre-existing work remains on grant from the owner of the pre-existing work".[^15]
 
 Depending on the number of pre-existing owners, the licences (if any) under which they may have released their code and the licence the agency wishes to apply to the adaptation / derivative work, this can get complex very quickly. In cases of any complexity, agencies may need to seek expert legal advice.
 
-[^14]: Stewart v Abend 495 U.S. 207, 223 (1990).
+[^15]: Stewart v Abend 495 U.S. 207, 223 (1990).
 
 #### Common scenarios where agency will not be able to license software under the MIT licence
 
@@ -160,9 +160,9 @@ If a sharealike open source software licence is to be applied because the agency
 
 GPL-compatibility is important given the large volume of software that has been released under the GPL. The Free Software Foundation maintains a list of licences it considers to be GPL-compatible. Note that only some of these are sharealike (copyleft) licences.
 
-### Stage 4: Application of chosen licence[^15]
+### Stage 4: Application of chosen licence[^16]
 
-[^15]: For a useful general discussion of this topic, see the Software Freedom Law Center’s "Managing copyright information within a free software project" at [http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html](http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html])
+[^16]: For a useful general discussion of this topic, see the Software Freedom Law Center’s "Managing copyright information within a free software project" at [http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html](http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html])
 
 #### Introduction
 
@@ -232,9 +232,9 @@ SpatialZone Project, Crown copyright (c) 2015, Land Information New Zealand on b
 
 ##### 56
 
-Full instructions on how to apply can be found on the Free Software Foundation’s [website](http://www.gnu.org/licenses/gpl-howto.html).[^16]
+Full instructions on how to apply can be found on the Free Software Foundation’s [website](http://www.gnu.org/licenses/gpl-howto.html).[^17]
 
-[^16]: See "How to use GNU licenses for your own software" at [http://www.gnu.org/licenses/gpl-howto.html](http://www.gnu.org/licenses/gpl-howto.html)
+[^17]: See "How to use GNU licenses for your own software" at [http://www.gnu.org/licenses/gpl-howto.html](http://www.gnu.org/licenses/gpl-howto.html)
 
 #### Other licences
 
