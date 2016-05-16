@@ -187,7 +187,7 @@ already clear);
 (b) if so, contribute their adapted or new source code back to the free and open source software community project unless
 an exception listed in paragraph 18 applies; and
 
-(c) avoid using a diverging fork[^12] copy of the software source code when it could reasonably use the upstream source
+(c) avoid using a diverging fork[^13] copy of the software source code when it could reasonably use the upstream source
 code and contribute agency adaptions to this software for general re-use
 
 (the **Contribute to FOSS Communities Principle**).
@@ -210,7 +210,7 @@ with others, agencies should consider providing explicit contribution guidance t
 (c) sets out any code of conduct, moderation policy or terms of use that apply when external contributors engage publicly in
 discussions about the agency-released software source code;
 
-(d) indicates whether external contributors need to physically sign and return a contributor licence agreement[^13] or other
+(d) indicates whether external contributors need to physically sign and return a contributor licence agreement[^14] or other
 document before the agency will accept contributions from them, or specifies that the act of contributing source code
 means the contributing user is agreeing to license his or her contributions to the agency and others under a specified free
 and open source software licence; and
@@ -258,20 +258,20 @@ in any way they like as long as they meet the requirements of the licence.
 ```
 
 Agencies may also wish to ensure that the 'contributing' file, or other document that is brought to the attention of users,
-contains the matters referred to in paragraph 27(a)-(e) above.[^14]
+contains the matters referred to in paragraph 27(a)-(e) above.[^15]
 
-[^12]: A diverging code fork occurs when agencies make changes to the code of open source software without publishing
+[^13]: A diverging code fork occurs when agencies make changes to the code of open source software without publishing
 the code back to the software’s development community. The fork is the split between the agency’s version of the software
 and the version published by the community. Any further changes made by either the agency or the community will increase
 the differences of the source code. This can make it difficult for the agency to upgrade to a new published version, as the
 agency would have to reapply all its changes. This risk may be mitigated by contributing modified source code back to the
 open source software community if appropriate.
 
-[^13]: A Contributor Licence Agreement, or CLA, is an agreement that sets out the terms under which a person or entity
+[^14]: A Contributor Licence Agreement, or CLA, is an agreement that sets out the terms under which a person or entity
 makes contributions to the project or software. A CLA will deal with licensing terms and can also agree with topics such as
 warranties and indemnities.
 
-[^14]: The 'contributing' file could also seek to obtain a warranty (promise) from contributors that they have all the rights
+[^15]: The 'contributing' file could also seek to obtain a warranty (promise) from contributors that they have all the rights
 they require to submit their contributions on the terms of the specified licence and an indemnity in favour of the agency
 should it turn out that the contributor does not have the required rights. The indemnity clause would seek to enable the agency to recover, from a contributor, loss the agency incurs as a result of the contributor's breach of the warranty.
 NZGOAL-SE suggests, however, that including an indemnity could be unnecessary and/or counter-productive. Not only could it inhibit contributions but it could pose difficulties for government departments given restrictions on the granting of
