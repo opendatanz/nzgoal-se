@@ -85,4 +85,6 @@ Additional guidance notes may be released over time which:
 
 (a) explore, in greater detail, some of the issues addressed or raised in NZGOAL-SE; and
 
-(b) address operational or technical issues which arise in practice.
+(b) address operational or technical issues which arise in practice; and
+
+(c) indicate the processes for agency released, open source software to be listed in any discovery tools to promote re-use.
