@@ -1,12 +1,12 @@
 ---
 layout: page
-title: NZGOAL Software Extension transperant revision process
+title: NZGOAL Software Extension transparent revision process
 permalink: /
-description: "Introduction for transperant revision process of NZGOAL-SE"
+description: "Introduction for transparent revision process of NZGOAL-SE"
 ---
 <div class="intro">
 
-# Introduction for transperant revision process of NZGOAL-SE
+# Introduction for transparent revision process of NZGOAL-SE
 
 The public consultation period has ended (30 April) but that's not the end of the process for NZGOAL-SE. Firstly, we'd like to say thank you for your comments. We will analyse all feedback submitted during the public comment period and revise the policy as necessary.
 
@@ -34,7 +34,7 @@ Please feel free to raise changes for any:
  >* Major rewrites of sections (as we'll have to run these past a legal eye each time)
  >* Complete overhauls of the document (because we're in the process of iteration not overhaul at this time)
 
-You may provide feedback during the transperant revision process in two ways. We ask that you do not submit the same content more than once. Please be aware that while we will consider your pull request, we may not necessrily merge it into the final revision. We will close all open pull requests at the end of the process and these will still be publically avialalbe via GitHub. 
+You may provide feedback during the transparent revision process in two ways. We ask that you do not submit the same content more than once. Please be aware that while we will consider your pull request, we may not necessrily merge it into the final revision. We will close all open pull requests at the end of the process and these will still be publically avialalbe via GitHub. 
 
 ## Options to contribute
 
