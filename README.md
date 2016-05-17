@@ -1,4 +1,4 @@
-# Introduction for transperant revision process of NZGOAL-SE
+# Introduction for transparent revision process of NZGOAL-SE
 
 The public consultation period has ended (30 April) but that's not the end of the process for NZGOAL-SE. Firstly, we'd like to say thank you for your comments. We will analyse all feedback submitted during the public comment period and revise the policy as necessary.
 
