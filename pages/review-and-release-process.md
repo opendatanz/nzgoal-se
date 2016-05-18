@@ -172,7 +172,7 @@ To give an example, if an agency develops and distributes a plugin for a content
 
 [^18]: See https://opensource.org/licenses/BSD-3-Clause   
 
-####Entirely new source code - default FOSS licences
+#### Entirely new source code - default FOSS licences
 
 ##### 51
 
