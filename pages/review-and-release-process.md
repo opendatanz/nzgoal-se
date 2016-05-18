@@ -198,9 +198,11 @@ In some cases an agency may wish to release entirely new source code but there m
 
 **Libraries**: the source code to be released is a library of code and the agency knows that there are proprietary software suppliers who wish to use the agency's particular library within, or to link the library to, their own proprietary source code without having to release (or it being argued that they have to release) their proprietary code if they distribute their software. The GNU Lesser General Public Licence (LGPL) will allow this kind use without exposing the proprietary software suppliers to risk but the GPL itself would not allow it in some cases and might not in others. The LGPL requires software licensed under it to be modifiable by end users through source code availability but does not require proprietary code that is linked to the LGPL-licensed library to be made available under the GPL.
 
-**Server side use of licensed software**: the sharealike obligation in the GPL (i.e., the obligation to license one's adaptations under the GPL) is triggered upon distribution of an adaptation. Where software is installed on a server to provide a service to end users (e.g., in an application service provider or cloud services context), the sharealike obligation is not triggered. To some people this seemed like a loophole. The GNU Affero General Public Licence was designed to close that loophole. It is based on the GPL but "has one added requirement: if you run a modified program on a server and let other users communicate with it there, your server must also allow them to download the source code corresponding to the modified version running there". There may be cases in which an agency is FOSS-licensing software that is used on servers where the agency would like to achieve this result or where communities of interest ask the agency to achieve this result. If so, the agency may wish to select the GNU Affero General Public Licence instead of the GPL.
+**Server side use of licensed software**: the sharealike obligation in the GPL (i.e., the obligation to license one's adaptations under the GPL) is triggered upon distribution of an adaptation. Where software is installed on a server to provide a service to end users (e.g., in an application service provider or cloud services context), the sharealike obligation is not triggered. To some people this seemed like a loophole. The GNU Affero General Public Licence was designed to close that loophole. It is based on the GPL but "has one added requirement: if you run a modified program on a server and let other users communicate with it there, your server must also allow them to download the source code corresponding to the modified version running there".[^19] There may be cases in which an agency is FOSS-licensing software that is used on servers where the agency would like to achieve this result or where communities of interest ask the agency to achieve this result. If so, the agency may wish to select the GNU Affero General Public Licence instead of the GPL.
 
 The selection of licences for unusual use cases like these can be difficult and in some cases using one of the NZGOAL-SE default licences (the GPL or MIT licence) may suffice. If in doubt, seek technical or legal advice in the context of your particular use case.
+
+[^19]: See "Why the Affero GPL" at http://www.gnu.org/licenses/why-affero-gpl.html
 
 #### Licensing of accompanying documentation
 
@@ -225,9 +227,9 @@ If an agency is adapting pre-existing documentation that accompanied pre-existin
 Sometimes an agency may find that existing documentation is licensed under an unfamiliar or unnecessarily complex licence. The agency may still wish to release its own documentation relating to, for example, its adapted part of the software, but the agency would prefer to use a Creative Commons licence for it. In this situation the agency may be able to create a new and separate document that contains the additional information the agency wishes to provide. That in all likelihood would be a new and standalone copyright work rather than an adaptation of an existing work. In that case, and assuming the agency owns the copyright in the new document, it could select a Creative Commons licence for the document.  
 
 
-### Stage 4: Application of chosen licence[^19]
+### Stage 4: Application of chosen licence[^20]
 
-[^19]: For a useful general discussion of this topic, see the Software Freedom Law Center’s "Managing copyright information within a free software project" at [http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html](http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html])
+[^20]: For a useful general discussion of this topic, see the Software Freedom Law Center’s "Managing copyright information within a free software project" at [http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html](http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html])
 
 #### Introduction
 
@@ -293,7 +295,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
->Example 2: if the licensing agency were a Crown entity and had selected the GPL[^20] licence, its licensing statement at the top of each source code file would look like this:
+>Example 2: if the licensing agency were a Crown entity and had selected the GPL[^21] licence, its licensing statement at the top of each source code file would look like this:
 
 ```
 Copyright (c) 2015, Commerce Commission (New Zealand).
@@ -328,7 +330,7 @@ SpatialZone Project, Crown copyright (c) 2015, Land Information New Zealand on b
 SpatialZone Project, Crown copyright (c) 2015, Land Information New Zealand on behalf of the New Zealand Government. This file is released under the <LICENCE> licence. See the LICENCE file found in the top-level directory of this distribution for more information.
 ```
 
-[^20]: See "How to use GNU licenses for your own software" at [http://www.gnu.org/licenses/gpl-howto.html](http://www.gnu.org/licenses/gpl-howto.html)
+[^21]: See "How to use GNU licenses for your own software" at [http://www.gnu.org/licenses/gpl-howto.html](http://www.gnu.org/licenses/gpl-howto.html)
 
 #### Other licences
 
