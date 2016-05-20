@@ -366,4 +366,8 @@ Once the chosen licence has been applied to the software, release the software f
 
 The decision tree diagram below illustrates the Review and Release Process explained above. It is intended to be read in conjunction with the explanations above for each stage.
 
-[NZGOAL-SE Review and release process - decision tree](https://opendatanz.github.io/nzgoal-se/assets/images/nzgoal-se-decision-tree-revision.png)
+[View the NZGOAL-SE decision tree](https://opendatanz.github.io/nzgoal-se/assets/images/nzgoal-se-decision-tree-revision.png)
+
+
+
+![NZGOAL-SE Review and release process - decision tree](https://opendatanz.github.io/nzgoal-se/assets/images/nzgoal-se-decision-tree-revision.png)
