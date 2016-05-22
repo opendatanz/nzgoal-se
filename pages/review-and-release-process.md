@@ -190,7 +190,7 @@ Answering the question yes or no is a judgement call for the agency.
 
 In either case, the agency should proceed to Stage 4 (Application of chosen licence) unless there are known reasons or use cases for releasing the source code under a FOSS licence other than the recommended GPL or MIT licences (as discussed immediately below).
 
-[^19]: Agencies should note that, even if an agency decides to apply the GPL to its source code, the agency can always allow particular developers to use it under different terms if the agency wishes (as long as the agency is the copyright owner). It is conceivable, for example, that a New Zealand-based proprietary developer may wish to use the code in commercial software for which it has a strong export market. In that sort of case, the agency may be happy to allow the developer to use the code under more permissive terms (i.e., without a sharealike obligation).
+[^19]: Agencies should note that, even if an agency decides to apply the GPL to its source code, the agency can always allow particular developers to use it under different terms if the agency wishes (as long as the agency is the copyright owner). It is conceivable, for example, that a New Zealand-based software developer may wish to use the code in proprietary software for which it has a strong export market. In that sort of case, the agency can make the code available to the developer under alternative licence terms, e.g. without the obligation to share the source code of derived versions.
 
 #### Known reasons or use cases for releasing source code under an alternative FOSS licence
 
