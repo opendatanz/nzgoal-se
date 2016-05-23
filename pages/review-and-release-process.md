@@ -202,7 +202,7 @@ In some cases an agency may wish to release entirely new source code and there m
 
 The selection of licences for unusual use cases like these can be difficult and in some cases using one of the NZGOAL-SE default licences (the GPL or MIT licence) may suffice. If in doubt, seek technical or legal advice in the context of your particular use case.
 
-[^19]: See AGPL Preample [http://www.gnu.org/licenses/agpl.html](http://www.gnu.org/licenses/agpl.html)
+[^19]: See AGPL Preamble [http://www.gnu.org/licenses/agpl.html](http://www.gnu.org/licenses/agpl.html)
 
 #### Licensing of accompanying documentation
 
