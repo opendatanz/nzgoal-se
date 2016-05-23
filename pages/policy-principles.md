@@ -32,35 +32,37 @@ Government agencies are strongly encouraged to apply the following Policy Princi
 
 Each Policy Principle is set out below.
 
-### Open access and public release of agency software using free and open source licences.
+### Open access and public release of agency software using free and open source licences
 
 ##### 14
 
-If government agencies have the required copyright-related rights to do so, they are encouraged to consider making their software source code and accompanying documentation, that is or may be of interest or use to people, available for re-use and adaption:
+If government agencies have the required copyright-related rights to do so,  and wish to license their software source code for re-use, they are encouraged:
 
-(a) under a free and open source software licence from the NZGOAL-SE review and release process and decision tree, unless an exception in paragraph 18 applies; and
+(a) to consider making their software source code, that is or may be of interest or use to people, available for re-use under a free and open source software licence as further described in these Policy Principles and in accordance with the NZGOAL-SE Review and Release Process and decision tree, unless an exception in paragraph 18 applies; and
 
-(b) to the greatest extent practicable, using existing version control systems and source code repository platforms to allow for discussion and improvement of released software [^6]; and
+(b) if they decide to do so, to
 
-(c) publicly released and accessible online; and
+>(i) use existing version control systems and source code repository platforms to allow for discussion and improvement of released software;[^6] and
 
-(d) using existing, freely available software to interact with the released software source code.
+>(ii) make the software publicly accessible by releasing it online; and
+
+>(iii) use existing, freely available software to interact with the released software source code
 
 (the **Open Access and Licensing Principle**).
 
 ##### 15
 
-For the purposes of NZGOAL-SE, the recommended set of free and open source software licences that selection guidance is provided for are:
+For the purposes of NZGOAL-SE, the recommended set of free and open source software licences for which selection guidance is provided are:
 
-(a) the **MIT licence** [^7] that invokes a permissive style licence. The full text of the MIT licence can be found on the website of the [Open Source Initiative](https://opensource.org/licenses/MIT). [^8].
+(a) the MIT licence:[^7] this is a more permissive licence in the sense that it does not contain a sharealike obligation that would require adaptations to be licensed under the same terms if distributed (the full text of the MIT licence can be found on the website of the Open Source Initiative[^8]); and
 
-(b) the **GPL license** that invokes a sharealike/copyleft style licence. The full text of the GPL licence can be found on the website of the [Free Software Foundation](http://www.gnu.org/licenses/gpl-3.0.en.html). [^9].
+(b) the GPL licence: this is a sharealike/copyleft licence that requires those who adapt the source code to release their adaptations on the same terms if they distribute them (the full text of the GPL licence can be found on the website of the Free Software Foundation[^9]).
 
-[^6]: Both the United Kingdom Government Digital Services [(https://www.gov.uk/service-manual/making-software/choosing-technology.html#sharing-software)](https://www.gov.uk/service-manual/making-software/choosing-technology.html#sharing-software) and the United Stated Federal Government [(https://sourcecode.cio.gov/Implementation/)](https://sourcecode.cio.gov/Implementation/) express the value of modern software development practices such as version control and code repository platforms for sharing and the improvement of publicly released government source code.
+[^6]: Both the United Kingdom Government Digital Services (https://www.gov.uk/service-manual/making-software/choosing-technology.html#sharing-software) and the United Stated Federal Government (https://sourcecode.cio.gov/Implementation/) express the value of modern software development practices such as version control and code repository platforms for sharing and the improvement of publicly released government source code.
 
-[^7]: The MIT licence is considered preferable to the BSD 3-Clause licence (another commonly-used permissive open source software licence) because the MIT licence includes a clearer grant of rights and expressly includes the right to sub-license (the BSD licence does not). Whilst many interpret a right to sub-license as being implicit in the BSD licence, the absence of an express reference to it in the BSD licence could produce uncertainty for users, most notably users who wish to incorporate government-produced code in a work licensed under the GPL. The Free Software Foundation considers the BSD licence to be  ompatible with the GPL but that must depend on a particular interpretation of the BSD licence wording (see generally A Sinclair “License Profile: BSD” IFOSS Law Review, 2(1) pp. 1-6). The MIT licence doesn’t contain the BSD’s ‘no endorsement’ clause but, in most cases, the law would prevent claims of endorsement without permission anyway. Another common permissive licence, the Apache License 2.0, was not chosen because it is more complex. The Free Software Foundation considers it preferable to the BSD and MIT licences as it deals with patent licensing and prevents ‘patent treachery’. However, in New Zealand the Patents Act 2013 excludes computer programs "as such" from patentable subject matter (and, in any event, historically government agencies have not generally been in the business of applying for software patents). NZGOAL-SE could have recommended its own bespoke permissive licence instead of the MIT licence but that would have contributed to further licence proliferation and exposed developers to a licence they’re not familiar with.
+[^7]: The MIT licence is considered preferable to the BSD 3-Clause licence (another commonly-used permissive open source software licence) because the MIT licence includes a clearer grant of rights and expressly includes the right to sub-license (the BSD licence does not). Whilst many interpret a right to sub-license as being implicit in the BSD licence, the absence of an express reference to it in the BSD licence could produce uncertainty for users, most notably users who wish to incorporate government-produced code in a work licensed under the GPL. The Free Software Foundation considers the BSD licence to be compatible with the GPL but that must depend on a particular interpretation of the BSD licence wording (see generally A Sinclair “License Profile: BSD” IFOSS Law Review, 2(1) pp. 1-6). The MIT licence doesn’t contain the BSD’s ‘no endorsement’ clause but, in most cases, the law would prevent claims of endorsement without permission anyway. Another common permissive licence, the Apache License 2.0, was not chosen because it is more complex. The Free Software Foundation considers it preferable to the BSD and MIT licences as it deals with patent licensing and prevents ‘patent treachery’. However, in New Zealand the Patents Act 2013 excludes computer programs “as such” from patentable subject matter (and, in any event, historically government agencies have not generally been in the business of applying for software patents). NZGOAL-SE could have recommended its own bespoke permissive licence instead of the MIT licence but that would have contributed to further licence proliferation and exposed developers to a licence they’re not familiar with.
 
-[^8]: MIT as used in NZGOAL-SE refers to the 'Expat' licence. See [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
+[^8]: See [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
 
 [^9]: GPL as used in NZGOAL-SE refers to the GNU General Public Licence version 3 or later. See [http://www.gnu.org/licenses/gpl-3.0.en.html](http://www.gnu.org/licenses/gpl-3.0.en.html)
 
