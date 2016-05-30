@@ -180,7 +180,7 @@ As noted above, NZGOAL-SE recommends a default set of licences  - two licences -
 
 The default licences, in no particular order, are the GPL licence and the MIT licence. These default licences and the reasons for selecting them as the NZGOAL-SE defaults are described in the NZGOAL Policy Principles (Open access and public release of agency software using free and open source licences).
 
-NZGOAL-SE suggests that an agency's choice between these two default licences should turn on the answer to this simple question: should a person who adapts the code and distributes it to others be required to license the adaptations for re-use by others.
+NZGOAL-SE suggests that an agency's choice between these two default licences should turn on the answer to this simple question: would you like everyone to be able to re-use other people's distributed adaptations of the source code in the future?[^19]
 
 If the answer to this question is yes - a person who adapts the code and distributes it to others should be required to license the adaptations for re-use by others - then the agency should select the GPL (version 3).
 
@@ -189,6 +189,8 @@ If the answer to this question is no - a person who adapts the code and distribu
 Answering the question yes or no is a judgement call for the agency.
 
 In either case, the agency should proceed to Stage 4 (Application of chosen licence) unless there are known reasons or use cases for releasing the source code under a FOSS licence other than the recommended GPL or MIT licences (as discussed immediately below).
+
+[^19]: Agencies should note that, even if an agency decides to apply the GPL to its source code, the agency can always allow particular developers to use it under different terms if the agency wishes (as long as the agency is the copyright owner). It is conceivable, for example, that a New Zealand-based software developer may wish to use the code in proprietary software for which it has a strong export market. In that sort of case, the agency can make the code available to the developer under alternative licence terms, e.g. without the obligation to share the source code of derived versions.
 
 #### Known reasons or use cases for releasing source code under an alternative FOSS licence
 
@@ -227,9 +229,9 @@ If an agency is adapting pre-existing documentation that accompanied pre-existin
 Sometimes an agency may find that existing documentation is licensed under an unfamiliar or unnecessarily complex licence. The agency may still wish to release its own documentation relating to, for example, its adapted part of the software, but the agency would prefer to use a Creative Commons licence for it. In this situation the agency may be able to create a new and separate document that contains the additional information the agency wishes to provide. That in all likelihood would be a new and standalone copyright work rather than an adaptation of an existing work. In that case, and assuming the agency owns the copyright in the new document, it could select a Creative Commons licence for the document.  
 
 
-### Stage 4: Application of chosen licence[^20]
+### Stage 4: Application of chosen licence[^21]
 
-[^20]: For a useful general discussion of this topic, see the Software Freedom Law Center’s "Managing copyright information within a free software project" at [http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html](http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html])
+[^21]: For a useful general discussion of this topic, see the Software Freedom Law Center’s "Managing copyright information within a free software project" at [http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html](http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html])
 
 #### Introduction
 
@@ -295,7 +297,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
->Example 2: if the licensing agency were a Crown entity and had selected the GPL[^21] licence, its licensing statement at the top of each source code file would look like this:
+>Example 2: if the licensing agency were a Crown entity and had selected the GPL[^22] licence, its licensing statement at the top of each source code file would look like this:
 
 ```
 Copyright (c) 2015, Commerce Commission (New Zealand).
@@ -330,7 +332,7 @@ SpatialZone Project, Crown copyright (c) 2015, Land Information New Zealand on b
 SpatialZone Project, Crown copyright (c) 2015, Land Information New Zealand on behalf of the New Zealand Government. This file is released under the <LICENCE> licence. See the LICENCE file found in the top-level directory of this distribution for more information.
 ```
 
-[^21]: See "How to use GNU licenses for your own software" at [http://www.gnu.org/licenses/gpl-howto.html](http://www.gnu.org/licenses/gpl-howto.html)
+[^22]: See "How to use GNU licenses for your own software" at [http://www.gnu.org/licenses/gpl-howto.html](http://www.gnu.org/licenses/gpl-howto.html)
 
 #### Other licences
 
