@@ -9,6 +9,10 @@ Thanks to everyone who has had input into the process of developing NZGOAL-SE fo
 
 The engagement has been outstanding and an excellent example of shared and collaborative decision making.
 
+[Discussions on Loomio.](https://www.loomio.org/g/NohQxyr9/nzgoal-software-extension-discussion-of-draft)
+
+[Revision on GitHub.](https://github.com/opendatanz/nzgoal-se)
+
 ## What next?
 The draft policy has now undergone a legal review and some minor amendments. The May 2016 revised version of NZGOAL-SE is available to view [view here](https://www.ict.govt.nz/assets/Uploads/Documents/NZGOAL-Software-Extension-Revision-May-2016.pdf).
 
