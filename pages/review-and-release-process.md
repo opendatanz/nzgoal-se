@@ -180,7 +180,7 @@ As noted above, NZGOAL-SE recommends a default set of licences  - two licences -
 
 The default licences, in no particular order, are the GPL licence and the MIT licence. These default licences and the reasons for selecting them as the NZGOAL-SE defaults are described in the NZGOAL Policy Principles (Open access and public release of agency software using free and open source licences).
 
-NZGOAL-SE suggests that an agency's choice between these two default licences should turn on the answer to this simple question: if a person adapts the code and distributes the adapted code to others, would it be beneficial to government, taxpayers and society to require that the adaptations (e.g., enhancements) are made available for re-use?
+NZGOAL-SE suggests that an agency's choice between these two default licences should turn on the answer to this simple question: would you like everyone to be able to re-use other people's distributed adaptations of the source code in the future?[^19]
 
 If the answer to this question is yes - a person who adapts the code and distributes it to others should be required to license the adaptations for re-use by others - then the agency should select the GPL (version 3).
 
