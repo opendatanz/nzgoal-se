@@ -1,14 +1,35 @@
 # Introduction for transparent revision process of NZGOAL-SE
 
-The public consultation period has ended (30 April) but that's not the end of the process for NZGOAL-SE. Firstly, we'd like to say thank you for your comments. We will analyse all feedback submitted during the public comment period and revise the policy as necessary.
+## Public consultation
+Thanks to everyone who has had input into the process of developing NZGOAL-SE for free and open source software licensing in the New Zealand government. We've worked through:
 
-We are going to be carrying this out in a transparent manner on the [Open Data NZ GitHub account](https://github.com/opendatanz/nzgoal-se/). Revisions will be subject to a lot of change during this first two weeks so please bear with us. We will raise proposals of change (_pull requests_) and where possible provide links back to the original online public conversations that guided the revisions and give inline supporting comments behind decisions.
- 
-For the first two weeks of the revision process (2 - 15 May, 2016) we will refrain from reviewing any publicly submitted pull requests on GitHub (though you are welcome to make them). This is to give us time to review the conversations from the [Loomio public consultation](https://www.loomio.org/g/NohQxyr9/nzgoal-software-extension-discussion-of-draft) (carried out 30 March - 30 April) and work out how to best incorporate these into the revision from a practical and legal point of view. 
- 
-Once all major revisions are complete, for a period of one week starting the 16 May 2016, we will review any final public direct contributions via _pull requests_ (See below on how to make a _pull request_).
- 
-Alternatively, the revised draft will be posted (once initial revisions are completed) on [ict.govt.nz](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-se/) and you can email your proposed change to [opendata@linz.govt.nz](mailto:opendata@linz.govt.nz).
+ - 16 threads of dialogue
+ - 175 comments, and
+ - over 28,000 words of discussion about this policy!
+
+The engagement has been outstanding and an excellent example of shared and collaborative decision making.
+
+## What next?
+The draft policy has now undergone a legal review and some minor amendments. The May 2016 revised version of NZGOAL-SE is available to view [view here](https://www.ict.govt.nz/assets/Uploads/Documents/NZGOAL-Software-Extension-Revision-May-2016.pdf).
+
+Next step is for the policy to be submitted for review by relevant government agencies before finally going to the Minister and before a Cabinet Committee meeting.
+
+Email [opendata@linz.govt.nz](mailto:opendata@linz.govt.nz) if you have any questions.
+
+
+## Revision process archive
+
+ - The initial public consultation period ended,30 April
+
+ - We've carried this out in a transparent manner on the Open Data NZ GitHub account. We raised proposals of change (pull requests) and commits to revise the policy based on public input. Where possible we're provide links back to the original online public conversations that guided the revisions and give inline supporting comments behind decisions.
+
+ - 2 - 15 May, 2016 we reviewed the conversations from the Loomio public consultation (carried out 30 March - 30 April, 2016) and worked out how to best incorporate these into the revision from a practical and legal point of view.
+
+ - For one week starting the 16 May 2016, we considered any final public contributions to the revision.
+
+ - On 23 May we put the revised draft document for a legal review, only minor changes and we have additionally included sample templates for the IP warranty and indemnity in an appendix.
+
+ - 30 May, the final revised draft is posted on ict.govt.nz.
 
 ## License
 
