@@ -1,0 +1,709 @@
+<h1 id="nzgoal-software-extension">NZGOAL Software Extension</h1>
+<p>Version 1</p>
+<p>[ ] 2016</p>
+<p>ISBN [ ] (PDF)</p>
+<p>ISBN [ ] (HTML)</p>
+
+<p><img src="https://licensebuttons.net/l/by/4.0/88x31.png" alt="CC BY 4.0 International" />Crown copyright &copy;. This copyright work is licensed under the Creative Commons Attribution 4.0 International licence. In essence, you are free to copy, distribute and adapt the work, as long as you attribute the work to the New Zealand Government and abide by the other licence terms. To view a copy of this licence, visit <a href="http://creativecommons.org/licenses/by/4.0/"><em>http://creativecommons.org/licenses/by/4.0/</em></a>. Please note that neither the New Zealand Government emblem nor the New Zealand Government logo may be used in any way which infringes any provision of the <a href="http://www.legislation.govt.nz/act/public/1981/0047/latest/whole.html#dlm52216"><em>Flags, Emblems, and Names Protection Act 1981</em></a> or would infringe such provision if the relevant use occurred within New Zealand. Attribution to the New Zealand Government should be in written form and not by reproduction of any emblem or the New Zealand Government logo.</p>
+
+<h2 id="contents">Contents</h2>
+<p><a href="#introduction-1">Introduction</a></p>
+  <ul style="list-style-type: none">
+    <li><p><a href="#purpose">Purpose</a></p></li>
+    <li><p><a href="#free-and-open-source-software-and-licences">Free and open source software and licences</a></p></li>
+    <li><p><a href="#approach-and-scope">Approach and scope</a></p></li>
+    <li><p><a href="#additional-guidance-notes">Additional guidance notes</a></p></li>
+  </ul>
+<p><a href="#legal-and-policy-context">Legal and policy context</a></p>
+  <ul style="list-style-type: none">
+    <li><p><a href="#copyright-law">Copyright law</a></p></li>
+    <li><p><a href="#guidelines-for-treatment-of-intellectual-property-rights-in-ict-contracts">Guidelines for Treatment of Intellectual Property Rights in ICT Contracts</a></p></li>
+    <li><p><a href="#government-rules-of-sourcing">Government Rules of Sourcing</a></p></li>
+  </ul>
+<p><a href="#nzgoal-se-policy-principles">NZGOAL-SE Policy Principles</a></p>
+  <ul style="list-style-type: none">
+    <li><p><a href="#introduction-2">Introduction</a></p></li>
+    <li><p><a href="#open-access-and-public-release-of-agency-software-using-free-and-open-source-licences">Open access and public release of agency software using free and open source licences</a></p></li>
+    <li><p><a href="#ensuring-copyright-ownership-or-right-to-sub-license">Ensuring copyright ownership or right to sub-license</a></p></li>
+    <li><p><a href="#exceptions">Exceptions</a></p></li>
+    <li><p><a href="#adaptations">Adaptations</a></p></li>
+    <li><p><a href="#security-code-review">Security code review</a></p></li>
+    <li><p><a href="#no-additional-controls-or-discrimination">No additional controls or discrimination</a></p></li>
+    <li><p><a href="#no-charging">No charging</a></p></li>
+    <li><p><a href="#updating-foss-licensed-software">Updating FOSS licensed software</a></p></li>
+    <li><p><a href="#contributions">Contributions</a></p></li>
+    <li><p><a href="#obtaining-rights-when-procuring-or-commissioning-the-development-of-software">Obtaining rights when procuring or commissioning the development of software</a></p></li>
+    <li><p><a href="#act-fairly-towards-developers-when-drafting-ip-warranties-and-indemnities">Act fairly towards developers when drafting IP warranties and indemnities</a></p></li>
+    <li><p><a href="#liability">Liability</a></p></li>
+    <li><p><a href="#review-and-release-process">Review and Release Process</a></p></li>
+  </ul>
+<p><a href="#nzgoal-se-review-and-release-process">NZGOAL-SE Review and Release Process</a></p>
+  <ul style="list-style-type: none">
+    <li><p><a href="#introduction-3">Introduction</a></p></li>
+    <li><p><a href="#stage-1-copyright-related-rights-evaluation">Stage 1: Copyright-related rights evaluation</a></p></li>
+    <li><p><a href="#stage-2-evaluation-of-exceptions">Stage 2: Evaluation of exceptions</a></p></li>
+    <li><p><a href="#stage-3-select-a-foss-licence">Stage 3: Select a FOSS licence</a></p></li>
+    <li><p><a href="#stage-4-application-of-chosen-licence">Stage 4: Application of chosen licence</a></p></li>
+    <li><p><a href="#stage-5-release-the-software">Stage 5: Release the software</a></p></li>
+    <li><p><a href="#review-and-release-process-decision-tree">Review and release process decision tree</a></p></li>
+  </ul>
+<p><a href="#annexure-specimen-ip-warranty-and-ip-indemnity-clauses">Annexure: Specimen IP warranty and IP indemnity clauses</a></p>
+
+<h2 id="introduction-1">Introduction</h2>
+<h3 id="purpose">Purpose</h3>
+<p>1 Government agencies invest significantly in software development and often own the copyright in the software that they develop or that is developed for them. Public sharing and the licensing of this government-owned software under free and open source software licence terms has the potential to:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>save agencies time and money, resulting in a more efficient use of scarce resources;</p></li>
+<li><p>encourage open innovation on the part of both the public and private sectors;</p></li>
+<li><p>contribute to economic growth, primarily through the private sector being able to leverage and support government investment in the software it openly releases for re-use;</p></li>
+<li><p>contribute to the formation of trusted communities of users whose public and private sector members have common or similar goals or interests;</p></li>
+<li><p>result in continuous and ongoing maintenance of the released software code through these communities of users in a way that may not be achievable by a single agency alone;</p></li>
+<li><p>enable agencies to better align their operational and strategic activities with relevant aspects of the Government ICT Strategy 2015; and</p></li>
+<li><p>in some cases, foster transparency &mdash; for those who can read software code &mdash; as to the methods or algorithms used for the creation or delivery of public data and services, thereby enabling critical analysis and potentially the provision of improvements back to the releasing agency.</p></li>
+</ol>
+
+<p>2 This NZGOAL Software Extension (<strong>NZGOAL-SE</strong>) provides agencies with a means of realising this potential. It:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>explains the legal and policy context that is relevant to agencies' open source licensing of software;</p></li>
+<li><p>sets out a series of policy principles to guide agencies in their open sharing of software code;</p></li>
+<li><p>advocates the use of particular open source software licences for this purpose; and</p></li>
+<li><p>sets out a review and release process to guide agencies through the review of the software they propose to release for re-use, the purpose of which is to help agencies make decisions that are legally robust and practically useful.</p></li>
+</ol>
+
+<h3 id="free-and-open-source-software-and-licences">Free and open source software and licences</h3>
+<p>3 For the purposes of NZGOAL-SE, free and open source software (<strong>FOSS</strong>) is software source code that is released on licence terms that grant others the freedom to use, copy, modify and distribute the software, for either non-commercial or commercial purposes, as long as they comply with the applicable licensing conditions. It is important to note the following:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>the licensing conditions that users of the software need to comply with depend on the form of FOSS licence applied to the software;</p></li>
+<li><p>&quot;free&quot; in FOSS refers to the granting of a set of &quot;freedoms&quot; or permissions usually only available to the copyright owner and arising from the bundle of property rights the owner has in its copyright work; and</p></li>
+<li><p>there are several common phrases in use that refer to the same style of licensing, such as &quot;free software&quot;, &quot;free and open source software&quot;, &quot;open source&quot;, &quot;FOSS&quot;, &quot;OSS&quot; and &quot;FLOSS&quot;. Depending on the context, NZGOAL-SE uses a combination of &quot;free and open source software&quot;, &quot;FOSS&quot; and &quot;open source&quot;, all with the same meaning referred to above.</p></li>
+</ol>
+
+<p>4 There are two main forms of FOSS licence:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><strong>more permissive licences</strong> that confer broad freedoms and minimal obligations on those who wish to use, adapt and distribute the software (e.g., the MIT licence, the BSD licence and the Apache 2.0 licence); and</p></li>
+<li><p><strong>sharealike licences</strong> (also known as copyleft licences) that confer similar freedoms and require those who adapt the licensed software to license their adaptations with the same licence if they distribute them (e.g., the GNU General Public License, or GPL for short).</p></li>
+</ol>
+
+<h3 id="approach-and-scope">Approach and scope</h3>
+<p>5 NZGOAL-SE is an extension of, and is modelled in part on the approach to, the open licensing of government copyright works set out in the New Zealand Government Open Access and Licensing framework (<strong>NZGOAL</strong>). NZGOAL-SE is a self-contained extension or framework, rather than being part of the original NZGOAL framework, because certain considerations are different to those relating to open information and data. Incorporating both frameworks under a single roof would unduly complicate matters for agencies and others interested in the frameworks.</p>
+
+<p>6 NZGOAL-SE is not concerned with the proprietary versus open source debate or with the considerations that agencies may wish to take into account when using existing open source for their own internal purposes.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> Its sole focus is on the public release and open source licensing by agencies of software they own or are authorised to release and license.</p>
+
+<h3 id="additional-guidance-notes">Additional guidance notes</h3>
+<p>7 Additional guidance notes may be released over time which:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>explore, in greater detail, some of the issues addressed or raised in NZGOAL-SE; or</p></li>
+<li><p>address operational or technical issues which arise in practice.</p></li>
+</ol>
+
+<h2 id="legal-and-policy-context">Legal and policy context</h2>
+<h3 id="copyright-law">Copyright law</h3>
+<p>8 Key aspects of copyright law relevant to open licensing generally are set out in the NZGOAL Copyright Guide.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> Additional aspects relating specifically to software include the following:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><strong>copyright exists in original</strong> <strong>software</strong>: software is a form of &quot;literary work&quot; and original literary works are a category of works in which copyright exists (section 14(1) of the Copyright Act 1994 and the section 2(1) definition of &quot;literary work&quot;);</p></li>
+<li><p><strong>infringement</strong>: as such, unless entitled to do so by a copyright licence or statutory provision, a person infringes copyright in software that that person does not own when he or she does any of a number of &quot;restricted acts&quot;, the most common of which is copying the work or a substantial part of it or adapting the work;</p></li>
+<li><p><strong>adaptations</strong>: an &quot;adaptation&quot;, in relation to a literary work that is a computer program (i.e., software), includes &quot;a version of the program in which it is converted into or out of a computer language or code or into a different computer language or code, otherwise than incidentally in the course of running the program&quot; (section 2(1));</p></li>
+<li><p><strong>first owner of copyright</strong>:</p>
+<ol style="list-style-type: lower-roman">
+<li><p><strong>employee-employer relationship</strong>: when employees create software for their employer in the course of employment, the employer is the first owner of copyright in the software unless the employment contract states otherwise. This is the case where the employer is the Crown (section 26) and where the employer is another person, agency or entity (section 21(2));</p></li>
+<li><p><strong>service provider-customer relationship</strong>: when a service provider creates software for a customer under a contract for services, the customer is the first owner of copyright in the software unless the contract for services states otherwise. Again, this is the case where the customer is the Crown (section 26) and where the customer is another person, agency or entity (section 21(3)).</p></li>
+</ol></li>
+</ol>
+
+<h3 id="guidelines-for-treatment-of-intellectual-property-rights-in-ict-contracts">Guidelines for Treatment of Intellectual Property Rights in ICT Contracts</h3>
+<p>9 These Guidelines<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> are relevant where an agency procures the development of software from a service provider. They state that only in limited circumstances should the government own and exploit new intellectual property rights (<strong>IPR</strong>) created under an ICT contract. The default position is that the supplier should own the new IPR, with licences being granted to the customer agency and other State Services agencies.</p>
+
+<p>10 This position could create an obstacle to an agency licensing developed software on open source terms because the agency can only do so if it has the requisite rights to do so. If it doesn't own the copyright, it doesn't have the requisite rights unless expressly authorised by the copyright owner.</p>
+
+<p>11 The Guidelines recognise, however, that there may be situations where an agency needs to own the IPR. One of those situations is where the agency &quot;intends to allow free use of the IPR on open source terms&quot;. Agencies would, therefore, be acting consistently with these Guidelines if they were to require the development contract to confer ownership of copyright in the software on the agency, on the basis that they wish to license the software on open source terms.<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></p>
+
+<h3 id="government-rules-of-sourcing">Government Rules of Sourcing</h3>
+<p>12 Who is to own the copyright in new software is a significant issue that needs to be considered at the time of procuring the software development services, a point that is made clear in Rule 61(1) (Intellectual Property) of the Government Rules of Sourcing.<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a> That Rule states:</p>
+<blockquote>
+<p>&quot;If an agency's procurement of goods, services or works involves the supplier creating new Intellectual Property, the agency <strong>should</strong> set out, in its Notice of Procurement, its intentions regarding ownership, licensing, and future commercialisation of that Intellectual Property.&quot;</p>
+</blockquote>
+
+
+<h2 id="nzgoal-se-policy-principles">NZGOAL-SE Policy Principles</h2>
+<h3 id="introduction-2">Introduction</h3>
+<p>13 Government agencies are strongly encouraged to apply the following Policy Principles in relation to publicly releasing and licensing their software on open source terms. The Principles should be read in their entirety but here is a summary:</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Policy Principle</strong></td>
+<td align="left"><strong>Summary</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Open access and public release of agency software using free and open source licences</td>
+<td align="left">If an agency wishes to license its software, it is encouraged to do so on open source terms, to use public version control and source code repository platforms and to follow the NZGOAL Review and Release Process and decision tree.</td>
+</tr>
+<tr class="odd">
+<td align="left">Ensuring copyright ownership or right to sub-license</td>
+<td align="left">Make sure your agency has the required copyright-related rights to license the software.</td>
+</tr>
+<tr class="even">
+<td align="left">Exceptions</td>
+<td align="left">Releasing under open source terms does not apply where an exception applies.</td>
+</tr>
+<tr class="odd">
+<td align="left">Adaptations</td>
+<td align="left">Respect existing licenses when re-using existing software. Be careful when considering whether you're &quot;adapting&quot; pre-existing software.</td>
+</tr>
+<tr class="even">
+<td align="left">Security code review</td>
+<td align="left">Consider whether a security code review is required to identify sensitive elements that may need to be removed.</td>
+</tr>
+<tr class="odd">
+<td align="left">No additional controls or discrimination</td>
+<td align="left">Do not seek to impose requirements that are inconsistent with the freedoms in the chosen FOSS licence.</td>
+</tr>
+<tr class="even">
+<td align="left">No charging</td>
+<td align="left">Do not charge people for access to FOSS licensed software.</td>
+</tr>
+<tr class="odd">
+<td align="left">Updating FOSS licensed software</td>
+<td align="left">If you spot a bug with software you've licensed, consider informing users and, if you fix the bug, release the updated files. Take appropriate action if there's a security risk.</td>
+</tr>
+<tr class="even">
+<td align="left">Contributions</td>
+<td align="left">Where appropriate, adapted, pre-existing open source licensed software should be contributed back to the open source community. Agencies should provide guidance on how they will accept external contributions to their own released source code.</td>
+</tr>
+<tr class="odd">
+<td align="left">Obtaining rights when procuring or commissioning the development of software</td>
+<td align="left">If you commission the development of software that you want to FOSS license, make sure you obtain the rights to license it on FOSS terms.</td>
+</tr>
+<tr class="even">
+<td align="left">Act fairly towards developers when drafting IP warranties and indemnities</td>
+<td align="left">If you commission the development of software that uses pre-existing third party FOSS licensed software and/or that you may FOSS license, act fairly in relation to IP warranties and indemnities.</td>
+</tr>
+<tr class="odd">
+<td align="left">Liability</td>
+<td align="left">Replicate all disclaimers and exclusions contained in the relevant FOSS licence when you release software under that licence.</td>
+</tr>
+<tr class="even">
+<td align="left">Review and Release Process</td>
+<td align="left">Follow the NZGOAL-SE Review and Release Process.</td>
+</tr>
+</tbody>
+</table>
+<p>Each Policy Principle is set out below.</p>
+
+<h3 id="open-access-and-public-release-of-agency-software-using-free-and-open-source-licences">Open access and public release of agency software using free and open source licences</h3>
+<p>14 If government agencies have the required copyright-related rights to do so, and wish to license their software source code for re-use, they are encouraged:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>to consider making their source code, that is or may be of interest or use to people, available for re-use under a FOSS licence as further described in these Policy Principles and in accordance with the NZGOAL-SE Review and Release Process and decision tree, unless an exception in paragraph 18 applies; and</p></li>
+<li><p>if they decide to do so, to:</p>
+<ol style="list-style-type: lower-roman">
+<li><p>use existing version control systems and source code repository platforms to allow for discussion and improvement of released software;<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a> and</p></li>
+<li><p>make the software publicly accessible by releasing it online; and</p></li>
+<li><p>use existing, freely available software to interact with the released software source code</p></li>
+</ol></li>
+</ol>
+<p>(the <strong>Open Access and Licensing Principle</strong>).</p>
+
+<p>15 For the purposes of NZGOAL-SE, the recommended set of free and open source software licences for which selection guidance is provided are:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>the <strong>MIT licence:</strong><a href="#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a> this is a more permissive licence in the sense that it does not contain a sharealike obligation that would require adaptations to be licensed under the same terms if distributed (the full text of the MIT licence can be found on the website of the <a href="https://opensource.org/licenses/MIT"><em>Open Source Initiative</em></a>)<a href="#fn8" class="footnoteRef" id="fnref8"><sup>8</sup></a>; and</p></li>
+<li><p>the <strong>GPL licence:</strong> this is sharealike/copyleft licence that requires those who adapt the source code to release their adaptations on the same terms if they distribute them (the full text of the GPL licence can be found on the website of the <a href="http://www.gnu.org/licenses/gpl-3.0.en.html"><em>Free Software Foundation</em></a>).<a href="#fn9" class="footnoteRef" id="fnref9"><sup>9</sup></a></p></li>
+</ol>
+
+<h3 id="ensuring-copyright-ownership-or-right-to-sub-license">Ensuring copyright ownership or right to sub-license</h3>
+<p>16 Paragraph 14 makes it clear that, for the Open Access and Licensing Principle to apply, an agency must have the required copyright-related rights to license the software.</p>
+
+<p>17 Agencies should only license software for re-use by others under a FOSS licence where:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>they own or can obtain an assignment of all copyright in the software and have not exclusively licensed it to a third party; or</p></li>
+<li><p>to the extent they do not own the copyright, they have or can obtain permission from the copyright owner(s) to do so</p></li>
+</ol>
+<p>(the <strong>Rights Clearance Principle</strong>). It can be important, in this context, to check whether developers have reused tracts of code from elsewhere and, if they have, to assess the licences that apply to those tracts to ensure the agency has all the rights it needs.</p>
+
+<h3 id="exceptions">Exceptions</h3>
+<p>18 The Open Access and Licensing Principle does not apply where:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><strong>civil wrongs</strong>: open source licensing of the software would constitute a breach of contract, breach of confidence, breach of privacy, disclosure of a trade secret or other actionable wrong;</p></li>
+<li><p><strong>commercial interests</strong>: open source licensing of the software would be contrary to an agency's own or the Government's legitimate commercial interests (note, however, that most government agencies are not in the business of commercialising developed software);</p></li>
+<li><p><strong>security or privacy risk</strong>: release of the software on open source terms would create an unacceptable security risk (whether to an agency, organisation or individuals) or an unacceptable privacy-related risk.</p></li>
+</ol>
+
+<h3 id="adaptations">Adaptations</h3>
+<p>19 In the course of its activities, an agency may incorporate or adapt pre-existing software source code that is licensed under one or more FOSS licences. Alternatively, an agency may produce new software source code that interacts with a pre-existing FOSS-licensed application. Take a plug-in or extension to an existing application as an example. Depending on the context, a plug-in or extension may be an adaptation of pre-existing source code (e.g., where it has forked an old plug-in or extension) or it may be new source code designed to interact with a pre-existing application but without taking any pre-existing source code. If an agency proposes to release its source code in these kinds of situations, the agency should:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>respect the terms and conditions of the existing licences (such as attribution requirements); and</p></li>
+<li><p>where possible, use the same free and open source licence or licences applying to the pre-existing software source code, even in cases where - strictly speaking - it is not required to do so</p></li>
+</ol>
+
+<p>(the <strong>Respect Existing Licences Principle</strong>).</p>
+
+<p>20 It is important to note that using more permissively-licensed source code (e.g., MIT-licensed source code) and sharealike/copyleft-licensed source code (e.g., GPL-licensed source code) together in a broader project may require you to release your new source code under the same sharealike/copyleft licence or a compatible licence (in most cases the licence will be version 2 or 3 of the GPL)<a href="#fn10" class="footnoteRef" id="fnref10"><sup>10</sup></a><span id="section-19" class="anchor"></span> rather than under the more permissive licence. Whether this is the case depends on the circumstances. Legal advice should be sought if required.</p>
+
+<p>21 Difficult legal questions can arise as to whether a given piece of developed software, that in some way leverages or interacts with other software, is in fact an adaptation or derivative of that software. If:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>an agency's developed software does leverage or interact with other software; and</p></li>
+<li><p>that other software, or part of it, is software owned by a third party that has been released under a sharealike open source software licence like the GPL,</p></li>
+</ol>
+<p>the agency should be cautious about concluding that its developed software is <em>not</em> an adaptation or derivative of the other software. The need for caution arises because if the agency concludes mistakenly that the developed software is not an adaptation, release of the developed software under an incorrect licence could result in the agency breaching third party rights and expose it to the risk of complaint or legal action. End users would also be at risk of breaching third party rights and be exposed to the risk of complaint or legal action. If an agency is in any doubt on this issue, it should seek specialist advice (which could be both technical and legal) before releasing the software for re-use.</p>
+
+<h3 id="security-code-review">Security code review</h3>
+<p>22 Before releasing software for re-use, agencies should:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>consider whether there is any prospect that the code or associated files may contain sensitive elements that may need to be removed prior to release; and</p></li>
+<li><p>if there is such prospect, have the code and any associated files security-reviewed before release.</p></li>
+</ol>
+
+<h3 id="no-additional-controls-or-discrimination">No additional controls or discrimination</h3>
+<p>23 When releasing developed software under an open source software licence, agencies must not seek to impose controls or requirements, whether contractual or otherwise, that are inconsistent with the freedoms or permissions granted by the selected licence. For example, agencies are <em>not</em> able to license software under an open source software licence and then seek to discriminate between individual, not-for-profit and commercial uses of the software.</p>
+
+<h3 id="no-charging">No charging</h3>
+<p>24 Government agencies that release software under open source software licences should not seek to charge people for access to the software.</p>
+
+<h3 id="updating-foss-licensed-software">Updating FOSS licensed software</h3>
+<p>25 If an agency:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>publicly releases software on open source terms; and</p></li>
+<li><p>subsequently identifies a bug or other issue with the software that could have a material adverse effect on users of the software,</p>
+  <blockquote>
+  <p>the agency should (subject to paragraph 26):</p>
+  </blockquote>
+</li>
+<li><p>consider whether to inform users of the software of the bug or other issue (e.g., by adding a notice to the repository, site or service that contains the software files); and</p></li>
+<li><p>if the agency has rectified the bug or other issue for its own purposes, release the updated file(s) to the relevant repository, site or service.</p></li>
+</ol>
+<p>26 If the agency is aware:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>of a bug or other issue that creates a risk to the security of sites or services using the software or to the confidentiality or privacy of information held by those sites or services; and</p></li>
+<li><p>that other government agencies are using the software,</p></li>
+</ol>
+<p>the agency should inform the Government Chief Information Officer (and where relevant the Government Chief Privacy Officer and Office of the Privacy Commissioner) as soon as possible, take all reasonable steps to inform the other agencies of the risk and give them time to mitigate the risk before making any public announcement that could result in people with malicious intent or crackers<a href="#fn11" class="footnoteRef" id="fnref11"><sup>11</sup></a> exploiting the bug or other issue. Agencies may also wish to consider including a Coordinated Disclosure Policy<a href="#fn12" class="footnoteRef" id="fnref12"><sup>12</sup></a> in an accompanying &quot;contributing&quot; file to set expectations as to how the reporting of security risks ought to be handled.</p>
+
+<h3 id="contributions">Contributions</h3>
+<h4 id="agency-contribution-to-foss-communities"><span id="__RefHeading__1260_28086713" class="anchor"><span id="agency-contribution-to-foss-communities" class="anchor"><span id="section-25" class="anchor"></span></span></span>Agency contribution to FOSS communities</h4>
+
+<p>27 Where an agency has re-used and adapted pre-existing free and open source software source code or has developed new code to interact with free and open source software source code, the agency should:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>consider asking the free and open source software community or the software source code owners whether any agency adapted feature or improvements or the agency's new source code would generally be re-usable by others (if this isn't already clear);</p></li>
+<li><p>if so, contribute their adapted or new source code back to the free and open source software community project unless an exception listed in paragraph 18 applies; and</p></li>
+<li><p>avoid using a diverging fork<a href="#fn13" class="footnoteRef" id="fnref13"><sup>13</sup></a> copy of the software source code when it could reasonably use the upstream source code and contribute agency adaptations of it back to the community for general re-use</p></li>
+</ol>
+<p>(the <strong>Contribute to FOSS Communities Principle</strong>).</p>
+
+<h4 id="agency-acceptance-of-contributions-from-others">Agency acceptance of contributions from others</h4>
+<p><em>Contribution guidance and files</em></p>
+<p>28 Part of the value of releasing free and open source software in accordance with the Open Access and Licensing Principle is that external contributors can re-use and contribute back improvements to agency-released software source code. To accept contributions from external contributors in a manner that enables contributions to be licensed properly and shared with others, agencies should consider providing explicit contribution guidance to users that:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>explains any technical aspects of making the contributions;</p></li>
+<li><p>sets expectations for users as to how the agency will review and accept contributions of source code;</p></li>
+<li><p>sets out any code of conduct, moderation policy or terms of use that apply when external contributors engage publicly in discussions about the agency-released software source code;</p></li>
+<li><p>indicates whether external contributors need to physically sign and return a contributor licence agreement<a href="#fn14" class="footnoteRef" id="fnref14"><sup>14</sup></a> or other document before the agency will accept contributions from them, or specifies that the act of contributing source code means the contributing user is agreeing to license his or her contributions to the agency and others under a specified FOSS licence; and</p></li>
+<li><p>ensures that users know that they must own the copyright in their contributions or be permitted to license them to the agency and others under the licence that the agency specifies (this is important as it seeks to mitigate the risk of the agency accepting and publishing external contributions that, for copyright reasons, should not be accepted and published).</p></li>
+</ol>
+
+<p>29 In the open source software context, a common means of providing this contribution guidance to users is by including a 'contributing' file in documentation that accompanies the source code. It is important that this file (or other document if an alternative approach is used) is brought to the attention of users before or at the time they submit contributions. Some source code repositories bring the existence of a 'contributing' file to the attention of users at the time of submission but if an agency is not using such a repository it should take care to ensure the terms of contribution are brought to users' attention.</p>
+
+<p>30 Whilst this is a decision for agencies, NZGOAL-SE suggests that it will usually be unnecessary, administratively burdensome and potentially counterproductive to require contributing users to physically sign and return a formal contributor licence agreement or other document. In most cases agencies will be able to secure the rights they need, with sufficient confidence, by including the 'contributing' file mentioned above in documentation accompanying the source code and ensuring that this file is brought to users' attention before or at the time of submitting their contributions. Agencies should seek advice from their legal teams if required.</p>
+
+<p><em>Comment on assignment versus licensing</em></p>
+<p>31 Agencies may wish to note that there are two ways in which an agency could obtain the rights it needs from contributors. An agency could require contributing users to assign (i.e., transfer) any copyright in their contributions to the agency or it could require contributors to license their contributions to the agency and others under a specified FOSS licence. The advantage of seeking assignments of copyright is that this enables the party maintaining the source code to own it all. That makes it easier to take action against a user who does not comply with the applicable FOSS licence terms. The significant disadvantage of seeking assignments of copyright is that it can inhibit contributions (as developers may wish to retain their copyright). In a government context, it could also be seen as 'over-reaching'. An assignment also needs to be &quot;in writing signed by or on behalf of the assignor&quot; (section 114 of the Copyright Act 1994). It will be evident from the approach suggested above that NZGOAL-SE does <em>not</em> recommend that agencies seek to obtain assignments of copyright in users' contributions. Rather, the suggested approach allows contributors to retain their own copyright and only requires them to license their contributions under a specified FOSS licence.</p>
+
+<p><em>Suggested licensing text for 'contributing' file </em></p>
+<p>32 NZGOAL-SE suggests that agencies include the following kind of licensing text in their 'contributing' file or other documentation that they bring to the attention of users before or at the time of source code submission (the content in square brackets needs to be completed):</p>
+
+<pre><code>
+Copyright and licensing
+
+The source code for this [name of project or software] is licensed under the [insert name of applicable free and open source software licence]. By contributing source code to this [name of project or software], you are agreeing to license your contributions under and on the terms of the [insert name of same licence]. Please note that your licence is irrevocable and royalty-free. You or your licensors retain any copyright in your contributions while allowing others to re-use the source code in any way they like as long as they meet the requirements of the licence.
+</code></pre>
+
+<p>33 Agencies may also wish to ensure that the 'contributing' file, or other document that is brought to the attention of users, contains the matters referred to in paragraph 28(a)-(e) above.<a href="#fn15" class="footnoteRef" id="fnref15"><sup>15</sup></a></p>
+
+<h3 id="obtaining-rights-when-procuring-or-commissioning-the-development-of-software">Obtaining rights when procuring or commissioning the development of software</h3>
+
+<p>34 When procuring or commissioning the development of software, government agencies should consider whether they may wish to release the software to the public for re-use under an open source software licence. If the answer is yes, agencies should consider the steps that may be required as part of their procurement and contracting processes to ensure that either:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>they have the relevant rights to release the software under an open source software licence; or</p></li>
+<li><p>that the developer will release the software under a specified open source software licence.</p></li>
+</ol>
+
+<p>35 Such steps may include:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>ensuring the agency owns the intellectual property rights in the developed software; or</p></li>
+<li><p>ensuring the agency obtains a broad licence from the service provider allowing the agency to sub-license the software under the MIT licence or GPL (or, if required, some other free and open source software licence); or</p></li>
+<li><p>insisting on contractual provisions that require the service provider to release the software under a specified open source software licence (and, where relevant, to a specified code repository).</p></li>
+</ol>
+
+<p>36 Taking these steps may require:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>the inclusion of appropriate paragraphs in a notice of procurement (where applicable); and/or</p></li>
+<li><p>the inclusion of specific contractual provisions in a draft contract; or</p></li>
+<li><p>where an existing panel supply arrangement is being used, a review of the intellectual property provisions in the panel contract and, if required and possible, amendments to them for the purposes of the software development in question; and</p></li>
+<li><p><span id="section-28" class="anchor"></span>ensuring that the contract does not include confidentiality provisions that would inadvertently prevent release of the software under an open source software licence.</p></li>
+</ol>
+
+<h3 id="act-fairly-towards-developers-when-drafting-ip-warranties-and-indemnities">Act fairly towards developers when drafting IP warranties and indemnities</h3>
+<p>37 If:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>a government agency is commissioning a service provider to develop software that is to be released on open source terms (either by the agency or by the service provider under a contractual obligation for the service provider to do so); and</p></li>
+<li><p>it is known that the developer will be leveraging or adapting existing open source software developed by others,</p></li>
+</ol>
+<p>the agency should act fairly towards the service provider in relation to the drafting of intellectual property warranties and indemnities.</p>
+
+<p>38 In particular, it is generally considered unreasonable to expect a service provider to give an unqualified intellectual property (<strong>IP</strong>) warranty and an unqualified IP indemnity in relation to third party open source software that the agency agrees can be used by the service provider in developing software for the agency. This is especially so when the agency will be releasing the developed software under an open source software licence or requires the service provider to do so on its behalf. Sample IP indemnity and IP warranty clauses are provided in the Annexure to NZGOAL-SE.</p>
+
+<h3 id="liability">Liability</h3>
+<p>39 The MIT licence and the GPL both contain broad disclaimers of warranties and exclusions of liability that are widely known and acknowledged and ought to protect releasing agencies from liability in connection with the software they have released. In essence, people use free and open source software at their own risk. Agencies should ensure that all disclaimers and exclusions contained in the MIT licence or the GPL (as applicable) are replicated when they release software under these licences.</p>
+
+<h3 id="review-and-release-process">Review and Release Process</h3>
+<p>40 Government agencies should follow the NZGOAL-SE Review and Release Process before publicly releasing and licensing their software for re-use under a free and open source software licence. The Review and Release Process is set out below.</p>
+
+<h2 id="nzgoal-se-review-and-release-process">NZGOAL-SE Review and Release Process</h2>
+<h3 id="introduction-3">Introduction</h3>
+<p>41 It is recommended that government agencies follow the review and release process set out below before releasing software source code for re-use under a FOSS licence, with assistance where required from their technical and legal teams. The process consists of five main stages:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>copyright-related rights evaluation;</p></li>
+<li><p>evaluation of exceptions;</p></li>
+<li><p>select a FOSS licence;</p></li>
+<li><p>application of the chosen licence; and</p></li>
+<li><p>release of the software.</p></li>
+</ol>
+
+<p>42 Each stage contains one or more issues that may need to be worked through. The stages and the issues within them reflect a mixture of the NZGOAL-SE Policy Principles, legal requirements and practical considerations.</p>
+
+<p>43 It can be important to work through these steps to ensure that the agency:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>has all relevant rights in or to the software source code it proposes to publicly release;</p></li>
+<li><p>uses the appropriate open source licence; and</p></li>
+<li><p><span id="section-37" class="anchor"></span>does not expose either itself or those who may re-use the released software to liability or related risk.</p></li>
+</ol>
+
+<p>44 A decision tree diagram for the review and release process is set out at paragraph 82 below.</p>
+
+<h3 id="stage-1-copyright-related-rights-evaluation">Stage 1: Copyright-related rights evaluation</h3>
+<h4 id="what-the-stage-involves">What the stage involves</h4>
+<p>45 The first stage involves:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>clearly identifying the boundaries of the software that the agency proposes to release (e.g., the software may comprise a range of files, all of which would need to be released together);</p></li>
+<li><p>determining whether that software constitutes or contains one or more copyright works; and, if so</p></li>
+<li><p><span id="section-39" class="anchor"></span>evaluating whether the agency has sufficient rights to license the software under open source terms.</p></li>
+</ol>
+
+<p>46 In the vast majority of cases, software that an agency wishes to license will constitute or contain one or more copyright works. In the unlikely event that a given piece of software does not constitute or contain one or more copyright works, an agency could, if no exception in Stage 2 applies, release it into the public domain using an NZGOAL-style &quot;no known rights&quot; statement. See NZGOAL for that statement. It is not discussed further in NZGOAL-SE.</p>
+
+<h4 id="issues-where-agency-does-not-own-all-copyright">Issues where agency does not own all copyright</h4>
+<p>47 When an agency is in the situation of not owning all copyright in the software it would like to release and license for re-use and needs permission from the copyright owner(s), it is important to appreciate that the software may:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>be all new source code (i.e., be a completely new copyright work);<a href="#fn16" class="footnoteRef" id="fnref16"><sup>16</sup></a> or</p></li>
+<li><p><span id="section-41" class="anchor"></span>build on pre-existing source code (i.e., be an adaptation / derivative of pre-existing source code).</p></li>
+</ol>
+
+<p>48 The analysis for these two scenarios is different:</p>
+
+<ol style="list-style-type: lower-alpha">
+  <li><p><strong>All new source code</strong>: In the case of all new source code that the agency doesn't own but wishes to license, the agency would need to either:</p>
+      <ol style="list-style-type: lower-roman">
+          <li><p>already be entitled, under a FOSS licence that the owner has recently applied to the software, to sub-license the software; or</p></li>
+          <li>
+            <p>obtain irrevocable written permission from the copyright owner to sub-license the software on the relevant open source terms.</p>
+            <p><strong>Notes on sub-licensing</strong>: As to the first option, it is important to note three points. First, if the software has already been licensed under a FOSS licence, there may be no need for the agency to sub-license it because anyone who gets the software has the rights granted by the licence that the owner has applied. Second, some licences prohibit sub-licensing. For example, you cannot sub-license GPL-licensed software. Third, if there is a right to sub-license, that right would need to be broad enough to allow sub-licensing under the particular FOSS licence that the agency wishes to apply to the software.</p>
+          </li>
+      </ol>
+
+  </li>
+  <li><p><strong>Adaptation / derivative of pre-existing code</strong>: In the case of an adaptation / derivative of pre-existing source code, the agency would need to:</p>
+      <ol style="list-style-type: lower-roman">
+          <li><p>be able to identify who owns the pre-existing source code (noting that there could be more than 1 owner/contributor) and who has made and owns the new copyright in the adaptation / derivative work; and</p></li>
+          <li>
+            <p>to the extent that the agency does not own the copyright in the adaptation / derivative work, have permission from the other copyright owner(s) for their parts of the overall new work to be licensed under the FOSS licence the agency wishes to use.</p>
+            <p>To understand this, one needs to appreciate that an adaptation / derivative work consists of property (copyright) owned by the original licensor(s) (let's call them A) plus new and separate property (copyright) over the new original parts of the adaptation / derivative work that are created by B. The adaptation / derivative work is a distinct copyright work in its own right but B doesn't obtain property rights that are greater than B's own contribution. As a United States court has put it, &quot;[t]he aspects of a derivative work added by the derivative author are that author's property, but the element drawn from the pre-existing work remains on grant from the owner of the pre-existing work&quot;.<a href="#fn17" class="footnoteRef" id="fnref17"><sup>17</sup></a></p>
+            <p>Depending on the number of pre-existing owners, the licences (if any) under which they may have released their code and the licence the agency wishes to apply to the adaptation / derivative work, this can get complex very quickly. In cases of any complexity, agencies may need to seek expert legal advice.</p>
+          </li>
+      </ol>
+  </li>
+</ol>
+
+
+
+<h4 id="common-scenarios-where-an-agency-will-not-be-able-to-license-software-for-re-use">Common scenarios where an agency will not be able to license software for re-use</h4>
+<p>49 There are certain scenarios in which, from a copyright perspective, an agency will not be able to license software either under <em>any</em> FOSS licence or under a <em>particular</em> FOSS licence. Three common scenarios are as follows:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><strong>third party owner</strong>: copyright in the software is owned by a third party and the agency is not permitted to license the software for re-use under a FOSS licence. In this scenario the agency cannot license the software under any FOSS licence;</p></li>
+<li><p><strong>adaptations of proprietary software</strong>: the software is an adaptation or derivative of proprietary software and the agency does not have the proprietary software owner's written and irrevocable authorisation to license the adaptation or derivative under a FOSS licence (whilst the agency might own the copyright in its new contributions, it still needs authorisation from the owner of the base software that it adapted). In this scenario the agency cannot license the software under any FOSS licence; and</p></li>
+<li><p><strong>adaptations of GPL or similarly FOSS-licensed software</strong>: the agency wishes to license the software under the MIT licence but the software is an adaptation or derivative of open source software that is licensed under a sharealike FOSS licence, such as the GPL, that requires distributed or conveyed adaptations or derivative works to be licensed under the same licence. In this scenario the agency cannot license its adaptation under the MIT licence.</p></li>
+</ol>
+
+<h3 id="stage-2-evaluation-of-exceptions">Stage 2: Evaluation of exceptions</h3>
+<p>50 If an agency has completed Stage 1 and concluded that it does have sufficient rights to license the software under a FOSS licence, then the NZGOAL-SE Policy Principles recommend that the software be licensed under open source terms unless an exception set out in paragraph 18 applies.</p>
+
+<p>51 For each proposed release, the exceptions need to be considered in the light of all the surrounding circumstances relevant to the specific software and its release.</p>
+
+<p>52 In many instances, the exercise will be quick as none of the restrictions will apply. In that event, the agency can proceed to Stage 3 (Select a FOSS Licence) below. This is because the Open Access and Licensing Principle will not have been displaced.</p>
+
+<p>53 If one or more of the exceptions applies, the Open Access and Licensing Principle will be displaced and not apply. One of two consequences will follow:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><strong>No FOSS licensing</strong>: FOSS licensing of the source code may not be possible unless the reason for the exception(s) can be removed in accordance with paragraph 53(b). If FOSS licensing is not possible, the analysis ends and there is no need to consider the subsequent stages below.</p></li>
+<li><p><strong>FOSS licensing after amending or anonymising the source code</strong>: If the source code can be amended or altered to remove the reason(s) for the exception(s) applying, the Open Access and Licensing Principle is resurrected and one progresses to Stage 3.</p></li>
+</ol>
+
+<h3 id="stage-3-select-a-foss-licence">Stage 3: Select a FOSS licence</h3>
+<h4 id="introduction-4">Introduction</h4>
+<p>54 Once an agency has determined that it has:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>the copyright-related rights it needs to license the software (in accordance with the Rights Clearance Principle); and</p></li>
+<li><p>none of the exceptions listed in paragraph 18 that would negate the Open Access and Licensing Principle applies,</p></li>
+</ol>
+<p><span id="section-48" class="anchor"></span>the agency can work through Stage 3 to select the appropriate FOSS licence before applying the selected licence in accordance with Stage 4.</p>
+
+<p>55 In most cases, an agency's selection of a FOSS licence is likely to turn on the answers to one or more of the following questions:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>whether the source code builds upon and/or interacts with existing FOSS-licensed source code;</p></li>
+<li><p>if the source code does not build upon and/or interact with existing FOSS-licensed source code, whether a person who adapts the code and distributes it to others should be required to license the adaptations for re-use by others;</p></li>
+<li><p>whether there are known reasons or use cases for releasing the source code under a FOSS licence other than the recommended GPL or MIT licences.</p></li>
+</ol>
+
+<p>56 NZGOAL-SE does recommend a default set of licences (GPL and MIT) but a &quot;yes&quot; answer to the first question may require (legally or ethically) the selection of a different FOSS licence and a &quot;yes&quot; answer to the third question might suggest that a more targeted FOSS licence is preferable. Each of the three questions is now discussed in turn.</p>
+
+<h4 id="source-code-builds-upon-andor-interacts-with-existing-third-party-foss-licensed-source-code---respect-existing-licences">Source code builds upon and/or interacts with existing third party FOSS-licensed source code - respect existing licence(s)</h4>
+
+<p>57 If the source code builds upon and/or interacts with existing third party FOSS-licensed source code, the Respect Existing Licences Principle applies. In this scenario, an agency should &mdash; where possible &mdash; select the same licence(s) for its new software code as the licences applying to the pre-existing source code (the upstream licences), or licences that are compatible with the upstream licence(s). For consistency reasons, using the same licence(s) is usually preferable to using compatible licence(s).</p>
+
+<p>58 To give an example, if an agency developed a software library that interacts with a pre-existing open source application licensed under the Berkley Software Distribution (BSD) licence<a href="#fn18" class="footnoteRef" id="fnref18"><sup>18</sup></a>, it would be consistent with the Respect Existing Licences Principle for the agency to license its new source code under the BSD as well. Effectively, the BSD licence would become the selected FOSS licence as an outcome of the Stage 3 analysis.</p>
+
+<p>59 Note, however, that the words &quot;where possible&quot; are used above because it will not always be possible to apply the same licences as the upstream licences. This can be the case where different parts of the pre-existing software the agency has used are licensed under different FOSS licences. For example, some of the pre-existing code might be licensed under the MIT licence (which is not a sharealike / copyleft licence) and other parts of the code might be licensed under the GPL (which is a sharealike / copyleft licence).</p>
+
+<p>60 Where an agency uses these differently licensed parts of software in a broader project (e.g., the agency might adapt the pre-existing software) the agency may be required, by the sharealike licence, to release its new code under the sharealike licence when the agency distributes its new code. In other words, a sharealike licence like the GPL may trump the non-sharealike licence (in this example, the MIT licence). Generally speaking, if an agency is using multiple pieces of software in a project and those pieces are licensed under different FOSS licences (non-sharealike and sharealike), new code should be released under the sharealike licence and not the non-sharealike licence. See the Adaptations Principle in paragraphs 19-21 for further explanation and, if in doubt, seek legal advice before selecting and applying a FOSS licence.</p>
+
+<p>61 To give an example, if an agency develops and distributes a plugin for a content management system that, legally speaking, is an adaptation of MIT-licensed code and GPL-licensed code that the agency has mixed together and used, the agency may need to license the plugin under the GPL. Whether there is an &quot;adaptation&quot; can be a difficult legal question in some cases but, if there is an adaptation, the GPL will trump.</p>
+
+<h4 id="entirely-new-source-code---default-foss-licences">Entirely new source code - default FOSS licences</h4>
+<p>62 As noted above, NZGOAL-SE recommends a default set of licences - two licences - for cases in which an agency wishes to release entirely new source code for re-use; in other words, for cases in which the source code to be released does not build upon and/or interact with existing FOSS-licensed source code.</p>
+
+<p>63 The default licences, in no particular order, are the GPL licence and the MIT licence. These default licences and the reasons for selecting them as the NZGOAL-SE defaults are described in the NZGOAL Policy Principles (Open access and public release of agency software using free and open source licences).</p>
+
+<p>64 NZGOAL-SE suggests that an agency's choice between these two default licences should turn on the answer to this simple question: would you like everyone to be able to re-use other people's distributed adaptations of the source code in the future?<a href="#fn19" class="footnoteRef" id="fnref19"><sup>19</sup></a></p>
+
+<p>65 If the answer to this question is yes &mdash; that is, a person who adapts the code and distributes it to others should be required to license the adaptations for re-use by others &mdash; then the agency should select the GPL (version 3).</p>
+
+<p>66 If the answer to this question is no &mdash; a person who adapts the code and distributes it to others does not need to license the adaptations for re-use by others &mdash; then the agency should select the MIT licence.</p>
+
+<p>67 Answering the question yes or no is a judgement call for the agency.</p>
+
+<p>68 In either case, the agency should proceed to Stage 4 (Application of chosen licence) unless there are known reasons or use cases for releasing the source code under a FOSS licence other than the recommended GPL or MIT licences (as discussed immediately below).</p>
+
+<h4 id="known-reasons-or-use-cases-for-releasing-source-code-under-an-alternative-foss-licence">Known reasons or use cases for releasing source code under an alternative FOSS licence</h4>
+<p>69 In some cases an agency may wish to release entirely new source code and there may be specific known reasons or use cases for not opting for the GPL or MIT licences. Two examples of this are as follows:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><strong>Libraries</strong>: the source code to be released is a library of code and the agency knows that there are proprietary software suppliers who wish to use the agency's particular library within, or to link the library to, their own proprietary source code without having to release (or it being argued that they have to release) their proprietary code if they distribute their software. The GNU Lesser General Public Licence (LGPL) will allow this kind of use without exposing the downstream user to risk. The LGPL requires software licensed under it to be modifiable by end users through source code availability and does not require proprietary code that is linked to the LGPL-licensed library to be made available under the GPL.</p></li>
+<li><p><strong>Server side use of licensed software</strong>: the sharealike obligation in the GPL (i.e., the obligation to license one's adaptations under the GPL) is triggered upon distribution of an adaptation. Where software is installed on a server to provide a service to end users (e.g., in an application service provider or cloud services context), the sharealike obligation is not triggered. To some people this seemed like a loophole. The GNU Affero General Public Licence (AGPL) was designed to close that loophole. It is based on the GPL and sates that if source code is adapted then the &quot;public use of a modified version, on a publicly accessible server, gives the public access to the source code of the modified version&quot;.<a href="#fn20" class="footnoteRef" id="fnref20"><sup>20</sup></a> There may be cases in which an agency is FOSS-licensing software that is used on servers where the agency would like to achieve this result or where communities of interest ask the agency to achieve this result. If so, the agency may wish to select the GNU Affero General Public Licence (AGPL) instead of the GPL.</p></li>
+</ol>
+
+<p>70 The selection of licences for unusual use cases like these can be difficult and in some cases using one of the NZGOAL-SE default licences (the GPL or MIT licence) may suffice. If in doubt, seek technical or legal advice in the context of your particular use case.</p>
+
+<h4 id="licensing-of-accompanying-documentation">Licensing of accompanying documentation</h4>
+<p>71 Explanatory documentation files included alongside open source software code are usually separate copyright works. These works are often thought to be licenced under the FOSS licence that has been applied to the source code. However, most FOSS licences used for source code are not designed for documentation and often don't naturally or comfortably apply. A more appropriate approach is to apply a Creative Commons licence to documentation in accordance with NZGOAL.</p>
+
+<p>72 Two situations need to be considered: the first is where the agency has created completely new documentation, the second where the agency has adapted pre-existing documentation.</p>
+  <ol style="list-style-type: lower-alpha">
+    <li><p><strong>New documentation</strong>: In the case of new documentation that the agency owns (i.e., it owns the copyright), the Creative Commons licensing is straight-forward. In this situation, NZGOAL-SE recommends that the Creative Commons licence choice reflect the nature of the selected FOSS licence. This means that an agency releasing new documentation alongside source code released under:</p>
+      <ol style="list-style-type: lower-roman">
+        <li><p>a <em>more permissive licence</em> such as the MIT licence, should license the documentation under a <strong>Creative Commons Attribution 4.0 International licence</strong>; and</p></li>
+        <li><p>a <em>sharealike/copyleft licence</em> such as the GPL, should license the documentation under a <strong>Creative Commons Attribution Sharealike 4.0 International licence</strong>.</p></li>
+      </ol>
+    </li>
+    <li>
+      <p><strong>Adapted documentation</strong>: If an agency is adapting pre-existing documentation that accompanied pre-existing FOSS-licensed software, it may be necessary to respect the licence (if any) that had been applied to the pre-existing documentation. For example, if the pre-existing documentation had been licensed under a Creative Commons Attribution Sharealike (CC-BY-SA) 4.0 International licence then, when the agency publishes its adaptation, it would need to license the adaptation under a CC-BY-SA licence.</p>
+      <p>Sometimes an agency may find that existing documentation is licensed under an unfamiliar or unnecessarily complex licence. The agency may still wish to release its own documentation relating to, for example, its adapted part of the software, but the agency would prefer to use a Creative Commons licence for it. In this situation the agency may be able to create a new and separate document that contains the additional information the agency wishes to provide. That in all likelihood would be a new and standalone copyright work rather than an adaptation of an existing work. In that case, and assuming the agency owns the copyright in the new document, it could select a Creative Commons licence for the document.</p>
+    </li>
+</ol>
+
+<h3 id="stage-4-application-of-chosen-licence">Stage 4: Application of chosen licence<a href="#fn21" class="footnoteRef" id="fnref21"><sup>21</sup></a></h3>
+<h4 id="introduction-5">Introduction</h4>
+<p>73 Stage 4 explains how agencies apply their chosen open source software licence to the software they're releasing.</p>
+
+<p>74 Copyright and licensing statements for FOSS software generally comprise:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>a statement of copyright ownership; and</p></li>
+<li><p>a description of the FOSS licence that applies to the software.</p></li>
+</ol>
+<p>They appear in the same place but are considered separately here to explain certain points.</p>
+
+<h4 id="the-copyright-notice">The copyright notice</h4>
+<p>75 When applying a licence, it is common practice to add the year the software was completed and the name of the copyright owner(s), in the following format:</p>
+
+<pre><code>
+  Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+</code></pre>
+
+<p>76 If the licensing agency is a department of the Crown, it should also replace &quot;Copyright&quot; with &quot;Crown copyright&quot;. For example, if the licensing agency were a department, its licensing statement would look something like this:</p>
+
+<pre><code>
+  Crown copyright (c) 2015, Land Information New Zealand on behalf of the New Zealand Government.
+</code></pre>
+
+<p>77 If the licensing agency is not part of the Crown (e.g., it might be a Crown entity), it would use the term &quot;Copyright&quot; rather than &quot;Crown copyright&quot; and it would state its name without reference to the &quot;New Zealand Government&quot;. For example:</p>
+
+<pre><code>Copyright (c) 2015, Commerce Commission (New Zealand).</code></pre>
+
+<h4 id="description-of-the-foss-licence-that-applies">Description of the FOSS licence that applies</h4>
+<p>78 The description of the FOSS licence that applies to the software either sets out the full terms of the FOSS licence or refers to the applicable licence and links to full text of the licence. The description may also contain statements that exclude warranties and liabilities. Examples can be seen in the next part of this Stage 4 below.</p>
+
+<h4 id="applying-the-selected-licence">Applying the selected licence</h4>
+<p>79 Agencies can apply their selected licence in one of two ways:</p>
+  <ol style="list-style-type: lower-alpha">
+    <li>
+      <p>They can reproduce the full text of the licence, or a summary with a link to the full licence, at the top of each source code file they are licensing. Here are two examples:</p>
+      <p><strong>Example 1:</strong> if the licensing agency were a department and had selected the MIT licence, its licensing statement at the top of each source code file would look like this:</p>
+      <pre><code>MIT Licence
+
+        Crown copyright (c) 2015, Land Information New Zealand on behalf of the New Zealand Government.
+
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+        THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+      </code></pre>
+
+      <p><strong>Example 2:</strong> if the licensing agency were a Crown entity and had selected the GPL<a href="#fn22" class="footnoteRef" id="fnref22"><sup>22</sup></a> licence, its licensing statement at the top of each source code file would look like this:</p>
+      <pre><code>Copyright (c) 2015, Commerce Commission (New Zealand).
+
+        This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or(at your option) any later version.
+
+        This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;
+      </code></pre>
+    </li>
+    <li><p>Alternatively, agencies can provide the licence as a separate text file (which would contain the full licence text) that accompanies the software files, usually in a top-level folder. If agencies take this approach:</p>
+      <ol style="list-style-type: lower-roman">
+        <li><p>the text file containing all the licensing text should be called &quot;LICENCE&quot; (or something similar); and</p></li>
+        <li>
+          <p>the first paragraph of the licensing text that identifies the licensor should also identify the software to which the licence is being applied, e.g.:</p>
+          <pre><code>SpatialZone Project, Crown copyright (c) 2015, Land Information New Zealand on behalf of the New Zealand Government.</code></pre>
+          <p>Note that, under this approach, if a single software file is separated from the distribution, the recipient is unlikely to see the applicable copyright notice. If this is of concern to an agency, the solution is to include a brief copyright notice in each file's header that points to the top-level LICENSING file. For example:</p>
+          <pre><code>SpatialZone Project, Crown copyright (c) 2015, Land Information New Zealand on behalf of the New Zealand Government. This file is released under the &lt;LICENCE&gt; licence. See the LICENCE file found in the top-level directory of this distribution for more information.</code></pre>
+        </li>
+      </ol>
+    </li>
+</ol>
+
+<h4 id="other-licences">Other licences</h4>
+<p>80 If for some reason you are applying an alternative open source software licence, you may wish to check whether the entity that maintains the licence has instructions on how to apply it. Alternatively, you could follow the approach suggested above for the MIT licence or the Free Software Foundation's suggested approach for the GPL.</p>
+
+<h3 id="stage-5-release-the-software">Stage 5: Release the software</h3>
+<p>81 Once the chosen licence has been applied to the software, release the software for re-use into one or more relevant code repositories and/or on the agency's website. Agencies are encouraged to:</p>
+<ol style="list-style-type: lower-alpha">
+  <li><p>use version control and existing source code repositories;</p></li>
+  <li><p>ensure the source code is publicly accessible;</p></li>
+  <li><p>use freely available tools for others to interact with the released source code;</p></li>
+  <li><p>include a CONTRIBUTING file to help others contribute to the source code and improve it as explained in the Contributions Principle;</p></li>
+  <li><p>include accompanying documentation such as a README file to help others get started re-using the software; and</p></li>
+  <li><p>consider whether to:</p>
+    <ol style="list-style-type: lower-roman">
+      <li><p>issue a press release about the agency's release of the software; and/or</p></li>
+      <li><p>notify appropriate communities of interest.</p></li>
+    </ol>
+  </li>
+</ol>
+
+<h3 id="review-and-release-process-decision-tree">Review and release process decision tree</h3>
+<p>82 The decision tree diagram below illustrates the Review and Release Process explained above. It is intended to be read in conjunction with the explanations above for each stage.</p>
+
+<p><img src="nzgoal-se-decision-tree.png" alt="NZGOAL-SE Decision Tree" /></p>
+
+<h2 id="annexure-specimen-ip-warranty-and-ip-indemnity-clauses">Annexure: Specimen IP warranty and IP indemnity clauses</h2>
+<h3 id="introduction-6">Introduction</h3>
+<p>1 The specimen IP warranty and IP indemnity clauses set out below are starting points for agencies that wish to act in accordance with the &quot;Act fairly towards developers when drafting IP warranties and indemnities&quot; Policy Principle in NZGOAL-SE. They are designed for insertion into new contracts for the development of software where FOSS software might be used. They can also be used to amend the standard terms of the Government Model Contract for Services (which is done by making appropriate insertions into Schedule 2 of that Contract).</p>
+
+<p>2 The precise drafting of such clauses in any given case, in the context of an agency's project and the contract it is using, is a matter for the agency. The provision of these specimen clauses does not constitute legal advice to any agency or person.</p>
+
+<h3 id="context">Context</h3>
+<p>3 It is common for software development contracts to contain a warranty clause along these lines:</p></li>
+<blockquote>
+<p><strong>1. Service Provider Warranties</strong></p>
+<p>The Service Provider represents and warrants that the possession or use by the Customer or its Personnel of any item of Intellectual Property supplied or licensed by the Service Provider will not infringe the Intellectual Property rights of any third party.</p>
+</blockquote>
+
+<p>4 It is also common for software development contracts to contain IP indemnity provisions that include a clause like this (this is just an example; sometimes they are more elaborate):</p>
+<blockquote>
+<p><strong>2. IP Indemnity</strong></p>
+<p>(a) The Service Provider will indemnify the Customer against all Losses suffered or incurred by the Customer or its Personnel as a result of any claim that the possession or use by the Customer or its Personnel of the System or any other Intellectual Property or materials supplied or licensed by the Service Provider under this Agreement infringes any third party's Intellectual Property rights.</p>
+</blockquote>
+
+<p>5 The specimen clauses set out below are based on the assumption that there are such clauses in the development contract in question.</p>
+
+<h3 id="specimen-clauses">Specimen clauses</h3>
+<p><strong>Specimen open source software clause</strong></p>
+<p>6 The specimen open source software clause set out below:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>requires the service provider to obtain the customer's consent before using particular open source software (this is not due to any judgement on the use of open source software but to enable the customer to be aware of the use of open source software and to assess the applicable FOSS licence(s) if it wishes);</p></li>
+<li><p>gives primacy to the FOSS licence(s) used in relation to the software they cover;</p></li>
+<li><p>confers ownership of new software IP on the customer;</p></li>
+<li><p>qualifies the application of the service provider warranty mentioned above to open source software;</p></li>
+<li><p>requires the service provider to comply with applicable FOSS licences; and</p></li>
+<li><p>requires the service provider to release adapted FOSS software or new software designed to interact with FOSS software to an open source repository if the agency requests it to do so (this does not prevent the agency from doing so but some agencies may prefer their service providers to do this).</p></li>
+</ol>
+
+<p>7 This is the specimen clause:</p>
+<blockquote>
+<p><strong>3. Open Source Software</strong></p>
+<p>(a) The Service Provider shall obtain the Customer's written consent before providing, incorporating or adapting, or developing any widget, plugin or module for, any Open Source Software, in the course of its performance and delivering the Services and any associated Deliverables. The parties acknowledge that the purpose of this requirement is to enable the Customer to review the applicable open source licence terms, make a decision as to whether those terms are acceptable and, should consent be granted, respect any obligations in those licence terms.</p>
+<p>(b) If the Customer grants such consent:</p>
+<p>(i) the terms of the applicable open source licence(s) will apply to that Open Source Software;</p>
+<p>(ii) the provisions of that licence or those licences will prevail over the terms of this Agreement in the event and to the extent of any inconsistency;</p>
+<p>(iii) all Intellectual Property rights in the Open Source Software that is supplied to the Customer (or incorporated into the System or any other Deliverables supplied to the Customer) under this Agreement, or under any collateral licence or agreement, remains the sole and exclusive property of the relevant third party;</p>
+<p>(iv) the Service Provider will own the new Intellectual Property rights in any adaptation or derivative of the Open Source Software and in any widget, plugin or module the Service Provider develops under this Agreement that is designed to interact with the Open Source Software;</p>
+<p>(v) the warranty in clause 1 does not apply in relation to that Open Source Software unless the Service Provider knows or has reason to believe, at the time it selects the Open Source Software, that the Open Source Software would, or would be likely to, infringe the Intellectual Property rights of a third party;</p>
+<p>(vi) the Service Provider will comply with all applicable terms of the open source licence(s); and</p>
+<p>(vii) if required by the Customer, the Service Provider will release:</p>
+<p>(A) any adaptation or derivative of the Open Source Software provided or incorporated into the System; and</p>
+<p>(B) any widget, plugin or module the Service Provider develops under this Agreement that is designed to interact with the Open Source Software and is used in the course of its performance and delivering the Services and any associated Deliverables,</p>
+<p>to one or more specified online software code repositories and under the open source licence that is either:</p>
+<p>(C) required to be applied to the adaptation, derivative, widget, plugin or module by the upstream open source licence; or, if there is no such requirement</p>
+<p>(D) specified by the Customer,</p>
+<p>provided that the Customer first consults the Service Provider for a minimum of 5 business days before exercising its right in this clause 3.2(b)(vii).</p>
+</blockquote>
+
+<p><strong>Specimen modification to IP indemnity clause</strong></p>
+<p>8 Sub-clause 2(b) in the specimen clause below has the effect of limiting the application of the IP indemnity mentioned above to open source software that the Service Provider uses in providing services and deliverables to the customer. It would usually form part of the indemnity clause mentioned above. For this reason, that indemnity clause is repeated here:</p></li>
+</ol>
+<blockquote>
+<p><strong>2. IP Indemnity</strong></p>
+<p>(a) The Service Provider will indemnify the Customer against all Losses suffered or incurred by the Customer or its Personnel as a result of any claim that the possession or use by the Customer or its Personnel of the System or any other Intellectual Property or materials supplied or licensed by the Service Provider under this Agreement infringes any third party's Intellectual Property rights.</p>
+<p>(b) Clause 2(a) does not apply to any Losses arising from the Customer's possession or use of any Open Source Software, unless the Service Provider knew or believed, at the time of selecting the relevant Open Source Software, that the possession or use by the Customer or its Personnel of that Open Source Software would, or would be likely to, infringe any third party's Intellectual Property rights.</p>
+</blockquote>
+
+<h3 id="associated-definitions">Associated definitions</h3>
+<p>The specimen clauses above use various defined terms (these are the terms that are capitalised). Not all of the defined terms need to be set out here. The relevant defined term for present purposes is the definition of Open Source Software. There are various ways to define Open Source Software. This is one way:</p>
+<blockquote>
+<p><strong>Open Source Software</strong> means any software that is released on licence terms that grant others the freedom to use, copy, modify and distribute the software, for either non-commercial or commercial purposes, as long as they comply with the applicable licensing conditions.</p>
+</blockquote>
+
+<div class="footnotes">
+<hr />
+<h2 id="footnotes">Footnotes</h2>
+<ol>
+  <li id="fn1"><p>On these topics, see the Australian Government's <em>A Guide to Open Source Software for Australian Government Agencies</em> (version 2.0, June 2011) at <a href="http://www.finance.gov.au/files/2012/04/AGuidetoOpenSourceSoftware.pdf"><em>http://www.finance.gov.au/files/2012/04/AGuidetoOpenSourceSoftware.pdf</em></a> <a href="#fnref1">(back)</a></p></li>
+  <li id="fn2"><p>See <a href="https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/ss-and-licensing-nzgoal-framework-nzgoal-copyright-guide/"><em>https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/ss-and-licensing-nzgoal-framework-nzgoal-copyright-guide/</em></a> <a href="#fnref2">(back)</a></p></li>
+  <li id="fn3"><p>The Guidelines are available at <a href="https://www.ict.govt.nz/assets/Uploads/Documents/ipr-guidelines-2008.pdf"><em>https://www.ict.govt.nz/assets/Uploads/Documents/ipr-guidelines-2008.pdf</em></a> <a href="#fnref3">(back)</a></p></li>
+  <li id="fn4"><p>Where the agency owns the copyright, it could still grant a non-exclusive custom licence to the service provider, before or at the same time as releasing the software on open source terms, that enables the service provider to use the software for other purposes. For example, the service provider may wish to be able to use the software it has developed for other projects before the agency releases it on open source terms. <a href="#fnref4">(back)</a></p></li>
+  <li id="fn5"><p>The Government Rules of Sourcing are available at <a href="http://www.business.govt.nz/procurement/for-agencies/key-guidance-for-agencies/the-new-government-rules-of-sourcing"><em>http://www.business.govt.nz/procurement/for-agencies/key-guidance-for-agencies/the-new-government-rules-of-sourcing</em></a> <a href="#fnref5">(back)</a></p></li>
+  <li id="fn6"><p>Both the United Kingdom Government Digital Services (<a href="https://www.gov.uk/service-manual/making-software/choosing-technology.html#sharing-software"><em>https://www.gov.uk/service-manual/making-software/choosing-technology.html#sharing-software</em></a>) and the United States Federal Government (<a href="https://sourcecode.cio.gov/Implementation"><em>https://sourcecode.cio.gov/Implementation</em></a>) express the value of modern software development practices such as version control and code repository platforms for sharing and the improvement of publicly released government source code. <a href="#fnref6">(back)</a></p></li>
+  <li id="fn7"><p>The MIT licence is considered preferable to the BSD 3-Clause licence (another commonly-used permissive open source software licence) because the MIT licence includes a clearer grant of rights and expressly includes the right to sub-license (the BSD licence does not). Whilst many interpret a right to sub-license as being implicit in the BSD licence, the absence of an express reference to it in the BSD licence could produce uncertainty for users, most notably users who wish to incorporate government-produced code in a work licensed under the GPL. The Free Software Foundation considers the BSD licence to be compatible with the GPL but that must depend on a particular interpretation of the BSD licence wording (see generally A Sinclair &quot;License Profile: BSD&quot; IFOSS Law Review, 2(1) pp. 1-6). The MIT licence doesn't contain the BSD's 'no endorsement' clause but, in most cases, the law would prevent claims of endorsement without permission anyway. Another common permissive licence, the Apache License 2.0, was not chosen because it is more complex. The Free Software Foundation considers it preferable to the BSD and MIT licences as it deals with patent licensing and prevents 'patent treachery'. However, in New Zealand the Patents Act 2013 excludes computer programs &quot;as such&quot; from patentable subject matter (and, in any event, historically government agencies have not generally been in the business of applying for software patents). NZGOAL-SE could have recommended its own bespoke permissive licence instead of the MIT licence but that would have contributed to further licence proliferation and exposed developers to a licence they're not familiar with. <a href="#fnref7">(back)</a></p></li>
+  <li id="fn8"><p>See <a href="https://opensource.org/licenses/MIT"><em>https://opensource.org/licenses/MIT</em></a> <a href="#fnref8">(back)</a></p></li>
+  <li id="fn9"><p>GPL as used in NZGOAL-SE refers to the GNU General Public Licence version 3 or later. See <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">http://www.gnu.org/licenses/gpl-3.0.en.html</a> <a href="#fnref9">(back)</a></p></li>
+  <li id="fn10"><p>Whilst versions 2 and 3 of the GPL differ in certain respects, in essence the GPL allows people to copy and distribute the software, to charge a fee for transferring it or providing warranty protection, and to modify the software and distribute resulting derivative works. And, if a person distributes a derivative work, that person needs to license it under the GPL, otherwise that person's licence to use the software will terminate. The full text of versions 2 and 3 of the GPL (both versions are in common use) can be found on the website of the <em>Free Software Foundation</em></a> at <a href="http://www.gnu.org/licenses/gpl-3.0.en.html"><em>http://www.gnu.org/licenses/gpl-3.0.en.html</em></a>. <a href="#fnref10">(back)</a></p></li>
+  <li id="fn11"><p>See the Internet Security Glossary, Version 2 on Crackers <a href="media/image2.emf#page-84"><em>https://tools.ietf.org/html/rfc4949#page-84</em></a> <a href="#fnref11">(back)</a></p></li>
+  <li id="fn12"><p>Coordinated disclosures ensure there is clear and explicit process for both external contributors and agencies for the reporting of security bugs and issues in publicly released software. Guidance for the New Zealand context can be found on the NZITF website at <a href="http://www.nzitf.org.nz/pdf/NZITF_Disclosure_Guidelines_2014.pdf"><em>http://www.nzitf.org.nz/pdf/NZITF_Disclosure_Guidelines_2014.pdf</em></a>. <a href="#fnref12">(back)</a></p></li>
+  <li id="fn13"><p>A diverging code fork occurs when agencies make changes to the code of open source software without publishing the code back to the software's development community. The fork is the split between the agency's version of the software and the version published by the community. Any further changes made by either the agency or the community will increase the differences of the source code. This can make it difficult for the agency to upgrade to a new published version, as the agency would have to reapply all its changes. This risk may be mitigated by contributing modified source code back to the open source software community if appropriate.
+    <a href="#fnref13">(back)</a></p></li>
+  <li id="fn14"><p>A Contributor Licence Agreement, or CLA, is an agreement that sets out the terms under which a person or entity makes contributions to the project or software. A CLA will deal with licensing terms and can also agree with topics such as warranties and indemnities. <a href="#fnref14">(back)</a></p></li>
+  <li id="fn15"><p>The 'contributing' file could also seek to obtain a warranty (promise) from contributors that they have all the rights they require to submit their contributions on the terms of the specified licence and an indemnity in favour of the agency should it turn out that the contributor does not have the required rights. The indemnity clause would seek to enable the agency to recover, from a contributor, loss the agency incurs as a result of the contributor's breach of the warranty. NZGOAL-SE suggests, however, that including an indemnity could be unnecessary and/or counter-productive. Not only could it inhibit contributions but it could pose difficulties for contributing government departments given restrictions on the granting of indemnities under the Public Finance Act 1989. <a href="#fnref15">(back)</a></p></li>
+  <li id="fn16"><p>For example, the software could be a deliverable under a services contract the agency has with a vendor, but the contract may confer copyright ownership on the service provider and only license the software to the agency. <a href="#fnref16">(back)</a></p></li>
+  <li id="fn17"><p>Stewart v Abend 495 U.S. 207, 223 (1990). <a href="#fnref17">(back)</a></p></li>
+  <li id="fn18"><p>See <a href="https://opensource.org/licenses/BSD-3-Clause"><em>https://opensource.org/licenses/BSD-3-Clause</em></a> <a href="#fnref18">(back)</a></p></li>
+  <li id="fn19"><p>Agencies should note that, even if an agency decides to apply the GPL to its source code, the agency can always allow particular developers to use it under different terms if the agency wishes (as long as the agency is the copyright owner). It is conceivable, for example, that a New Zealand-based software developer may wish to use the code in proprietary software for which it has a strong export market. In that sort of case, the agency can make the code available to the developer under alternative licence terms, e.g. without an obligation to share the source code of distributed adaptations. <a href="#fnref19">(back)</a></p></li>
+  <li id="fn20"><p>See AGPL Preamble <a href="http://www.gnu.org/licenses/agpl.html"><em>http://www.gnu.org/licenses/agpl.html</em></a> <a href="#fnref20">(back)</a></p></li>
+  <li id="fn21"><p>For a useful general discussion of this topic, see the Software Freedom Law Center's &quot;Managing copyright information within a free software project&quot; at <a href="http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html"><em>http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html</em></a> <a href="#fnref21">(back)</a></p></li>
+  <li id="fn22"><p>See &quot;How to use GNU licenses for your own software&quot; at <a href="http://www.gnu.org/licenses/gpl-howto.html"><em>http://www.gnu.org/licenses/gpl-howto.html</em></a> <a href="#fnref22">(back)</a></p></li>
+</ol>
+</div>
