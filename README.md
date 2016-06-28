@@ -16,7 +16,7 @@ The engagement has been outstanding and an excellent example of shared and colla
 ## What next?
 The draft policy has now undergone a legal review and some minor amendments. The May 2016 revised version of NZGOAL-SE is available to view [view here](https://www.ict.govt.nz/assets/Uploads/Documents/NZGOAL-Software-Extension-Revision-May-2016.pdf).
 
-Next step is for the policy to be submitted for review by relevant government agencies before finally going to the Minister and before a Cabinet Committee meeting.
+Next step is for the policy to be submitted for review by relevant government agencies before finally going to the Minister for final approval. Once approved, the NZGOAL section of ict.govt.nz will be updated with the extension for software licensing.
 
 Email [opendata@linz.govt.nz](mailto:opendata@linz.govt.nz) if you have any questions.
 
