@@ -1,7 +1,7 @@
 # NZGOAL Software Extension (working repository for revision May 2016)
 
 ## Published
-The NZGOAL Software Extension policy for the licensing of free and open source software was [published on ict.govt.nz](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-se/) on the 20th July 2016. This policy gives guidance to agencies on the of licensing software when they choose to release source code under open source terms for others to legally reuse.
+The NZGOAL Software Extension policy for the licensing of free and open source software was [published on ict.govt.nz](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-se/) on the 20th July 2016. This policy gives guidance to agencies on the licensing of software when they choose to release source code under open source terms for others to legally reuse.
 
 Read the Ministerial press release: [Guidelines unlock govt software for innovation](https://www.beehive.govt.nz/release/guidelines-unlock-govt-software-innovation)
 
