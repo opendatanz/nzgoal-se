@@ -1,0 +1,1175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content=
+    "text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="generator" content="pandoc">
+    <title>
+      Working in the open
+    </title>
+    <style type="text/css">
+    code{white-space: pre;}
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="title">
+        Working in the open
+      </h1>
+      <h3 class="date">
+        2016-11-9
+      </h3>
+    </div>
+    <h2 id="safe-configuration-practices">
+      Safe configuration practices
+    </h2>
+    <p>
+      When releasing your code as open source software, ensure that
+      you have not included any sensitive credentials in the
+      publicly released code itself.
+    </p>
+    <p>
+      For example:
+    </p>
+    <ul>
+      <li>
+        <p>
+          Database logins
+        </p>
+      </li>
+      <li>
+        <p>
+          API keys
+        </p>
+      </li>
+      <li>
+        <p>
+          Configuration setting specific to your production
+          deployment
+        </p>
+      </li>
+      <li>
+        <p>
+          User account details
+        </p>
+      </li>
+    </ul>
+    <p>
+      A issue here is that if you are using version control, once
+      one of these details has been commented to the repository, it
+      stays in the history forever (unless you remove the project
+      history and start with a fresh commit of code but you will
+      lose a wealth of project history information doing this).
+    </p>
+    <p>
+      A good practice to adhere to here is building a configuration
+      layer into the software that you write. In your software code
+      you can then write in references to the variables contained
+      within the configuration file without exposing the values
+      themselves. This make the software code much safer to share
+      under an open source licence. You might also provide an
+      example configuration file that users can duplicate before
+      they configure their own copy of the software.
+    </p>
+    <h2 id="release-early-and-often">
+      Release early and often
+    </h2>
+    <p>
+      Part of the value of developing code in the open is to
+      'release early, and often'<a href="#fn1" class="footnoteRef"
+      id="fnref1" name="fnref1"><sup>1</sup></a>. When working on
+      code in public, it is acceptable to have code that is not yet
+      ready for production (work in progress, often <a href=
+      "#semantic-versioning">indicated by the version number</a>.
+      This is how bugs can be caught and fixed early, improving the
+      quality of the code before it is put into production.
+    </p>
+    <p>
+      Government open source projects have potential to be harmed
+      by waiting for a particular event to occur before they are
+      made publicly available. The longer the project is run closed
+      prior to open sourcing it, the more difficult it will be to
+      open.
+    </p>
+    <p>
+      At each step in a project, developers face a choice:
+    </p>
+    <ul>
+      <li>
+        <p>
+          do something in a manner compatible with a hypothetical
+          future open sourcing; or
+        </p>
+      </li>
+      <li>
+        <p>
+          do it in a manner incompatible with open sourcing (eg
+          hard-coding an API key).
+        </p>
+      </li>
+    </ul>
+    <p>
+      Every time the latter is chosen, the project gets just a
+      little bit harder to open source. Sometimes you can't help
+      choosing the latter occasionally. It's very difficult to give
+      a future event the same present-day weight as, say, fixing
+      the incoming bugs reported or finishing a new feature.
+    </p>
+    <p>
+      Everything in an open source project is part of the version
+      history and exposed when you finally open source it. Cleaning
+      this up prior to releasing takes time and resources that
+      might have been avoided if the project had been open from the
+      beginning.
+    </p>
+    <h2 id="version-control">
+      Version Control
+    </h2>
+    <p>
+      Version control is like track-changes for documents but much
+      more useful. It allows multiple people to work on the same
+      code simultaneously and avoids having to pass the work back
+      and forth in order for individuals to make their changes.
+    </p>
+    <p>
+      Using version control allows you to:
+    </p>
+    <ul>
+      <li>
+        <p>
+          Iteratively build up your software over time.
+        </p>
+      </li>
+      <li>
+        <p>
+          Revert to an earlier version whenever you want to.
+        </p>
+      </li>
+      <li>
+        <p>
+          Record your changes and the reasons why you made them, to
+          help future developers understand the process.
+        </p>
+      </li>
+      <li>
+        <p>
+          Work on changes in parallel as a team before merging them
+          together (See <a href="#working-in-branches">Working in
+          branches</a>).
+        </p>
+      </li>
+      <li>
+        <p>
+          Tag stable releases of code using meaningful version
+          numbers (See <a href="#semantic-versioning">Semantic
+          Versioning</a>)
+        </p>
+      </li>
+    </ul>
+    <h2 id="distributed-version-control-systems">
+      Distributed version control systems
+    </h2>
+    <p>
+      <a href="https://git-scm.com/">Git</a> has become one of the
+      most widely used version control systems. Git is a
+      distributed version (DVCS) as it allows many developers to
+      work simultaneously on the same project code by allowing
+      multiple, distributed copies of the work and incremental
+      improvements to contributed to an agreed copy of the code
+      (usually in a publicly accessible code repository).
+    </p>
+    <p>
+      It's a good idea to use a DVCS for government open source
+      projects as they are useful in managing both internal work
+      and wider external contributors using the same set of
+      software development processes.
+    </p>
+    <p>
+      This is because:
+    </p>
+    <ul>
+      <li>
+        <p>
+          everyone involved in the process has a full copy of the
+          code and its history
+        </p>
+      </li>
+      <li>
+        <p>
+          it’s easier for developers to create ‘branches’ in their
+          code to explore new features or approaches without
+          encroaching on others work
+        </p>
+      </li>
+      <li>
+        <p>
+          developers can continue to work when the network is
+          unavailable, making small incremental commits, merging
+          their changes back with everyone else’s at a later date
+        </p>
+      </li>
+    </ul>
+    <h2 id="getting-up-to-speed-with-git">
+      Getting up to speed with Git
+    </h2>
+    <p>
+      If you are new to Git version control we recommend working
+      through one of the online learning courses available at:
+    </p>
+    <ul>
+      <li>
+        <p>
+          <a href="https://try.github.io" class=
+          "uri">https://try.github.io</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://www.codecademy.com/learn/learn-git"
+          class=
+          "uri">https://www.codecademy.com/learn/learn-git</a>
+        </p>
+      </li>
+    </ul>
+    <h2 id="making-commits">
+      Making commits
+    </h2>
+    <h3 id="make-commits-small-and-self-contained">
+      Make commits small and self-contained
+    </h3>
+    <p>
+      When committing new code to your version control, make sure
+      commits only relate to one feature or specific set of
+      changes. Keep the commits as small as possible (while still
+      achieving the outcome of the patch). An ideal commit is a
+      cross-section of work including: the code for the patch,
+      tests for the change (if relevant), documentation relating to
+      that change. As a government open source project maintainer,
+      set a good example in your commits and ask other developers
+      that contribute to do the same. It will help with peer review
+      and maintenance of the project over time<a href="#fn2" class=
+      "footnoteRef" id="fnref2" name="fnref2"><sup>2</sup></a>.
+    </p>
+    <h3 id="what-makes-a-good-commit-message">
+      What makes a good commit message?
+    </h3>
+    <p>
+      Your commit messages act as an audit trail for your code so
+      be sure that if you looked back over these in a year's time,
+      they would still make sense to you. More importantly, would
+      they make sense to any new team members that may join in the
+      future?
+    </p>
+    <p>
+      Write a commit message like you’re trying to explain it to
+      your future self. Generally a good commit message contains
+      the following<a href="#fn3" class="footnoteRef" id="fnref3"
+      name="fnref3"><sup>3</sup></a>:
+    </p>
+    <ul>
+      <li>
+        <p>
+          Short subject line (max. 50 characters).
+        </p>
+      </li>
+      <li>
+        <p>
+          Capitalised without a trailing full stop.
+        </p>
+      </li>
+      <li>
+        <p>
+          Written in the imperative (i.e. an instruction on
+          <em>how</em> it was done), for example "<em>Fix bug</em>"
+          (correct) vs. “<em>Fixed bug</em>” (incorrect).
+        </p>
+      </li>
+      <li>
+        <p>
+          If you need to explain more in your commit message, use
+          the commit body text.
+        </p>
+      </li>
+    </ul>
+    <h2 id="working-in-branches">
+      Working in branches
+    </h2>
+    <p>
+      It's a good rule of thumb to keep your "master" branch in a
+      production ready state. At any time you should be able to
+      safely deploy or install the "master" and have the current
+      stable version of your software running. This means that
+      practices such as contributing new code directly to the
+      master branch should be avoided. Use branches and pull
+      requests to achieve code improvements.
+    </p>
+    <p>
+      New features can be tested in separate branches without
+      interrupting the main project releasability. People need the
+      freedom to try new things without feeling like they're
+      interfering with other's' work.There are times when code
+      needs to be isolated from the main project branch, for
+      example getting a bug fixed or stabilising a new release
+      without worrying about tracking the moving target of daily
+      development activity. Developers need to be able to review
+      and comment on experimental work, treating branches as
+      first-class, publishable objects makes this possible.
+    </p>
+    <p>
+      <strong>Quick tips for branches</strong>
+    </p>
+    <ul>
+      <li>
+        <p>
+          Use branches liberally.
+        </p>
+      </li>
+      <li>
+        <p>
+          Encourage others on your team or contributing to the
+          project externally to use them.
+        </p>
+      </li>
+      <li>
+        <p>
+          Avoid long running branches, that is, build your feature
+          in small iterations and merge back frequently.
+        </p>
+      </li>
+      <li>
+        <p>
+          Watch out for branches becoming a mechanism for dividing
+          the development community's efforts (the eventual goal of
+          branches should be to merge changes back into the master
+          and disappear, as soon as possible not hang around for a
+          long time).
+        </p>
+      </li>
+      <li>
+        <p>
+          Use a branching approach that doesn't add undue overhead
+          to getting work completed. For example a large project
+          might make use of a branching standard called
+          "GitFlow"<a href="#fn4" class="footnoteRef" id="fnref4"
+          name="fnref4"><sup>4</sup></a>, this might add too much
+          undue process if the project is small (in which case you
+          might simply use feature branches<a href="#fn5" class=
+          "footnoteRef" id="fnref5" name="fnref5"><sup>5</sup></a>
+          and pull requests to merge to master).
+        </p>
+      </li>
+    </ul>
+    <h2 id="peer-reviewing">
+      Peer reviewing
+    </h2>
+    <h3 id="why-peer-review-in-public">
+      Why peer review in public?
+    </h3>
+    <p>
+      Peer reviewing is an important process for teams building
+      software. The benefits when peer review is carried out in
+      public are magnified as the potential pool of people
+      available to give constructive feedback is wider. This helps
+      in a number of ways.
+    </p>
+    <ul>
+      <li>
+        <p>
+          It can improve the quality of the software in a
+          measurable way eg reduced bugs per month by a percentage
+          because of peer reviewing.
+        </p>
+      </li>
+      <li>
+        <p>
+          Keeps a record of past software architecture decisions
+          (you can go back and discover why something was done,
+          this is good for new team members to get up to speed on
+          projects).
+        </p>
+      </li>
+      <li>
+        <p>
+          Keeps your software releasable, less chance of avoidable
+          bugs making it into your master branch if the peer review
+          picks it up before merging.
+        </p>
+      </li>
+      <li>
+        <p>
+          The team and wider community gets to learn about new code
+          as it’s being written.
+        </p>
+      </li>
+      <li>
+        <p>
+          Helps to establish and maintain code standards in your
+          open source projects.
+        </p>
+      </li>
+      <li>
+        <p>
+          Feedback more likely to be applied if made in public.
+        </p>
+      </li>
+    </ul>
+    <h3 id="carrying-out-a-technical-code-review">
+      Carrying out a technical code review
+    </h3>
+    <p>
+      There are some things you can do to make the process of
+      technical peer review smoother (both in your team and out in
+      the wider open source community). These include:
+    </p>
+    <ul>
+      <li>
+        <p>
+          Making sure you <a href=
+          "#what-makes-a-good-commit-message">write good commit
+          messages</a> to help the reviewer know what they are
+          reviewing.
+        </p>
+      </li>
+      <li>
+        <p>
+          Don’t peer review your own work, make sure to engage your
+          team and wider open source community..
+        </p>
+      </li>
+      <li>
+        <p>
+          Open a pull request as a way to initiate peer review
+          (allows comments directly on code).
+        </p>
+      </li>
+      <li>
+        <p>
+          Use "<span class="citation">@mentions</span>" to alert
+          others to consider peer reviewing your change.
+        </p>
+      </li>
+      <li>
+        <p>
+          Keep your reviewable code in a separate branch.
+        </p>
+      </li>
+      <li>
+        <p>
+          Peer review occurs directly before anything gets merged
+          into master.
+        </p>
+      </li>
+      <li>
+        <p>
+          Break down peer reviews into small pieces to help the
+          reviewer.
+        </p>
+      </li>
+      <li>
+        <p>
+          Developers can leave comments for reviewers in the source
+          code to help them.
+        </p>
+      </li>
+      <li>
+        <p>
+          Build a culture where catch bugs is a positive thing,
+          it’s about the software having less defects and serving
+          users better.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use testing tools like <a href=
+          "#automating-your-testing">Continuous Integration</a> to
+          automate some of the review process.
+        </p>
+      </li>
+    </ul>
+    <h3 id=
+    "making-peer-review-request-in-an-open-source-project-in-public">
+      Making peer review request in an open source project in
+      public
+    </h3>
+    <p>
+      The following is a high level technical walk-through the
+      process of raising a pull request on an open source project
+      in a public repository for peer review.
+    </p>
+    <ol style="list-style-type: decimal">
+      <li>
+        <p>
+          Find the project repository you want to contribute to.
+        </p>
+      </li>
+      <li>
+        <p>
+          Raise an "issue" outlining the feature you intend to work
+          on.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use this issues as the place to dialogue and work out
+          details of the new proposed feature. This avoids
+          disappointment of your patch being rejected by the
+          maintainers.
+        </p>
+      </li>
+      <li>
+        <p>
+          ‘Fork' a copy of the code repository into your own
+          editable public repository.
+        </p>
+      </li>
+      <li>
+        <p>
+          Checkout your copy of the code to your local development
+          environment.
+        </p>
+      </li>
+      <li>
+        <p>
+          Make a new branch to work in for your feature.
+        </p>
+      </li>
+      <li>
+        <p>
+          Once work is completed locally, push the branch of code
+          to your publicly accessible 'fork'.
+        </p>
+      </li>
+      <li>
+        <p>
+          Raise a 'pull request', a proposal of code changes, on
+          the original project repository.
+        </p>
+      </li>
+      <li>
+        <p>
+          There may be further online discussion while the code is
+          peer reviewed as part of the pull request.
+        </p>
+      </li>
+      <li>
+        <p>
+          Once agreed, the maintainer will accept the pull request
+          to merge branch into the project and the new feature will
+          now be available, ready for a release.
+        </p>
+      </li>
+    </ol>
+    <h3 id="when-someone-reviews-your-code">
+      When someone reviews your code
+    </h3>
+    <ul>
+      <li>
+        <p>
+          Be grateful for the reviewer's suggestions avoid
+          discounting them outright.
+        </p>
+      </li>
+      <li>
+        <p>
+          Don't take it personally. The review is of the code, not
+          you.
+        </p>
+      </li>
+      <li>
+        <p>
+          Provide reasoning for why the code exists and be open to
+          change.
+        </p>
+      </li>
+      <li>
+        <p>
+          Extract refactoring into new issues to be tackled in the
+          future.
+        </p>
+      </li>
+      <li>
+        <p>
+          Do not squash commit until the branch is ready to merge
+          so reviewers can read individual updates based on earlier
+          feedback.
+        </p>
+      </li>
+      <li>
+        <p>
+          Seek to understand the reviewer's perspective.
+        </p>
+      </li>
+      <li>
+        <p>
+          Try to respond to every comment.
+        </p>
+      </li>
+      <li>
+        <p>
+          If you’re using Continuous Integration wait until it
+          tells you the tests pass before merging.
+        </p>
+      </li>
+      <li>
+        <p>
+          Merge once you feel confident in the code and its impact
+          on the project.
+        </p>
+      </li>
+    </ul>
+    <h3 id="when-you-review-someone-elses-code">
+      When you review someone else's code
+    </h3>
+    <ul>
+      <li>
+        <p>
+          Seek to understand why the change is necessary (fixes a
+          bug, improves the user experience, refactoring of
+          existing code).
+        </p>
+      </li>
+      <li>
+        <p>
+          Communicate which ideas you feel strongly about and those
+          you don't.
+        </p>
+      </li>
+      <li>
+        <p>
+          Identify ways to simplify the code while still solving
+          the problem.
+        </p>
+      </li>
+      <li>
+        <p>
+          If discussions turn too philosophical or academic, move
+          the discussion offline. In the meantime, let the author
+          make the final decision on alternative implementations.
+        </p>
+      </li>
+      <li>
+        <p>
+          Offer alternative implementations, and assume the author
+          already considered them.
+        </p>
+      </li>
+      <li>
+        <p>
+          Seek to understand the author's perspective.
+        </p>
+      </li>
+      <li>
+        <p>
+          Sign off on the pull request with a "+1" or "Ready to
+          merge" comment once you’re happy with the change.
+        </p>
+      </li>
+    </ul>
+    <h2 id="coordinated-disclosure-of-security-issues">
+      Coordinated disclosure of security issues
+    </h2>
+    <p>
+      A coordinated disclosure is designed to improve security of
+      software systems and protect the public. It does this by
+      ensuring that reporters of these issues are treated
+      respectfully when they inform agencies of issues and that
+      both parties (your agency and the reporter) work together in
+      a responsible manner, in good faith and within the law to
+      correct the issue and then let others know about it so they
+      can update their own systems.
+    </p>
+    <p>
+      It’s important to ensure that external contributors know how
+      to correctly contact you if they discover a security
+      vulnerability in your open source software. Your organisation
+      should respond in good faith to the reporter and encourage
+      these type of reports being made safely for all involved.
+    </p>
+    <p>
+      You should have a process in place for this in the form of a
+      Coordinated Disclosure policy which informs contributors how
+      they should let you know about security related issues
+      (rather than publicly disclosing them) and how you will work
+      with them to resolve the issue that they have disclosed to
+      you.
+    </p>
+    <p>
+      Some suggestions when you publish your open source software:
+    </p>
+    <ul>
+      <li>
+        <p>
+          Read over the <a href=
+          "http://www.nzitf.net.nz/pdf/NZITF_Disclosure_Guidelines_2014.pdf">
+          New Zealand Internet Task Force Coordinated Disclosure
+          guidance</a>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Put in place a coordinated security policy at your
+          agency.<a href="#fn6" class="footnoteRef" id="fnref6"
+          name="fnref6"><sup>6</sup></a>
+        </p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p>
+          Publish your policy on your agency’s website and link to
+          it in your software code repository documentation to
+          ensure contributors can contact you about security
+          related issues.
+        </p>
+      </li>
+      <li>
+        <p>
+          Include a summary of what contributors should do when
+          they find a security issue in your code in your
+          CONTRIBUTING.md documentation alongside your code. A
+          sample insert for this is provided below.
+        </p>
+      </li>
+      <li>
+        <p>
+          Set up an email such as "security@AGENCY.govt.nz" that
+          can be used to report issues (you may also look into
+          ensuring this can be done securely by providing a public
+          encryption key<a href="#fn7" class="footnoteRef" id=
+          "fnref7" name="fnref7"><sup>7</sup></a>
+        </p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p>
+          Respond promptly and in good faith to reporters of
+          security issues (within 2 days is suggested), inform them
+          as to what the next steps in the process are to get the
+          issue resolved. Remember they have gone to the effort of
+          letting you know about something important to your
+          security and privacy, work with them to get the issue
+          resolved and both parties should take a "do no harm"
+          approach.
+        </p>
+      </li>
+      <li>
+        <p>
+          Once you agree with the reporter that there is an issue
+          to be fixed, keep the reporter informed as your work on
+          the fix (a simple update email once a week to the
+          reporter would be appropriate) to show you’re acting and
+          haven’t gone silent on the matter. Try and stick to any
+          timeframes you set to build trust with the reporter.
+        </p>
+      </li>
+      <li>
+        <p>
+          Check your system for any signs of it being compromised
+          and then fix the issue.
+        </p>
+      </li>
+      <li>
+        <p>
+          NZGOAL-SE suggests informing other agencies known to be
+          using your software, the CGIO, the GCPO and the Office of
+          the Privacy Commissioner so the widest number of users
+          get the opportunity to apply the fix to the software
+          before it becomes publicly disclosed.
+        </p>
+      </li>
+      <li>
+        <p>
+          Lastly, release your fix directly to your publicly
+          accessible code repository (and consider applying a
+          security patch version number as discussed in the
+          <a href="#semantic-versioning">section on Semantic
+          Versioning</a> along with an advisory note or CHANGELOG
+          in your project documentation informing users of the
+          known issue and prompting them to update.
+        </p>
+      </li>
+      <li>
+        <p>
+          Publicly acknowledge the reporter for helping with the
+          fix (if they agree).
+        </p>
+      </li>
+    </ul>
+    <h3 id="communicating-security-disclosures-to-contributors">
+      Communicating security disclosures to contributors
+    </h3>
+    <p>
+      Use the following as a starting point to include in your
+      CONTRIBUTING file regarding security issues (replace the
+      content in upper case with your own details):
+    </p>
+    <h2 id="security-issues">
+      Security Issues
+    </h2>
+    <p>
+      Please don't file security issues in the bugtracker or
+      publicly disclose them without first contacting us. We
+      operate a Coordinated Disclosure policy and will work with
+      you in good faith to responsibly fix and publicly disclose
+      security issues appropriately.
+    </p>
+    <p>
+      Please read over our coordinated disclosure policy at:
+      POLICY_URL
+    </p>
+    <h3 id="checklist-for-reporting">
+      Checklist for reporting
+    </h3>
+    <ul>
+      <li>
+        <p>
+          Don’t disclose the issue publicly
+        </p>
+      </li>
+      <li>
+        <p>
+          Document the issue to help us understand how to fix it
+        </p>
+      </li>
+      <li>
+        <p>
+          Read over our Coordinated Disclosure policy
+        </p>
+      </li>
+      <li>
+        <p>
+          Report the security issue to us directly via
+          security@AGENCY.govt.nz
+        </p>
+      </li>
+      <li>
+        <p>
+          Be professional and clear in your communications
+        </p>
+      </li>
+      <li>
+        <p>
+          Wait to hear back from us
+        </p>
+      </li>
+      <li>
+        <p>
+          Provide any follow up information if requested to help
+          resolve the issue
+        </p>
+      </li>
+      <li>
+        <p>
+          Work with us on timing and publishing of the security
+          issue.
+        </p>
+      </li>
+    </ul>
+    <h4 id="providing-encryption-for-secure-communication">
+      Providing encryption for secure communication
+    </h4>
+    <p>
+      There are tools available to generate private/public key
+      pairs, encrypt and decrypt email communication when
+      discussing software security related issues. You will also
+      want to look at learning how to accept encrypted mail and
+      decrypt it at your end.<a href="#fn8" class="footnoteRef" id=
+      "fnref8" name="fnref8"><sup>8</sup></a>
+    </p>
+    <ul>
+      <li>
+        <p>
+          For Windows: <a href="https://www.gpg4win.org/" class=
+          "uri">https://www.gpg4win.org/</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          For Mac: <a href="https://gpgtools.org/" class=
+          "uri">https://gpgtools.org/</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          For Linux: <a href="https://www.gnupg.org/index.html"
+          class="uri">https://www.gnupg.org/index.html</a>
+        </p>
+      </li>
+    </ul>
+    <p>
+      If you have set up a encryption to allow reporters to
+      security communicate with you you could also add the
+      following in your CONTRIBUTING file (you might also include
+      the generated public key itself in the documentation):
+    </p>
+    <p>
+      You can communicate securely to us by encrypting your email,
+      please use our public key available at: PUBLICKEY_URL.
+    </p>
+    <h2 id="semantic-versioning">
+      Semantic Versioning
+    </h2>
+    <p>
+      In order to indicate to other developers the status of
+      publicly released code, your project can adopt <a href=
+      "https://semver.org"><strong>Semantic Versioning
+      (SemVer)</strong></a>, that is, version numbers that have a
+      meaning.
+    </p>
+    <p>
+      SemVer is a three point versioning open standard in the
+      format of "X.Y.Z". For example, <a href=
+      "http://ckan.org/">CKAN</a><a href="#fn9" class="footnoteRef"
+      id="fnref9" name="fnref9"><sup>9</sup></a> is version
+      <a href="https://github.com/ckan/ckan/blob/master/CHANGELOG.rst#v252-2016-03-31">
+      <strong>2.5.2</strong></a> using the SemVer standard.
+    </p>
+    <p>
+      Let's detail what these numbers mean.
+    </p>
+    <p>
+      The <strong>"Z"</strong> refers to a “security” version which
+      indicates a bug or security fix has been added to the code
+      and you should look to upgrade as soon as possible. Security
+      releases should be backwards compatible with the current
+      minor version, that is, they should be able to be installed
+      without interrupting any additional customisations you may
+      have made to a minor version of the software. The security
+      release version changes the most frequently of the 3 levels.
+      In our CKAN example, there have been 2 security patches
+      applied to the current released version as you can see from
+      the number on the right of the version (X.Y.2).
+    </p>
+    <p>
+      The** "Y"** indicates a “minor” version and indicates that
+      new features have been added and they will be backwards
+      compatible with previous minor versions. For the CKAN example
+      here, you can read the middle number and quickly find out
+      that this is the 5th minor version of the software (X.5.Z)
+      and this version should be compatible with version 2.4.0 all
+      the way back to 2.0.0 or any future versions such as 2.6.0
+      for example.
+    </p>
+    <p>
+      The <strong>"X"</strong> indicates a "major" version and
+      changes if the code undergoes a major rewrite with backwards
+      <em>incompatible</em> changes. Major versions indicate to
+      developers that they will need to do some work when upgrading
+      the version of the software if they have made any
+      customisations. From the CKAN version number on the left
+      (2.Y.Z), you can find out that there have been 2 major
+      versions of the software released.
+    </p>
+    <p>
+      Putting out CKAN example together we can quickly get an
+      understanding as a developer that there have been have 2
+      major versions, 5 minor versions of the major version and 2
+      security patches to the latest minor version - hence version
+      <strong>2.5.2.</strong>
+    </p>
+    <p>
+      When first releasing an open source project publicly it is
+      common to use version 0.1.0 and begin to increment from this
+      point forward. This indicates that there is no major stable
+      version yet ready for production. Over time as incremental
+      contributions are made and the code is improved, tested and
+      deemed ready to use in projects the semantic version would
+      increment to 1.0.0.
+    </p>
+    <p>
+      SemVer tagging is widely practiced standard in the wider open
+      source software community and recommended for government open
+      source projects to help communicate to external contributors
+      valuable information about the project status.
+    </p>
+    <h2 id="testing-in-open-source-projects">
+      Testing in open source projects
+    </h2>
+    <p>
+      Testing in any software project is useful as it helps ensure
+      that software does what it is supposed to do. In context of
+      an open source project, this is even more important as
+      contributors to the project may be external and have less
+      context about the inner workings of the software than the
+      original maintainers.
+    </p>
+    <p>
+      While we won’t talk specifically about how to write tests for
+      specific applications (the scope depends on your project and
+      is too wide to cover here), manually testing can be very time
+      consuming so it is a good practice to set up an automated
+      suite of tests. This helps determine if any potential changes
+      to the code will cause it stop functioning as it is supposed
+      to <em>before</em> changes make it into the released version
+      of the code.
+    </p>
+    <p>
+      This is called often referred to as Regression testing (and
+      there are a number of other types you may want to look into
+      for your project including Unit testing and
+      Behavioural/functional testing).
+    </p>
+    <p>
+      Regression testing becomes useful as the size and complexity
+      of your project grows. There is a trade off of the time to
+      write the tests versus code for the application itself. Here
+      you need to use judgement and test appropriately for the size
+      and importance of the features in your open source project.
+    </p>
+    <p>
+      It is common practice in open source projects to require that
+      contributors ensure any existing tests pass before their
+      changes are accepted. It’s also preferred that they
+      contribute tests for new code they write and submit. Again,
+      in this case be careful that requiring tests with every
+      contribution doesn’t bottleneck the process of contribution
+      itself (you want to encourage not hinder people efforts). You
+      might want to describe what type of code changes do or do not
+      require testing explicitly in your project documentation so
+      contributors know when they need to write these.
+    </p>
+    <h3 id="automating-your-testing">
+      Automating your testing
+    </h3>
+    <p>
+      Many existing public code repositories include or can
+      integrate with automated regression testing tools (referred
+      Continuous Integration or CI). These can often be set up free
+      of charge for open source projects and help external
+      contributors see when a change they propose might affect the
+      software working as intended.
+    </p>
+    <p>
+      If you are using branches and pull requests as part of your
+      development workflow, most CI tools run your tests whenever a
+      new change is proposed via a branch or pull request. CI tools
+      can also block the change from being merged into the code if
+      the tests are failing which avoids bugs making their way into
+      the software to begin with.
+    </p>
+    <p>
+      The following are some available tools often used for
+      automated testing in open source projects.
+    </p>
+    <h4 id="travis-ci">
+      Travis CI
+    </h4>
+    <p>
+      <a href="https://travis-ci.org/" class=
+      "uri">https://travis-ci.org/</a>
+    </p>
+    <p>
+      Travis CI integrates with GitHub repositories to run your
+      tests automatically, whenever new code is pushed to a branch.
+      To set up your project to work with GitLab CI you include a
+      ".travis.yml" file in your project and then follow their
+      setup guide at: <a href=
+      "https://docs.travis-ci.com/user/getting-started/" class=
+      "uri">https://docs.travis-ci.com/user/getting-started/</a>
+    </p>
+    <h4 id="gitlab-ci">
+      GitLab CI
+    </h4>
+    <p>
+      <a href="https://about.gitlab.com/gitlab-ci/" class=
+      "uri">https://about.gitlab.com/gitlab-ci/</a>
+    </p>
+    <p>
+      GitLab CI is integrated into the GitLab code repository tool
+      (from version 8.0 and up). It’s a good choice if you are
+      using GitLab to host your open source project. To set up your
+      project to work with GitLab CI you include a ".gitlab-ci.yml"
+      file in your project and then follow their setup guide at:
+      <a href=
+      "https://docs.gitlab.com/ce/ci/quick_start/README.html"
+      class="uri">https://docs.gitlab.com/ce/ci/quick_start/README.html</a>
+    </p>
+    <h4 id="jenkins">
+      Jenkins
+    </h4>
+    <p>
+      <a href="https://jenkins.io/" class=
+      "uri">https://jenkins.io/</a>
+    </p>
+    <p>
+      Jenkins is a self hosted, open source CI tool. It’s useful
+      when you are testing code internally or if you are hosting
+      your own code repository tools for your projects. Assuming
+      you have an instance of Jenkins running, to set up your
+      project to work you include "JenkinsFile" file in your
+      project and then follow their setup guide at: <a href=
+      "https://jenkins.io/doc/book/pipeline/jenkinsfile/#creating-a-jenkinsfile"
+      class=
+      "uri">https://jenkins.io/doc/book/pipeline/jenkinsfile/#creating-a-jenkinsfile</a>
+    </p>
+    <div class="footnotes">
+      <hr>
+      <ol>
+        <li id="fn1">
+          <p>
+            The Cathedral and the Bazaar, 2015
+            http://www.catb.org/esr/writings/cathedral-bazaar/<a href="#fnref1">↩</a>
+          </p>
+        </li>
+        <li id="fn2">
+          <p>
+            See Costa, T. (2016). <a href=
+            "https://thoughtbot.com/maintaining-open-source-projects-sample.pdf">
+            Maintaining open source software.</a><a href=
+            "#fnref2">↩</a>
+          </p>
+        </li>
+        <li id="fn3">
+          <p>
+            See <a href=
+            "http://chris.beams.io/posts/git-commit/#why-not-how">more
+            detailed explanation of commit messages</a><a href=
+            "#fnref3">↩</a>
+          </p>
+        </li>
+        <li id="fn4">
+          <p>
+            See
+            http://nvie.com/posts/a-successful-git-branching-model<a href="#fnref4">↩</a>
+          </p>
+        </li>
+        <li id="fn5">
+          <p>
+            See
+            https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows#Topic-Branches<a href="#fnref5">↩</a>
+          </p>
+        </li>
+        <li id="fn6">
+          <p>
+            See the Office of the <a href=
+            "https://www.privacy.org.nz/news-and-publications/guidance-resources/vulnerability-disclosure">
+            Office of the Privacy Commissioner’s policy for a good
+            template</a>. (Available under Creative Commons
+            Attributions 3.0 NZ).<a href="#fnref6">↩</a>
+          </p>
+        </li>
+        <li id="fn7">
+          <p>
+            [Introduction to email encryption]
+            (https://support.mozilla.org/en-US/kb/digitally-signing-and-encrypting-messages).<a href="#fnref7">↩</a>
+          </p>
+        </li>
+        <li id="fn8">
+          <p>
+            See
+            https://support.mozilla.org/en-US/kb/digitally-signing-and-encrypting-messages<a href="#fnref8">↩</a>
+          </p>
+        </li>
+        <li id="fn9">
+          <p>
+            CKAN is the application used by beta.data.govt.nz open
+            data portal is as of Oct 2016.<a href="#fnref9">↩</a>
+          </p>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
