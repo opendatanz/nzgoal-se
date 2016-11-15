@@ -1,0 +1,14 @@
+{
+    "name": "opendatanz/nzgoal-se",
+    "description": "PHP application that outputs markdown content source for NZGOAL-SE and Guidance Notes into other formats for web publication and print.",
+    "author": "Cam Findlay <cfindlay@linz.govt.nz>",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+      "php": "^5.6",
+      "ext-tidy": "*",
+      "ryakad/pandoc-php": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
