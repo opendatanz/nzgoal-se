@@ -99,4 +99,4 @@ licensing, and future commercialisation of that Intellectual Property."
 [^5]: The Government Rules of Sourcing are available at
 [*http://www.business.govt.nz/procurement/for-agencies/key-guidance-for-agencies/the-new-government-rules-of-sourcing*](http://www.business.govt.nz/procurement/for-agencies/key-guidance-for-agencies/the-new-government-rules-of-sourcing)
 
-[<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+[<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>

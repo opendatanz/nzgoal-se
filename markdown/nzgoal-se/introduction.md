@@ -115,4 +115,4 @@ a.  explore, in greater detail, some of the issues addressed or raised
     in NZGOAL-SE; or
 b.  address operational or technical issues which arise in practice.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>

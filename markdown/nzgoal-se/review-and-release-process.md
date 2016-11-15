@@ -40,7 +40,7 @@ c.  does not expose either itself or those who may re-use the released
 **44.** A decision tree diagram for the review and release process is
 set out at paragraph 82 below.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 
 ## Stage 1: Copyright-related rights evaluation
@@ -161,7 +161,7 @@ c.  **adaptations of GPL or similarly FOSS-licensed software**: the
     be licensed under the same licence. In this scenario the agency
     cannot license its adaptation under the MIT licence.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 
 ## Stage 2: Evaluation of exceptions
@@ -195,7 +195,7 @@ b.  **FOSS licensing after amending or anonymising the source code**: If
     for the exception(s) applying, the Open Access and Licensing
     Principle is resurrected and one progresses to Stage 3.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 
 ## Stage 3: Select a FOSS licence
@@ -423,7 +423,7 @@ b.  **Adapted documentation**: If an agency is adapting pre-existing
     agency owns the copyright in the new document, it could select a
     Creative Commons licence for the document.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 
 ## Stage 4: Application of chosen licence[^21] {#stage-4-application-of-chosen-licence}
@@ -546,7 +546,7 @@ Alternatively, you could follow the approach suggested above for the MIT
 licence or the Free Software Foundation's suggested approach for the
 GPL.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 
 ## Stage 5: Release the software
@@ -568,7 +568,7 @@ f.  consider whether to:
         software; and/or
     ii. notify appropriate communities of interest.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 
 ## Review and release process decision tree

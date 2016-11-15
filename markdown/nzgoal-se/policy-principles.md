@@ -117,8 +117,7 @@ they're not familiar with.
 [^9]: GPL as used in NZGOAL-SE refers to the GNU General Public Licence version 3 or later. See
 [http://www.gnu.org/licenses/gpl-3.0.en.html](http://www.gnu.org/licenses/gpl-3.0.en.html)
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
-
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 ## Ensuring copyright ownership or right to sub-license
 
@@ -139,7 +138,7 @@ context, to check whether developers have reused tracts of code from
 elsewhere and, if they have, to assess the licences that apply to those
 tracts to ensure the agency has all the rights it needs.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 
 ## Exceptions
@@ -158,7 +157,7 @@ c.  **security or privacy risk**: release of the software on open source
     agency, organisation or individuals) or an unacceptable
     privacy-related risk.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 ## Adaptations
 
@@ -226,7 +225,7 @@ in any doubt on this issue, it should seek specialist advice (which
 could be both technical and legal) before releasing the software for
 re-use.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 ## Security code review
 
@@ -238,7 +237,7 @@ a.  consider whether there is any prospect that the code or associated
 b.  if there is such prospect, have the code and any associated files
     security-reviewed before release.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 
 ## No additional controls or discrimination
@@ -251,7 +250,7 @@ agencies are *not* able to license software under an open source
 software licence and then seek to discriminate between individual,
 not-for-profit and commercial uses of the software.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 
 ## No charging
@@ -260,7 +259,7 @@ not-for-profit and commercial uses of the software.
 software licences should not seek to charge people for access to the
 software.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 
 ## Updating FOSS licensed software
@@ -304,7 +303,7 @@ security bugs and issues in publicly released software. Guidance for
 the New Zealand context can be found on the NZITF website at
 [*http://www.nzitf.org.nz/pdf/NZITF\_Disclosure\_Guidelines\_2014.pdf*](http://www.nzitf.org.nz/pdf/NZITF_Disclosure_Guidelines_2014.pdf).
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 
 ## Contributions
@@ -448,7 +447,7 @@ only could it inhibit contributions but it could pose difficulties
 for contributing government departments given restrictions on the
 granting of indemnities under the Public Finance Act 1989.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 
 ## Obtaining rights when procuring or commissioning the development of software
@@ -492,7 +491,7 @@ d.  ensuring that the contract does not include confidentiality
     provisions that would inadvertently prevent release of the software
     under an open source software licence.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 
 ## Act fairly towards developers when drafting IP warranties and indemnities
@@ -519,7 +518,7 @@ source software licence or requires the service provider to do so on its
 behalf. Sample IP indemnity and IP warranty clauses are provided in the
 Annexure to NZGOAL-SE.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 
 ## Liability
@@ -533,7 +532,7 @@ that all disclaimers and exclusions contained in the MIT licence or the
 GPL (as applicable) are replicated when they release software under
 these licences.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
 
 
 ## Review and Release Process
@@ -543,4 +542,4 @@ Release Process before publicly releasing and licensing their software
 for re-use under a free and open source software licence. The Review and
 Release Process is set out below.
 
-<a style="text-align right;" href="#top"><strong>&uarr;Top</strong</a>
+<a style="text-align right;" href="#top"><strong>&uarr;Top</strong></a>
