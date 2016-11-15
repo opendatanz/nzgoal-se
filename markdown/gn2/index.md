@@ -18,3 +18,11 @@ These guidance notes cover technical practices for developers working on governm
 It’s important to note that alongside the technical considerations in this guidance note, you should also familiarise yourself with the communication and community management aspects of open source which are available in a separate guidance note. Part of developing an open licensed project requires the ability to engage in dialogue about your work, code out on the open, give and receive feedback and interact with contributors in public while using modern software development practices to produce and maintain the project’s code base over time.
 
 If you wish to contribute improvements and further information to these guidance notes you can do so via the [Open Data NZ GitHub repository](https://github.com/opendatanz/nzgoal-se).
+
+## Contents
+ - [Getting started](getting-started.md)
+ - [Working in the open](working-in-the-open.md)
+ - [Documenting your code](documenting-your-code.md)
+ - [Understanding copyright and licensing](understanding-copyright-and-licensing.md)
+ - [Creative Commons attribution and community contributors](creative-commons-attributions.md)
+ 
