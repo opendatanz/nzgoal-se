@@ -73,7 +73,7 @@ an open source software licence.
 20 An open and transparent software development process releases code early and builds it up iteratively in a public repository. This process can be used to help catch bugs, make it easier to maintain over time and improve reliability of the software[^4].
 
 ### Transparency of software code can build trust in government systems                                         
-21 In can be important for citizens to be able to see how something they interact with works and that, in turn, may foster trust that they are being treated fairly.
+21 It can be important for citizens to be able to see how something they interact with works and that, in turn, may foster trust that they are being treated fairly.
 
 Take for example, a digital public service that provides a calculation. If the business rules or calculations are not sensitive and do not raise any identifiable security or privacy risk then the code that produces the calculation could be released on open source terms.
 
@@ -101,7 +101,7 @@ An added benefit of this is that having calculations expressed in reusable code 
 
 30 Note that, while you might be able to set expectations as to how frequently you will reply, some questions about the software may be considered requests for official information. In such cases the Official Information Act 1982 would usually apply.
 
-31 Releasing your code doesn’t cause a flood of interaction to occur. Your commitment to interaction with the open source community may change over time if the software becomes well used. You could also consider using or relying upon trusted external contributors to help share the maintenance and answer questions.
+31 Releasing your code doesn’t necessarily cause a flood of interaction to occur. Your commitment to interaction with the open source community may change over time if the software becomes well used. You could also consider using or relying upon trusted external contributors to help share the maintenance and answer questions.
 
 ### We’re worried about licensing legal obligations
 32 NZGOAL-SE was created to help make the open source licensing process straightforward for government agencies. It includes a detailed set of principles, a review and release process and specimen contract clauses for IP indemnity and warranties agencies can insert into contracts with suppliers. Open source licensing is grounded in copyright, if you need assistance you should consider consulting your legal team.
@@ -110,7 +110,7 @@ An added benefit of this is that having calculations expressed in reusable code 
 33 If you don’t have internal technical support for software you’re thinking of releasing under an open source software licence, you have the option of talking to suppliers in the market about providing this support for you. Suppliers can study the software and offer commercial service offerings (usually training and support) around it due to its openly accessible nature [^10].
 
 ### Suppliers might charge more if they don’t get to own the copyright or know that the software will be released for all under an open source software licence
-34 While a valid concern, the IPR Guidelines are clear in stating that cost saving is usually not a sufficient reason for accepting a restricted licence (from supplier to agency) because accepting cost savings as a valid reason could: :
+34 While a valid concern, the IPR Guidelines are clear in stating that cost saving is usually not a sufficient reason for accepting a restricted licence (from supplier to agency) because accepting cost savings as a valid reason could:
 
   a. reward vendors for deliberately tendering an unrealistic all-of-government price while offering a realistic single agency licence price; or
   b. incentivise agencies to take a purely self-interested approach, at the expense of the government as a whole.
