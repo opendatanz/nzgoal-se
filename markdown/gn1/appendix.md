@@ -21,7 +21,7 @@ Contracts](https://www.ict.govt.nz/guidance-and-resources/open-government/procur
 The paragraphs are written on the assumption that a draft contract is
 attached to the RFP and that the draft contract confers ownership of new
 intellectual property rights on the procuring agency. The specimen
-clause for use in RFP below has been adapted from [NZGOAL Guidance Note 3: Procuring copyright works](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-guidance-notes/nzgoal-guidance-note-3/)[^18]
+clause for use in RFP below has been adapted from [NZGOAL Guidance Note 3: Procuring copyright works](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-guidance-notes/nzgoal-guidance-note-3/)[^19]
 and reads as follows:
 
 ```
@@ -62,4 +62,4 @@ and reads as follows:
         of the licences referred to in NZGOAL-SE.
 ```
 
-[^18]: [*https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-guidance-notes/nzgoal-guidance-note-3/*](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-guidance-notes/nzgoal-guidance-note-3/)
+[^19]: [*https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-guidance-notes/nzgoal-guidance-note-3/*](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-guidance-notes/nzgoal-guidance-note-3/)
