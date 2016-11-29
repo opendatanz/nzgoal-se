@@ -26,6 +26,8 @@ class Build {
 
     foreach (glob($folder . '/*') as $file)
     {
+      $content .= file_get_contents($file);
+    }
       //start the build
       echo 'Building ' . basename($file) . '... ';
 
@@ -34,9 +36,10 @@ class Build {
       $options = array(
           "from"  => "markdown",
           "to"    => "html",
-          "standalone" => null //this includes the meta data in the markup
+          "standalone" => null, //this includes the meta data in the markup
+          "toc" => null
       );
-      $html = $pandoc->runWith(file_get_contents($file), $options);
+      $html = $pandoc->runWith($content, $options);
 
       //tidy the output html
       $tidy = new Tidy();
@@ -45,11 +48,11 @@ class Build {
       $tidy->cleanRepair();
 
       // save to file
-      file_put_contents(self::$output_dir . '/' . basename($folder) . '/' . substr(basename($file),0,-3) . '.html', (string) $tidy);
+      file_put_contents(self::$output_dir . '/' . basename($folder) . '/' . basename($folder) . '.html', (string) $tidy);
 
       // output the work completed
       echo 'done!' . PHP_EOL;
-    }
+
     return true;
   }
 

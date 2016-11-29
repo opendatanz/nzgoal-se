@@ -4,10 +4,11 @@ description: Considering open source release for new software code during a gove
 creator: Cam Findlay <cfindlay@linz.govt.nz>
 publisher: Land Information New Zealand
 subject: open source, procurement, intellectual property, copyright,
-date: 2016-11-16
+date: 2016-11-29
 language: en
 rights: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
 ---
+
 ## Purpose
 1 This guidance note is to help government agencies understand:
 

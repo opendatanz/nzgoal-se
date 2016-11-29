@@ -1,15 +1,5 @@
----
-title: Communicating open source release during procurement
-description: Guidance on when and how to communicate your intention to open source a government software procurement.
-creator: Cam Findlay <cfindlay@linz.govt.nz>
-publisher: Land Information New Zealand
-subject: open source, procurement, intellectual property, copyright,
-date: 2016-11-16
-language: en
-rights: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
----
-{::options footnote_nr="17" /}
 
+## Communicating open source release during procurement
 38 The IPR Guidelines encourage communication of the copyright ownership
 intention as part of a Notice of Procurement, such as Request for
 Proposals (RFP), and rule 61 of the Government Rules of Sourcing
@@ -33,7 +23,7 @@ software licence: pre-market engagement, in your RFP and in the contract
 (that will usually be attached to or mentioned in the RFP). Each are
 covered in more detail below.
 
-## Pre-market engagement
+### Pre-market engagement
 42 You may be putting together a business case or
 request for information (RFI) to help define the problem you are trying
 to solve with your software development project. Framing your project as
@@ -70,7 +60,7 @@ reuse by other agencies has a low transaction cost.
     problem (these could be released as open source to test demand and
     reusability of the project in a more tangible way).
 
-## Request for proposal (RFP)
+### Request for proposal (RFP)
 45 The IPR Guidelines state that agencies should set out the conditions of
 copyright ownership in the RFP when going to market (which, at least for
 purchases worth \$100,000 or more, will be via the Government Electronic
@@ -115,7 +105,7 @@ questions such as:
  c. Will you require the supplier to carry out open development of the
     software?
 
-## Contracts
+### Contracts
 49 Before reaching the contracting stage of the procurement, you should
 have already explained your intention to release procured code under an
 open source software licence. However, in some situations you may have

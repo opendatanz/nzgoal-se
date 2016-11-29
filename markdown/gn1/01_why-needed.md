@@ -1,14 +1,5 @@
----
-title: Why is this guidance needed?
-description: A detailed discussion on the policy interaction and why the open source guidance is needed.
-creator: Cam Findlay <cfindlay@linz.govt.nz>
-publisher: Land Information New Zealand
-subject: open source, procurement, intellectual property, copyright,
-date: 2016-11-16
-language: en
-rights: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
----
 
+## Why is this guidance needed?
 4 When considering development of custom software from a supplier there
 are two policy documents to consider:
 
@@ -66,4 +57,4 @@ they are not relevant to this Guidance Note.
 ![open source procurement decision](../../img/gn1-release-process-procurement.png)
 
 [^1]: IPR Guidelines, p. 13. See
-    [*https://www.ict.govt.nz/guidance-and-resources/open-government/procurement-advice/guidelines-for-the-treatment-of-intellectual-property-rights-in-ict-contracts/decision-process-for-determining-ownership-and-commercialisation/*](https://www.ict.govt.nz/guidance-and-resources/open-government/procurement-advice/guidelines-for-the-treatment-of-intellectual-property-rights-in-ict-contracts/decision-process-for-determining-ownership-and-commercialisation/)
+    [https://www.ict.govt.nz/guidance-and-resources/open-government/procurement-advice/guidelines-for-the-treatment-of-intellectual-property-rights-in-ict-contracts/decision-process-for-determining-ownership-and-commercialisation/](https://www.ict.govt.nz/guidance-and-resources/open-government/procurement-advice/guidelines-for-the-treatment-of-intellectual-property-rights-in-ict-contracts/decision-process-for-determining-ownership-and-commercialisation/)

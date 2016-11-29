@@ -1,14 +1,5 @@
----
-title: 'APPENDIX: Communicating open source software licensing and release in Request For Proposals'
-description: Insert for RPFs to let suppliers know of the agency's intention to open source.
-creator: Cam Findlay <cfindlay@linz.govt.nz>
-publisher: Land Information New Zealand
-subject: open source, procurement, intellectual property, copyright,
-date: 2016-11-16
-language: en
-rights: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
----
 
+## APPENDIX: Communicating open source software licensing and release in Request For Proposals
 Agencies are encouraged to include the following paragraphs in their
 Requests For Proposals (RFPs) once they have decided to release procured
 software code under an open source software licence. Communicating this
@@ -62,4 +53,4 @@ and reads as follows:
         of the licences referred to in NZGOAL-SE.
 ```
 
-[^19]: [*https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-guidance-notes/nzgoal-guidance-note-3/*](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-guidance-notes/nzgoal-guidance-note-3/)
+[^19]: [https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-guidance-notes/nzgoal-guidance-note-3/](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-guidance-notes/nzgoal-guidance-note-3/)
