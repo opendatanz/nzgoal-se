@@ -23,13 +23,13 @@ class Build {
    * @return boolean true if completed, false if error
    */
   public function GenerateHTML($folder) {
-
+    $content = "";
     foreach (glob($folder . '/*') as $file)
     {
       $content .= file_get_contents($file);
     }
       //start the build
-      echo 'Building ' . basename($file) . '... ';
+      echo 'Building ' . basename($folder) . '... ';
 
       //convert md to html via pandoc bin
       $pandoc = new Pandoc();
@@ -48,7 +48,7 @@ class Build {
       $tidy->cleanRepair();
 
       // save to file
-      file_put_contents(self::$output_dir . '/' . basename($folder) . '/' . basename($folder) . '.html', (string) $tidy);
+      file_put_contents(self::$output_dir . '/' . basename($folder) . '.html', (string) $tidy);
 
       // output the work completed
       echo 'done!' . PHP_EOL;

@@ -1,6 +1,6 @@
 
 ## Why is this guidance needed?
-4 When considering development of custom software from a supplier there
+4. When considering development of custom software from a supplier there
 are two policy documents to consider:
 
  a. [Guidelines for Treatment of Intellectual Property Right in ICT
@@ -17,7 +17,7 @@ are two policy documents to consider:
     NZGOAL-SE helps agencies correctly license publicly funded software
     code using an open source licence when they have decided to do so.
 
-5 The IPR Guidelines default position is that suppliers should own the
+5. The IPR Guidelines default position is that suppliers should own the
 copyright in newly developed software code. The reasoning is that the
 government is not in the business of commercialising software. In
 certain limited situations the default can be overridden, one of these
@@ -26,7 +26,7 @@ open source terms"*[^1]. Open source licensing allows commercialisation
 opportunities of software code by anyone under the open source licence
 terms.
 
-6 If an agency decides *"yes, we intend to allow free use on open source
+6. If an agency decides *"yes, we intend to allow free use on open source
 terms"* then the IPR Guidelines recognise that an agency may wish to own
 new intellectual property rights in the software that is to be procured.
 This can be important because, as the NZGOAL-SE review and release
@@ -39,14 +39,14 @@ be achieved by obtaining a sufficiently broad licence from the supplier
 that allows release on open source terms but this path can be more
 complicated and involve more paper work.
 
-7 The IPR Guidelines do not contain guidance on what to consider when
+7. The IPR Guidelines do not contain guidance on what to consider when
 deciding whether to release software under an open source software
 licence. They also contain little guidance as to when and how to
 communicate to suppliers an agency’s intention to release procured
 software on open source terms (as that was not their purpose). These two
 aspects are addressed in this Guidance Note.
 
-8 The following diagram demonstrates how agencies can respect the IPR
+8. The following diagram demonstrates how agencies can respect the IPR
 Guidelines during a software procurement while incorporating a decision
 to release the procured software under an open source software licence.
 Note that it only considers the interaction between the IPR Guidelines
