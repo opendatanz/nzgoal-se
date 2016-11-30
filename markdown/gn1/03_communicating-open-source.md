@@ -1,30 +1,30 @@
 
 ## Communicating open source release during procurement
-38 The IPR Guidelines encourage communication of the copyright ownership
+40 The IPR Guidelines encourage communication of the copyright ownership
 intention as part of a Notice of Procurement, such as Request for
 Proposals (RFP), and rule 61 of the Government Rules of Sourcing
 contains a similar statement that applies to new intellectual property
 more generally. You should provide your reasoning for the decision to
 help suppliers understand and encourage responses.
 
-39 Considering your decision to open source license may occur as early as
+41 Considering your decision to open source license may occur as early as
 an initial investment proposal or building a business case. Your
 considerations may be informed through discussions with internal
 stakeholders, other agencies and with suppliers through pre-market
 engagement processes.
 
-40 Once you have decided that your agency intends to release new software
+42 Once you have decided that your agency intends to release new software
 code under an open source software licence, you will need to ensure you
 communicate this as early as possible to suppliers.
 
-41 There are three ideal times when you should communicate your agency's
+43 There are three ideal times when you should communicate your agency's
 intention to release publicly funded software under an open source
 software licence: pre-market engagement, in your RFP and in the contract
 (that will usually be attached to or mentioned in the RFP). Each are
 covered in more detail below.
 
 ### Pre-market engagement
-42 You may be putting together a business case or
+44 You may be putting together a business case or
 request for information (RFI) to help define the problem you are trying
 to solve with your software development project. Framing your project as
 a user problem to be solved, rather than specifying a technical solution
@@ -35,7 +35,7 @@ more about the project characteristics. You might also investigate the
 framework](https://www.ict.govt.nz/guidance-and-resources/accelerate/)
 to help guide your pre-market engagement.
 
-43 For example, you may discover existing government open source solutions
+45 For example, you may discover existing government open source solutions
 that fit your needs (or at least in part). In this case your project may
 reuse and build upon existing code, configuring it to your specific need
 and contributing back any resulting new software code. Alternatively,
@@ -47,7 +47,7 @@ duplication, give rise to a potential co-funding model[^17] and build
 support for releasing the code under an open source licence to ensure
 reuse by other agencies has a low transaction cost.
 
-44 During a pre-market engagement consider:
+46 During a pre-market engagement consider:
 
  a. Communicating with a wider set of government agencies.
  b. Opening a dialogue with related communities of practice (online and
@@ -61,7 +61,7 @@ reuse by other agencies has a low transaction cost.
     reusability of the project in a more tangible way).
 
 ### Request for proposal (RFP)
-45 The IPR Guidelines state that agencies should set out the conditions of
+47 The IPR Guidelines state that agencies should set out the conditions of
 copyright ownership in the RFP when going to market (which, at least for
 purchases worth \$100,000 or more, will be via the Government Electronic
 Tenders Service). If you have made the choice to release procured
@@ -71,7 +71,7 @@ it is clear that you are looking to procure developed software which you
 would like to release under an open source licence and that you are
 respecting the policy set out in the IPR Guidelines.
 
-46 In your RFP we recommend that you:
+48 In your RFP we recommend that you:
 
  a. State your decision to open source license the developed software.
  b. Make use of the RFP paragraph insert in the
@@ -92,11 +92,11 @@ respecting the policy set out in the IPR Guidelines.
         provide shared maintenance or your internal teams develop skills
         in the software to be able to support it.
 
-47 As a separate matter, it is also desirable to document your decision
+49 As a separate matter, it is also desirable to document your decision
 process to open source license the software including your motivations,
 concerns and risk mitigations.
 
-48 You may also wish to determine the
+50 You may also wish to determine the
 approach to releasing the software code publicly[^18] including asking
 questions such as:
 
@@ -106,7 +106,7 @@ questions such as:
     software?
 
 ### Contracts
-49 Before reaching the contracting stage of the procurement, you should
+51 Before reaching the contracting stage of the procurement, you should
 have already explained your intention to release procured code under an
 open source software licence. However, in some situations you may have
 learnt through the RFP process that open source software release is
@@ -116,19 +116,19 @@ intellectual property provisions in your contract are drafted in a
 manner that gives you the rights you need to release the software on
 open source terms.
 
-50 There are specimen contract clauses in the IPR Guidelines that can be
+52 There are specimen contract clauses in the IPR Guidelines that can be
 used as starting points for the intellectual property ownership and
 licensing section of your software development contract. The clauses are
 in Appendix One to the Guidelines and the relevant ones (short form,
 medium form and long form) are numbered A3, B3 and C3 (the choice
 between depends on the nature, value and risk of your procurement).
 
-51 Note that you can also:
+53 Note that you can also:
 
  a. replace the "Supplier Indemnity" clause in the IPR Guidelines Appendix One with the specimen "IP warranty and IP indemnity" clauses in the [Annexure of NZGOAL Software    Extension](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-se/annexure-specimen-ip-warranty-and-ip-indemnity-clauses/) in order to act in accordance with the "Act fairly towards developers when drafting IP warranties and indemnities" principle in NZGOAL-SE; and
  b. update your contract definitions with those from the NZGOAL Software Extension Annexure and the IPR Guidelines Appendix One, to the extent required.
 
-52 Agencies are encouraged to seek assistance from their legal teams for these tasks.
+54 Agencies are encouraged to seek assistance from their legal teams for these tasks.
 
 [^17]: NZ Government Common Web Platform shared service has a co-fund
     open source model. See https://www.cwp.govt.nz/working-with-cwp/development-pool/
