@@ -60,27 +60,27 @@ an open source software licence.
 #### Transparency of software code can build trust in government systems                                         
 21 It can be important for citizens to be able to see how something they interact with works and that, in turn, may foster trust that they are being treated fairly.
 
-Take for example, a digital public service that provides a calculation. If the business rules or calculations are not sensitive and do not raise any identifiable security or privacy risk then the code that produces the calculation could be released on open source terms.
+22 Take for example, a digital public service that provides a calculation. If the business rules or calculations are not sensitive and do not raise any identifiable security or privacy risk then the code that produces the calculation could be released on open source terms.
 
-An added benefit of this is that having calculations expressed in reusable code can improve consistency of this calculation across a range of software, both open source and proprietary. In some cases open source can also be used strategically to gain adoption of open standards and facilitate interoperability.
+23 An added benefit of this is that having calculations expressed in reusable code can improve consistency of this calculation across a range of software, both open source and proprietary. In some cases open source can also be used strategically to gain adoption of open standards and facilitate interoperability.
 
 #### Speed up government digital service provision                                                        
-22 There is a move by governments internationally to what is referred to as a Government as a Platform[^5] approach to digital services delivery. Agencies combine modular and reusable components of software and open data to deliver digital government services to citizens more quickly and iteratively improve them over time[^6].Open source licensing makes the reuse of digital service delivery components easier by reducing the transaction costs of acquiring and assembling the required components to deliver digital services to the public. Currently, the New Zealand Government ICT Strategy and Action Plan can be seen as supporting this approach as it calls for more "common capabilities" and that "common service components are re-used by agencies"[^7].
+24 There is a move by governments internationally to what is referred to as a Government as a Platform[^5] approach to digital services delivery. Agencies combine modular and reusable components of software and open data to deliver digital government services to citizens more quickly and iteratively improve them over time[^6].Open source licensing makes the reuse of digital service delivery components easier by reducing the transaction costs of acquiring and assembling the required components to deliver digital services to the public. Currently, the New Zealand Government ICT Strategy and Action Plan can be seen as supporting this approach as it calls for more "common capabilities" and that "common service components are re-used by agencies"[^7].
 
 ### Concerns about open source licensing of software
-23 The below sets out and assesses potential concerns agencies may have in relation to releasing procured software under an open source software licence.
+25 The below sets out and assesses potential concerns agencies may have in relation to releasing procured software under an open source software licence.
 
 #### What about security and privacy?
-24 Open source licensing of software code does not guarantee it will have superior security to code developed under a proprietary model or vice versa. A bug is a bug, and no software style is immune. However, making the code openly available may result in expert attention being given to it by experienced developers in the community that might not be available internally.
+26 Open source licensing of software code does not guarantee it will have superior security to code developed under a proprietary model or vice versa. A bug is a bug, and no software style is immune. However, making the code openly available may result in expert attention being given to it by experienced developers in the community that might not be available internally.
 
-25 Releasing software code does not mean releasing data the software uses, configuration of the software in production or other sensitive credentials. Security or privacy-sensitive code or configuration layers should not be released and NZGOAL-SE recognises that it’s Open Access and Licensing Principle does not apply if release of the software on open source terms would create an unacceptable security risk or an unacceptable privacy-related risk. A key point to note here is that, through good design, it will often be possible to separate security or privacy-sensitive code or configuration layers (not to be released) from the rest of the code that can be released.
+27 Releasing software code does not mean releasing data the software uses, configuration of the software in production or other sensitive credentials. Security or privacy-sensitive code or configuration layers should not be released and NZGOAL-SE recognises that it’s Open Access and Licensing Principle does not apply if release of the software on open source terms would create an unacceptable security risk or an unacceptable privacy-related risk. A key point to note here is that, through good design, it will often be possible to separate security or privacy-sensitive code or configuration layers (not to be released) from the rest of the code that can be released.
 
-26 If there is an identifiable security risk or the code forms a critical system for government and exposes security enforcing functions[^8] you might consider not releasing the code. However, as noted, you may be able to isolate sensitive code from the more general reusable code, releasing only the latter under an open source licence.
+28 If there is an identifiable security risk or the code forms a critical system for government and exposes security enforcing functions[^8] you might consider not releasing the code. However, as noted, you may be able to isolate sensitive code from the more general reusable code, releasing only the latter under an open source licence.
 
 #### We don’t want to be burdened with maintenance time and contributor questions after the release
-27 Releasing your code under open source terms doesn’t necessarily cause a flood of interaction to occur and you level of interaction may change over time if the software gets wide reuse.
+29 Releasing your code under open source terms doesn’t necessarily cause a flood of interaction to occur and you level of interaction may change over time if the software gets wide reuse.
 
-28 When you don’t have internal support experience to regularly maintain the project or allocated time to answer contributor questions, you can look to mitigate this through:
+30 When you don’t have internal support experience to regularly maintain the project or allocated time to answer contributor questions, you can look to mitigate this through:
 
  a. up-skilling support staff
  b. allocating regular time (however limited) to tend to project communications
@@ -88,33 +88,33 @@ An added benefit of this is that having calculations expressed in reusable code 
  d. sharing maintenance efforts by building a community of users around the project
  e. set expectations that the project is released ‘as is’ and only provide limited support[^10].
 
-29 If you have a support team, remember that you open source license your code, not your time and attention. You can usually set expectations as to how frequently you will reply to external contributors in the documentation accompanying your software. Note that some questions about the software may be considered requests for official information. In such cases the Official Information Act 1982 would usually apply.
+31 If you have a support team, remember that you open source license your code, not your time and attention. You can usually set expectations as to how frequently you will reply to external contributors in the documentation accompanying your software. Note that some questions about the software may be considered requests for official information. In such cases the Official Information Act 1982 would usually apply.
 
 #### We’re worried about licensing legal obligations
-30 NZGOAL-SE was created to help make the open source licensing process straightforward for government agencies. It includes a detailed set of principles, a review and release process and specimen contract clauses for IP indemnity and warranties agencies can insert into contracts with suppliers. Open source licensing is grounded in copyright, if you need assistance you should consider consulting your legal team.
+32 NZGOAL-SE was created to help make the open source licensing process straightforward for government agencies. It includes a detailed set of principles, a review and release process and specimen contract clauses for IP indemnity and warranties agencies can insert into contracts with suppliers. Open source licensing is grounded in copyright, if you need assistance you should consider consulting your legal team.
 
 #### We need on-call support for critical issues
-31 If you don’t have internal technical support for software you’re thinking of releasing under an open source software licence, you have the option of talking to suppliers in the market about providing this support for you. Suppliers can study the software and offer commercial service offerings (usually training and support) around it due to its openly accessible nature [^11].
+33 If you don’t have internal technical support for software you’re thinking of releasing under an open source software licence, you have the option of talking to suppliers in the market about providing this support for you. Suppliers can study the software and offer commercial service offerings (usually training and support) around it due to its openly accessible nature [^11].
 
 #### Suppliers might charge more if they don’t get to own the copyright or know that the software will be released for all under an open source software licence
-32 While a valid concern, the IPR Guidelines are clear in stating that cost saving is usually not a sufficient reason for accepting a restricted licence (from supplier to agency) because accepting cost savings as a valid reason could:
+34 While a valid concern, the IPR Guidelines are clear in stating that cost saving is usually not a sufficient reason for accepting a restricted licence (from supplier to agency) because accepting cost savings as a valid reason could:
 
   a. reward vendors for deliberately tendering an unrealistic all-of-government price while offering a realistic single agency licence price; or
   b. incentivise agencies to take a purely self-interested approach, at the expense of the government as a whole.
 
-33 Suppliers may still be able to commercially exploit the software under the terms of the open source licence.
+35 Suppliers may still be able to commercially exploit the software under the terms of the open source licence.
 
 #### It’s not in the national interest to release the software code on open source terms
-34 You may consider that the open source release of government software might compete directly with and unfairly impact local technology suppliers who developed the code or who have a similar commercial offering. Note, however, that:
+36 You may consider that the open source release of government software might compete directly with and unfairly impact local technology suppliers who developed the code or who have a similar commercial offering. Note, however, that:
   a. local suppliers themselves would be able to make use of the software and compete on service provision rather than selling code; and
   b. releasing publicly funded software under an open source software  licence could accelerate and improve government digital services and (as noted above) be seen as aligning with the New Zealand Government ICT Strategy and Action Plan.
 
-35 Potentially against that, another consideration is that accelerator[^12] or catalyst[^13] programmes and hackathon events[^14] are becoming more popular in driving better digital government services through the use of private-public initiatives and open government data[^15]. Private sector retention and exclusive commercial exploitation of software code produced through these may be an incentive for participants to take part (though some events require code to be open source licensed).
+37 Potentially against that, another consideration is that accelerator[^12] or catalyst[^13] programmes and hackathon events[^14] are becoming more popular in driving better digital government services through the use of private-public initiatives and open government data[^15]. Private sector retention and exclusive commercial exploitation of software code produced through these may be an incentive for participants to take part (though some events require code to be open source licensed).
 
 #### What if a significant bug is found in the released code?
-36 All open source licenses include liability exclusions and warranty disclaimers as part of the licence terms. They state that the party releasing the code will not be liable for the consequences of its use and that it is not giving any warranties in relation to the software.
+38 All open source licenses include liability exclusions and warranty disclaimers as part of the licence terms. They state that the party releasing the code will not be liable for the consequences of its use and that it is not giving any warranties in relation to the software.
 
-37 In addition, the NZGOAL Software Extension provides [guidance you can follow](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-se/nzgoal-se-policy-principles/#updating-foss-licensed-software) to help you responsibly correct and communicate the issue using a process called a Coordinated Disclosure[^16]. This process can help you to control and safely release sensitive changes reported by external contributors to your open source project.
+39 In addition, the NZGOAL Software Extension provides [guidance you can follow](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-se/nzgoal-se-policy-principles/#updating-foss-licensed-software) to help you responsibly correct and communicate the issue using a process called a Coordinated Disclosure[^16]. This process can help you to control and safely release sensitive changes reported by external contributors to your open source project.
 
 [^2]: [http://www.dwheeler.com/oss\_fs\_why.html\#wont-destroy-industry](http://www.dwheeler.com/oss_fs_why.html#wont-destroy-industry)
 
