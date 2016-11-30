@@ -10,7 +10,7 @@ rights: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
 ---
 
 ## Purpose
-1 This guidance note is to help government agencies understand:
+1. This guidance note is to help government agencies understand:
 
  a. Considerations that are relevant to deciding whether to release new
     software code produced by a supplier (procured) under an open source
@@ -23,7 +23,7 @@ rights: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
  c. How to make use of the two current policies relating to software
     code procurement and open source as an end to end process.
 
-2 It does not:
+2. It does not:
 
  a. Cover the use of existing open source software in procured projects
     from suppliers.
@@ -39,7 +39,7 @@ rights: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
     their legal advisors to the extent required.
 
 ## When to use this guidance?
-3 You should use this guidance when:
+3. You should use this guidance when:
 
  a.  You are procuring newly developed software code not already owned by
     your supplier; and
