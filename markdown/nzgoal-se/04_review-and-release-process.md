@@ -578,5 +578,4 @@ Release Process explained above. It is intended to be read in
 conjunction with the explanations above for each stage.
 
 [![NZGOAL-SE decision
-tree](assets/Uploads/_resampled/ResizedImageWzU0MCw3MDdd/nzgoal-se-decision-tree.png){.center
-width="540" height="707"}](assets/Uploads/nzgoal-se-decision-tree.png)
+tree](img/nzgoal-se-decision-tree.png)

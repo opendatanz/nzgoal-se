@@ -6,8 +6,7 @@ use Pandoc\Pandoc;
 class Build {
 
   public static $markdown_dir = __DIR__ . '/markdown';
-
-  public static $output_dir = __DIR__ . '/html';
+  public static $html_dir = __DIR__ . '/html';
 
   public function __construct() {
     foreach (glob(self::$markdown_dir . '/*', GLOB_ONLYDIR) as $folder) {
@@ -29,7 +28,7 @@ class Build {
       $content .= file_get_contents($file);
     }
       //start the build
-      echo 'Building ' . basename($folder) . '... ';
+      echo 'Building ' . basename($folder) . '.html... ';
 
       //convert md to html via pandoc bin
       $pandoc = new Pandoc();
@@ -48,20 +47,13 @@ class Build {
       $tidy->cleanRepair();
 
       // save to file
-      file_put_contents(self::$output_dir . '/' . basename($folder) . '.html', (string) $tidy);
+      file_put_contents(self::$html_dir . '/' . basename($folder) . '.html', (string) $tidy);
 
       // output the work completed
       echo 'done!' . PHP_EOL;
 
     return true;
   }
-
-  //@TODO build out this function to generate PDF version of the policy and guidance notes
-  public function GeneratePDF(){
-    return null;
-  }
-
 }
-
 //Run the build script
 new Build();

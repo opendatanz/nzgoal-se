@@ -10,6 +10,7 @@ rights: CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0/](https://c
 ---
 {::options footnote_nr="10" /}
 
+## Documenting your code
 Documentation is an important part of releasing your work as open source. This helps users get started, understand what your code does and how they might make use of it. Good documentation clearly answers questions that users have - either by informing or by instructing them.[^10]
 
 [^10]: See Instructing and Informing at http://slash7.com/2006/11/15/tech-writing-the-five-sins/
@@ -123,10 +124,6 @@ language: en
 rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
 ---
 ```
-
-# Your content here
-
-You first sentence starts here etc
 
 ### What documentation should I include with my code?
 

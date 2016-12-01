@@ -9,8 +9,9 @@ language: en
 rights: CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
 ---
 
-## Safe configuration practices
+## Working in the open
 
+### Safe configuration practices
 When releasing your code as open source software, ensure that you have not included any sensitive credentials in the publicly released code itself.
 
 For example:
@@ -27,7 +28,7 @@ A issue here is that if you are using version control, once one of these details
 
 A good practice to adhere to here is building a configuration layer into the software that you write. In your software code you can then write in references to the variables contained within the configuration file without exposing the values themselves. This make the software code much safer to share under an open source licence. You might also provide an example configuration file that users can duplicate before they configure their own copy of the software.
 
-## Release early and often
+### Release early and often
 
 Part of the value of developing code in the open is to 'release early, and often'[^1]. When working on code in public, it is acceptable to have code that is not yet ready for production (work in progress, often [indicated by the version number](#semantic-versioning). This is how bugs can be caught and fixed early, improving the quality of the code before it is put into production.
 
@@ -45,7 +46,7 @@ Every time the latter is chosen, the project gets just a little bit harder to op
 
 Everything in an open source project is part of the version history and exposed when you finally open source it. Cleaning this up prior to releasing takes time and resources that might have been avoided if the project had been open from the beginning.
 
-## Version Control
+### Version Control
 
 Version control is like track-changes for documents but much more useful. It allows multiple people to work on the same code simultaneously and avoids having to pass the work back and forth in order for individuals to make their changes.
 
@@ -61,7 +62,7 @@ Using version control allows you to:
 
 * Tag stable releases of code using meaningful version numbers (See [Semantic Versioning](#semantic-versioning))
 
-## Distributed version control systems
+### Distributed version control systems
 
 [Git](https://git-scm.com/) has become one of the most widely used version control systems. Git is a distributed version  (DVCS) as it allows many developers to work simultaneously on the same project code by allowing multiple, distributed copies of the work and incremental improvements to contributed to an agreed copy of the code (usually in a publicly accessible code repository).
 
@@ -75,7 +76,7 @@ This is because:
 
 * developers can continue to work when the network is unavailable, making small incremental commits, merging their changes back with everyone else’s at a later date
 
-## Getting up to speed with Git
+### Getting up to speed with Git
 
 If you are new to Git version control we recommend working through one of the online learning courses available at:
 
@@ -83,15 +84,15 @@ If you are new to Git version control we recommend working through one of the on
 
 * [https://www.codecademy.com/learn/learn-git](https://www.codecademy.com/learn/learn-git)
 
-## Making commits
+### Making commits
 
-### Make commits small and self-contained
+#### Make commits small and self-contained
 
 When committing new code to your version control, make sure commits only relate to one feature or specific set of changes. Keep the commits as small as possible (while still achieving the outcome of the patch). An ideal commit is a cross-section of work including: the code for the patch, tests for the change (if relevant), documentation relating to that change. As a government open source project maintainer, set a good example in your commits and ask other developers that contribute to do the same. It will help with peer review and maintenance of the project over time[^2].
 
 [^2]: See Costa, T. (2016). [Maintaining open source software.](https://thoughtbot.com/maintaining-open-source-projects-sample.pdf)
 
-### What makes a good commit message?
+#### What makes a good commit message?
 
 Your commit messages act as an audit trail for your code so be sure that if you looked back over these in a year's time, they would still make sense to you. More importantly, would they make sense to any new team members that may join in the future?
 
@@ -108,7 +109,7 @@ Write a commit message like you’re trying to explain it to your future self. G
 
 * If you need to explain more in your commit message, use the commit body text.
 
-## Working in branches
+### Working in branches
 
 It's a good rule of thumb to keep your "master" branch in a production ready state. At any time you should be able to safely deploy or install the "master" and have the current stable version of your software running. This means that practices such as contributing new code directly to the master branch should be avoided. Use branches and pull requests to achieve code improvements.
 
@@ -129,9 +130,9 @@ New features can be tested in separate branches without interrupting the main pr
 [^4]: See http://nvie.com/posts/a-successful-git-branching-model
 [^5]: See https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows#Topic-Branches
 
-## Peer reviewing
+### Peer reviewing
 
-### Why peer review in public?
+#### Why peer review in public?
 
 Peer reviewing is an important process for teams building software. The benefits when peer review is carried out in public are magnified as the potential pool of people available to give constructive feedback is wider. This helps in a number of ways.
 
@@ -147,7 +148,7 @@ Peer reviewing is an important process for teams building software. The benefits
 
 * Feedback more likely to be applied if made in public.
 
-### Carrying out a technical code review
+#### Carrying out a technical code review
 
 There are some things you can do to make the process of technical peer review smoother (both in your team and out in the wider open source community). These include:
 
@@ -171,7 +172,7 @@ There are some things you can do to make the process of technical peer review sm
 
 * Use testing tools like [Continuous Integration](#automating-your-testing) to automate some of the review process.
 
-### Making peer review request in an open source project in public
+#### Making peer review request in an open source project in public
 
 The following is a high level technical walk-through the process of raising a pull request on an open source project in a public repository for peer review.
 
@@ -195,7 +196,7 @@ The following is a high level technical walk-through the process of raising a pu
 
 10. Once agreed, the maintainer will accept the pull request to merge branch into the project and the new feature will now be available, ready for a release.
 
-### When someone reviews your code
+#### When someone reviews your code
 
 * Be grateful for the reviewer's suggestions avoid discounting them outright.
 
@@ -215,7 +216,7 @@ The following is a high level technical walk-through the process of raising a pu
 
 * Merge once you feel confident in the code and its impact on the project.
 
-### When you review someone else's code
+#### When you review someone else's code
 
 * Seek to understand why the change is necessary (fixes a bug, improves the user experience, refactoring of existing code).
 
@@ -231,7 +232,7 @@ The following is a high level technical walk-through the process of raising a pu
 
 * Sign off on the pull request with a "+1" or "Ready to merge" comment once you’re happy with the change.
 
-## Coordinated disclosure of security issues
+### Coordinated disclosure of security issues
 
 A coordinated disclosure is designed to improve security of software systems and protect the public. It does this by ensuring that reporters of these issues are treated respectfully when they inform agencies of issues and that both parties (your agency and the reporter) work together in a responsible manner, in good faith and within the law to correct the issue and then let others know about it so they can update their own systems.
 
@@ -267,17 +268,17 @@ Some suggestions when you publish your open source software:
 
 * Publicly acknowledge the reporter for helping with the fix (if they agree).
 
-### Communicating security disclosures to contributors
+#### Communicating security disclosures to contributors
 
 Use the following as a starting point to include in your CONTRIBUTING file regarding security issues (replace the content in upper case with your own details):
 
-## Security Issues
+### Security Issues
 
 Please don't file security issues in the bugtracker or publicly disclose them without first contacting us. We operate a Coordinated Disclosure policy and will work with you in good faith to responsibly fix and publicly disclose security issues appropriately.
 
 Please read over our coordinated disclosure policy at: POLICY_URL
 
-### Checklist for reporting
+#### Checklist for reporting
 
 * Don’t disclose the issue publicly
 
@@ -295,7 +296,7 @@ Please read over our coordinated disclosure policy at: POLICY_URL
 
 * Work with us on timing and publishing of the security issue.
 
-#### Providing encryption for secure communication
+##### Providing encryption for secure communication
 
 There are tools available to generate private/public key pairs, encrypt and decrypt email communication when discussing software security related issues. You will also want to look at learning how to accept encrypted mail and decrypt it at your end.[^8]
 
@@ -311,7 +312,7 @@ If you have set up a encryption to allow reporters to security communicate with 
 
 You can communicate securely to us by encrypting your email, please use our public key available at: PUBLICKEY_URL.
 
-## Semantic Versioning
+### Semantic Versioning
 
 In order to indicate to other developers the status of publicly released code, your project can adopt [**Semantic Versioning (SemVer)**](https://semver.org), that is, version numbers that have a meaning.
 
@@ -333,7 +334,7 @@ When first releasing an open source project publicly it is common to use version
 
 SemVer tagging is widely practiced standard in the wider open source software community and recommended for government open source projects to help communicate to external contributors valuable information about the project status.
 
-## Testing in open source projects
+### Testing in open source projects
 
 Testing in any software project is useful as it helps ensure that software does what it is supposed to do. In context of an open source project, this is even more important as contributors to the project may be external and have less context about the inner workings of the software than the original maintainers.
 
@@ -345,7 +346,7 @@ Regression testing becomes useful as the size and complexity of your project gro
 
 It is common practice in open source projects to require that contributors ensure any existing tests pass before their changes are accepted. It’s also preferred that they contribute tests for new code they write and submit. Again, in this case be careful that requiring tests with every contribution doesn’t bottleneck the process of contribution itself (you want to encourage not hinder people efforts). You might want to describe what type of code changes do or do not require testing explicitly in your project documentation so contributors know when they need to write these.
 
-### Automating your testing
+#### Automating your testing
 
 Many existing public code repositories include or can integrate with automated regression testing tools (referred Continuous Integration or CI). These can often be set up free of charge for open source projects and help external contributors see when a change they propose might affect the software working as intended.
 
@@ -353,19 +354,19 @@ If you are using branches and pull requests as part of your development workflow
 
 The following are some available tools often used for automated testing in open source projects.
 
-#### Travis CI
+##### Travis CI
 
 [https://travis-ci.org/](https://travis-ci.org/)
 
 Travis CI integrates with GitHub repositories to run your tests automatically, whenever new code is pushed to a branch. To set up your project to work with GitLab CI you include a ".travis.yml" file in your project and then follow their setup guide at: [https://docs.travis-ci.com/user/getting-started/](https://docs.travis-ci.com/user/getting-started/)
 
-#### GitLab CI
+##### GitLab CI
 
 [https://about.gitlab.com/gitlab-ci/](https://about.gitlab.com/gitlab-ci/)
 
 GitLab CI is integrated into the GitLab code repository tool (from version 8.0 and up). It’s a good choice if you are using GitLab to host your open source project. To set up your project to work with GitLab CI you include a ".gitlab-ci.yml" file in your project and then follow their setup guide at: [https://docs.gitlab.com/ce/ci/quick_start/README.html](https://docs.gitlab.com/ce/ci/quick_start/README.html)
 
-#### Jenkins
+##### Jenkins
 
 [https://jenkins.io/](https://jenkins.io/)
 

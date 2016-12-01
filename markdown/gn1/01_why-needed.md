@@ -54,7 +54,7 @@ and release of software on open source terms under NZGOAL-SE. There may
 be other reasons as to why an agency wishes to own procured software but
 they are not relevant to this Guidance Note.
 
-![open source procurement decision](../../img/gn1-release-process-procurement.png)
+![open source procurement decision](img/gn1-release-process-procurement.png)
 
 [^1]: IPR Guidelines, p. 13. See
     [https://www.ict.govt.nz/guidance-and-resources/open-government/procurement-advice/guidelines-for-the-treatment-of-intellectual-property-rights-in-ict-contracts/decision-process-for-determining-ownership-and-commercialisation/](https://www.ict.govt.nz/guidance-and-resources/open-government/procurement-advice/guidelines-for-the-treatment-of-intellectual-property-rights-in-ict-contracts/decision-process-for-determining-ownership-and-commercialisation/)
