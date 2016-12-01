@@ -260,6 +260,8 @@ Some suggestions when you publish your open source software:
 
 * Include a summary of what contributors should do when they find a security issue in your code in your CONTRIBUTING.md documentation alongside your code. A sample insert for this is provided below.
 
+* Ensure your policy makes it clear that security reports are sought after and that reporters acting in good faith will not be prosecuted. Often the first reaction from organisations (both public and private) is to look to prosecute or litigate the issue to ensure the reporter does not disclose details of the issue. This can often mean that security researchers will find vulnerabilities but not report them for fear of prosecution. Having a policy that makes it clear this won't happen to them is key to soliciting reports from outside researchers.
+
 * Set up an email such as "security@AGENCY.govt.nz" that can be used to report issues (you may also look into ensuring this can be done securely by providing a public encryption key[^7]
 
 [^7]: [Introduction to email encryption] (https://support.mozilla.org/en-US/kb/digitally-signing-and-encrypting-messages).
@@ -270,9 +272,9 @@ Some suggestions when you publish your open source software:
 
 * Check your system for any signs of it being compromised and then fix the issue.
 
-* NZGOAL-SE suggests informing other agencies known to be using your software, the CGIO, the GCPO and the Office of the Privacy Commissioner so the widest number of users get the opportunity to apply the fix to the software before it becomes publicly disclosed.
+* NZGOAL-SE suggests informing other agencies known to be using your software, the GCIO, the GCPO and the Office of the Privacy Commissioner (if applicable) so the widest number of users get the opportunity to apply the fix to the software before it becomes publicly disclosed.
 
-* Lastly, release your fix directly to your publicly accessible code repository (and consider applying a security patch version number as discussed in the [section on Semantic Versioning](#semantic-versioning) along with an advisory note or CHANGELOG in your project documentation informing users of the known issue and prompting them to update.
+* Lastly, release your fix directly to your publicly accessible code repository (and consider applying a security patch version number as discussed in the [section on Semantic Versioning](#semantic-versioning) along with an advisory note or CHANGELOG entry in your project documentation informing users of the known issue and prompting them to update.
 
 * Publicly acknowledge the reporter for helping with the fix (if they agree).
 
