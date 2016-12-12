@@ -22,15 +22,15 @@ This section is not a substitute for robust legal advice and every edge case. Fo
 
 Copyright is a set of property rights that automatically come into existence when you write software code. Copyright applies to the actual product of the work, not the idea to produce the work. Open source projects are grounded in copyright, there is an owner and this owner can decide what happens to the work, for example, licensing it under open source terms.
 
-When you create work while employed or are commissioned to write software (as a contractor) then the owner of the copyright is the entity that you did the work on behalf of, you don’t personally hold the copyright in this situation.
+When you create work while employed or are commissioned to write software (as a contractor) then the owner of the copyright is generally the entity that you did the work on behalf of, you don’t personally hold the copyright in this situation (unless it has been specifically written into your contract that you do).
 
-In terms of code created in or on behalf of the New Zealand Government (the "Crown"), unless contracted out of ( that is, arrangements made in the contract to alter the default):
+In terms of code created in or on behalf of the New Zealand Government (the "Crown"), unless contracted out of (that is, arrangements made in the contract to alter the default):
 
  "the Crown is the first owner of any copyright subsisting in any work created by a person who is employed or engaged by the Crown, under a contract of service, apprenticeship, or a contract for services" (Crown Copyright, 2014).
 
 This is called ["Crown Copyright"](https://en.wikipedia.org/wiki/Crown_copyright#New_Zealand) and means the NZ Government as a whole owns the copyright in the code (and the agencies look after it on the Crown’s behalf).
 
-Other agencies could make use of this Crown Copyright code, however Crown Copyright doesn’t apply to some organisations in Government. Crown Entities and State-owned Enterprises for example are excluded from Crown Copyright when they create works (in this case the Crown Entity itself is the copyright owner). In this situation , in order for the widest reuse across NZ Government in the simplest way, you can license the code using open source licences as set out in NZGOAL Software Extension.
+Other agencies could make use of this Crown Copyright code, however Crown Copyright doesn’t apply to some organisations in Government. Crown Entities and State-Owned Enterprises for example are excluded from Crown Copyright when they create works (in this case the Crown Entity itself is the copyright owner). In this situation, in order for the widest reuse across NZ Government in the simplest way, you can license the code using open source licences as set out in NZGOAL Software Extension.
 
 ### Licensing
 
@@ -38,7 +38,7 @@ Licensing is related to copyright but is a distinct concept. Licensing concerns 
 
 Open source licenses grant a set of rights normally reserved for the copyright holder (hence the term "all rights reserved" you often see in association with copyright) to another person. For instance, the right to use, copy, modify, or redistribute.
 
-This license is provided in writing along with the code (in the LICENSE file) and states the terms under which the code may be used to the world at large, you don’t have to ask permission specifically. Most common licence types are the "copyleft" and the “permissive” and there are many licences you can use that fit into these two categories.
+This license is provided in writing along with the code (in the LICENCE file) and states the terms under which the code may be used by the world at large, they won’t have to ask permission specifically. Most common licence types are the “copyleft” and the “permissive” and there are many licences you can use that fit into these two categories. 
 
 For government open source projects we recommend the use of one of two licenses, the GPL or the MIT. See [NZGOAL Review and release process](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-se/nzgoal-se-review-and-release-process/) which sets out in more detail the legal aspects of selecting and applying an open source licence.
 
@@ -52,13 +52,13 @@ Under such terms, either the individual contributor will retain the copyright, a
 The source code for this [name of project or software] is licensed under the [insert name of applicable free and open source software licence]. By contributing source code to this [name of project or software], you are agreeing to license your contributions under and on the terms of the [insert name of same licence]. Please note that your licence is irrevocable and royalty-free. You or your licensors retain any copyright in your contributions while allowing others to re-use the source code in any way they like as long as they meet the requirements of the licence.
 ```
 
-Alternatively, the project maintainer may request that copyright be assigned to them at such time they will license the code under the same terms as the repository so the contributor can still make use of their contributions along with all other users. Note, NZGOAL Software Extension **doesn’t recommend this second approach** as it can been seen as "over-reaching" in its position as copyright holder of externally contributed code.
+Alternatively, the project maintainer may request that copyright be assigned to them. At such time they will license the code under the same terms as the repository so the contributor can still make use of their contributions along with all other users. Note, NZGOAL Software Extension **doesn’t recommend this second approach** as it can been seen as "over-reaching" in its position as copyright holder of externally contributed code.
 
-Either way the copyright is managed for contributions, the rights and freedoms of the shared code remain the same, all can reuse, copy, modify and redistribute because of the overall open source licence the project is released under allows this.
+Either way the copyright is managed for contributions, the rights and freedoms of the shared code remain the same - all can reuse, copy, modify and redistribute because the overall open source licence the project is released under allows this.
 
 ### What do contractors need to know about copyright and licensing?
 
-As a contractor doing work for New Zealand Government agencies, it's important to be aware that unless you have explicitly stated in your services contract that you will be the owner of any copyright material you produce while working for the New Zealand public sector then the agency that commissions you to do the work, owns the copyright in the work you produce for them for the duration of the contract.
+As a contractor doing work for New Zealand Government agencies, it's important to be aware that unless you have explicitly stated in your services contract that you will be the owner of any copyright material you produce while working for the New Zealand public sector, then the agency that commissions you to do the work owns the copyright of the work you produce for them for the duration of the contract.
 
 This is stated in legislation under the New Zealand Copyright Act 1994:
 
