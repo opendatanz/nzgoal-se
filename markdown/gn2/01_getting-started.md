@@ -37,8 +37,10 @@ A key concept of using or maintaining an open source project is the "Don’t rep
     * [Ruby Gems](https://rubygems.org/) - Ruby code libraries
 
     * [PyPi](https://pypi.python.org/pypi) - Python code packages
+    
+    * [Drupal Modules](https://www.drupal.org/project/project_module) - Extensions to Drupal CMS
 
- * Keep an open mind, you may find that parts of your feature exist already in existing libraries. If you find part of what you intended to build ask yourself if you could reuse it in part part and build further on top of it to develop the feature you need.
+ * You may find that parts of your feature exist already in existing libraries. If you find part of what you intended to build ask yourself if you could reuse it in part and extend it to develop the feature you need.
 
  * Before selecting existing code to reuse, examine how well maintained it already is:
 
@@ -54,14 +56,14 @@ A key concept of using or maintaining an open source project is the "Don’t rep
 
     * It’s a good practice to base your new developments on maintained existing code, however if the code is not well maintained and you find it still solves your problem you may want to consider maintaining it yourself as a derivative version.
 
- * In the case of an abandoned repository of code, try and at least contact the maintainer.
+ * In the case of an abandoned repository of code, try to contact the maintainer.
 
     * You may be able to adopt the original repository and become its new maintainer (or co-maintainer with others). This is preferable over "forking" the code (taking a copy of it and developing it in parallel).
 
     * The ideal is for improvements to end up in the original repository however sometimes you have no choice (for example if the code has been abandoned or not actively maintained).
 
 ### Where and how to publicly release your code?
-Part of the open source process involves putting your code online in an openly accessible way (not just a zip file on your agency website). You will want to ensure there is a process for others (and your own team) to contribute improvements to this code, raise issues and control the collaborative development process. Agencies should look to make use of existing code management tools wherever possible (NZGOAL-SE advocates for this) to enable others to find and reuse the code also to avoid the operational costs of running such an ICT system. There are online repositories (both free and paid) as well as self-hosted options available (should you wish to operate your own code repository).
+Part of the open source process involves putting your code online in an openly accessible way (not just a zip file on your agency website). You will want to ensure there is a process for others (and your own team) to contribute improvements to this code, raise issues and control the collaborative development process. Agencies should look to make use of existing code management tools wherever possible (NZGOAL-SE advocates for this) to enable others to find and reuse the code to avoid the operational costs of running such an ICT system. There are online repositories (both free and paid) as well as self-hosted options available (should you wish to operate your own code repository).
 
 Some of the available options include:
 
@@ -77,13 +79,13 @@ Some of the available options include:
 
  * [Drupal.org](https://www.drupal.org/node/648898) (for Drupal themes and modules)
 
-Which ever option you choose, you’ll want to ensure that it is easy for external parties to interact with. If a contributor has an important fix to your software and cannot submit it or find the contact details for you as the maintainer, then that work may never see the light of day and the benefit of community contributions of open source is lost.
+Whichever option you choose, you’ll want to ensure that it is easy for external parties to interact with. If a contributor has an important fix to your software and cannot submit it or find the contact details for you as the maintainer, then that work may never see the light of day and the benefit of community contributions to open source is lost.
 
 #### Setting up an organisation account
 
 When setting up a code repository account to make your public open source releases, agencies should avoid signing up for an individual user account. It is recommended to set up an organisational account (in some code repositories these are called "groups"). You can then assign access to individual developer accounts within that organisation.
 
-Organisation account have the advantage of:
+Organisation accounts have the advantage of:
 
  * Being able to organise a number of open source projects in one central location.
 
@@ -91,15 +93,15 @@ Organisation account have the advantage of:
 
  * Ensure open source projects are not tied to one individual and are available into the future (even as staff come and go from the projects).
 
-For example, the [govt.nz website team have a GitHub organisation](https://github.com/GOVTNZ) grouping all the open source licensed code they have released in one place, they assign individual developer access to these projects when needed.
+For example, the [govt.nz website team have a GitHub organisation](https://github.com/GOVTNZ) grouping all the open source licensed code they have released in one place, and they assign individual developer access to these projects when needed.
 
 When working with external contractors or across agencies, giving them read or write access to your repository is encouraged. It facilitates the flow of ideas and builds stronger community support around your open source projects.
 
-Add the additional and removal of developer access to your staff/contractor induction and exit processes. Ideally, have someone like a team lead or IT manager that is savvy with code repository account management hold the administrator access to the organisation account so that they can add or remove staff when required (otherwise you may need to document the process and make available to your HR team). Don’t give admin rights to the organisation account to anyone but your agency staff.
+Communicate the addition and removal of developer access to your staff/contractor induction and exit processes. Ideally, have someone like a team lead or IT manager that is savvy with code repository account management hold the administrator access to the organisation account, so that they can add or remove staff when required (otherwise you may need to document the process and make available to your HR team). Don’t give admin rights to the organisation account to anyone but your agency staff.
 
 #### Individual user accounts
 
-Government and contractor developers should use individual accounts when committing their code changes and responding to contributors. They should assign their ".govt.nz" email address to the account. This helps to keep an audit trail of the work history and shows others which code has come from the official government maintainer of the project. It’s important to maintain transparency when developing code in the open and this helps everyone contributing to the project know who to contact when working with an open source project. If you already have an account with the code management tool in use for the project, rather than making a new account you can often associate your “.govt.nz” email address to your account as a secondary email.
+Government and contractor developers should use individual accounts when committing their code changes and responding to contributors. They should assign their ".govt.nz" email address to the account. This helps to keep an audit trail of the work history and shows others which code has come from the official government maintainer of the project. It’s important to maintain transparency when developing code in the open. This helps everyone contributing to the project know who to contact when working with an open source project. If an individual already has an account with the code management tool in use for the project, rather than making a new account they can often associate their “.govt.nz” email address to the account as a secondary email.
 
 If you are signing up for a new account:
 
@@ -109,9 +111,9 @@ If you are signing up for a new account:
 
  3. If available, set up two-factor authentication to keep your account secure.
 
- 4. Request your team to be add you to the organisation account that has been set up.
+ 4. Ask your team to add you to the organisation account that has been set up.
 
- 5. Ensure that any notifications from the project go to your ".govt.nz“ email .
+ 5. Ensure that any notifications from the project go to your ".govt.nz“ email.
 
  6. Respect any agency or project specific code of conduct.
 
@@ -119,12 +121,12 @@ If you are signing up for a new account:
 
 ### What to include in your first code release
 
- * Your software code
+ * Your software code.
 
  * A licence (it’s not open source without a licence!)
 
  * Supporting documentation. See ["What documentation should I include with my code?](documenting-you-code#what-documentation-should-i-include-with-my-code).
 
- * Any supporting project metadata files (note a metadata standard and discovery portal has not yet been set to catalogue NZ government open source projects. This may develop in the future, if so we’ll update these guidance notes when applicable).
+ * Any supporting project metadata files (note: a metadata standard and discovery portal has not yet been set to catalogue NZ government open source projects. This may be developed in the future. If so we’ll update these guidance notes when applicable).
 
  * Tag a version (See [Semantic Versioning](working-in-the-open#semantic versioning) or best practices established already in the project or framework your work relates to).
