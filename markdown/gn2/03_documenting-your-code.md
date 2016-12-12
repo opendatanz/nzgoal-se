@@ -17,9 +17,9 @@ Documentation is an important part of releasing your work as open source. This h
 
 ### General points about technical documentation
 
-* Document your code for your own future reference (because it’s in the open others will benefit too), chances are one day you’ll thank yourself (and your team).
+ * Document your code for your own future reference, chances are one day you’ll thank yourself (and your team). Because it’s in the open others will benefit too!
 
-* Some documentation is better than none. Leave documentation "stubs" (pages with headings of known areas not documented), this helps by providing a clear place to contribute documentation and shows you are aware of what is and isn’t complete. It is common practice in open source to accept things as incomplete as long as this is pointed out to users.
+ * Some documentation is better than none. Leave documentation "stubs" (pages with headings of known undocumented areas). This helps by providing a clear place to contribute documentation and shows you are aware of what is and isn’t complete. It is common practice in open source to accept things as incomplete as long as this is pointed out to users.
 
 * Understand that documentation is never really finished, it will evolve as your code does.[^11]
 
@@ -39,11 +39,11 @@ There are generally 3 types of documentation that either inform or instruct your
 
 [^12]: See https://jacobian.org/writing/what-to-write/
 
-1. **Tutorials** - Step-by-step guides that instruct your user how to do something specific with your code. This might be a detailed walkthrough of getting started or how to accomplish a common coding task. They should be short, easy to complete (and not too easy that learning doesn’t occur) and should demonstrate what it’s like to work with your project’s code.
+1. **Tutorials** - Step-by-step guides that instruct your user how to do something specific with your code. This might be a detailed walkthrough of getting started or how to accomplish a common coding task. They should be short, easy to complete (but not so easy that learning does't occur) and should demonstrate what it’s like to work with your project’s code.
 
-2. **Guides** - These will form the main bulk of your documentation. They are used to describe and inform users about the concepts and features you’ve included in your software. These might also include some code snippets to help explain concepts. Aim for completeness, a user should be able to feel like they have a good grasp on a particular aspect of your software after reading these guides.
+2. **Guides** - These will form the main bulk of your documentation. They are used to describe and inform users about the concepts and features you’ve included in your software. These might also include some code snippets to help explain concepts. Aim for completeness; a user should be able to feel like they have a good grasp on a particular aspect of your software after reading these guides.
 
-3. **Reference material** - This details your softwares public APIs (methods and classes) that developers can make use of when adapting to suit their needs. Developers use these guides to look up the arguments and implementation specifics of your code so the audience is likely more technical. Reference material is not a substitute for good well written guides and tutorials.
+3. **Reference material** - This details the public APIs (methods and classes) of the software that developers can make use of when adapting to suit their needs. Developers use these guides to look up the arguments and implementation specifics of your code so the audience is likely to be more technical. Reference material is not a substitute for well written guides and tutorials.
 
 ### Markdown documentation
 
@@ -53,7 +53,7 @@ Use a open standard format when writing your documentation so that anyone can re
 
 Markdown documentation is treated exactly the same as code in your version control system - you can track the changes over time, many developers are able to work on it at the same time and merge changes together once ready to release.
 
-Markdown is a text file and saved with the file extension ".md", you write your content using plain text and use a set of plain text “marks”  to represent the format of your document.
+Markdown is a text file and saved with the file extension ".md". You write your content using plain text and use a set of plain text “marks”  to represent the format of your document.
 
 #### Example of markdown format
 
@@ -83,25 +83,27 @@ An example of Markdown looks like this when writing it:
 
 Markdown is rendered into human readable html pages. For example the above Markdown would render as follows when viewed online as part of your code repository:
 
-# **My documentation**
 
-This is a paragraph of text talking about my work and how you might make use of it as a developer. You’ll note paragraphs need no extra formatting.
+># **My documentation**
+>
+>This is a paragraph of text talking about my work and how you might make use of it as a developer. You’ll note paragraphs need no extra formatting.
+>
+>* Here I’ll make a bullet point
+>
+>* And another
+>
+>* One more
+>
+>1. An ordered list of numbers
+>
+>2. Another number
+>
+>## **Here is a sub heading**
+>
+>### **And a sub, sub-heading**
+>
+>[Here is a link](https://ict.govt.nz/)
 
-* Here I’ll make a bullet point
-
-* And another
-
-* One more
-
-1. An ordered list of numbers
-
-2. Another number
-
-## **Here is a sub heading**
-
-### **And a sub, sub-heading**
-
-[Here is a link](https://ict.govt.nz/)
 
 There are several [guides](https://daringfireball.net/projects/markdown/) and [cheat sheets ](https://guides.github.com/features/mastering-markdown/) that show the full range of formatting options.
 
@@ -109,7 +111,7 @@ We recommend learning and making use of Markdown for government open source docu
 
 #### Markdown Metadata
 
-Another great aspect of Markdown format is you can also include metadata directly within it. You might use this to provide additional information to users about the nature of the documentation contained in the document. Markdown metadata is 3 dashes followed by key/value pairs at the top of your document before you start the first paragraph, closed with a final 3 dashes. Any metadata standard can be represented, it would be suggested to use of a few commons attributes like "title" and “description” and you might also implement an existing open metadata standard such as [Dublin Core](http://dublincore.org/documents/usageguide/elements.shtml).
+Another great aspect of Markdown format is you can also include metadata directly within it. You might use this to provide additional information to users about the nature of the documentation contained in the document. Markdown metadata is 3 dashes followed by key/value pairs at the top of your document before you start the first paragraph, closed with a final 3 dashes. Any metadata standard can be represented, but use of a few commons attributes like “Title” and “Description” is recommended and you might also implement an existing open metadata standard such as [Dublin Core](http://dublincore.org/documents/usageguide/elements.shtml).
 
 For example:
 ```
@@ -127,13 +129,13 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
 
 ### What documentation should I include with my code?
 
-* **LICENSE.md** - This should include the text of your chosen open source licence (from NZGOAL Software Extension this will usually be MIT or GPL v3).
+* **LICENSE.md** - This should include the text of your chosen open source licence (from NZGOAL Software Extension; this will usually be MIT or GPL v3).
 
-* **README.md** - This will likely be the first piece of documentation your users read, depending on the size of your project it may be the  only documentation you include. See below for what to include in your readme file.
+* **README.md** - This will likely be the first piece of documentation your users read, and depending on the size of your project it may be the only documentation you include. See below for what to include in your readme file.
 
 * **CONTRIBUTING.md** - This file includes information to potential contributors about any code of conduct and processes that users need to be aware of if they contribute to the project such as security disclosures and licensing considerations. The use of a contributing file is mentioned in [NZGOAL Software Extension contribution principles](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-se/nzgoal-se-policy-principles/#contributions).
 
-* **CHANGELOG.md** - Includes a list of changes you make to your code each time you release new versions. You might provide a link to an external changelog tracker in this file rather than store the changes directly. You can also make use of [automated changelog generator tools](https://github.com/skywinder/Github-Changelog-Generator) to produce this file.
+* **CHANGELOG.md** - This includes a list of changes you make to your code each time you release new versions. You might provide a link to an external changelog tracker in this file rather than store the changes directly. You can also make use of [automated changelog generator tools](https://github.com/skywinder/Github-Changelog-Generator) to produce this file.
 
 * **docs/en/** - Your more detailed documentation should reside in a docs folder and a language code subfolder "en" for English in this example. Within this folder you can include as many Markdown pages and sub-folders needed to best structure your full documentation.
 
@@ -145,7 +147,7 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
 
 * Requirements - of servers, infrastructure to run the software and any other software packages needed to run the code and any technical know-how such as the programming languages used.
 
-* Installation instructions and "Getting started" section to get the software setup or configured.
+* Installation instructions and a "Getting Started" section to get the software set up or configured.
 
 * The licence the code is released for reuse under and link to the LICENSE file.
 
@@ -161,15 +163,15 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
 
 ### Your first release of documentation
 
-Documenting a new project can be daunting, ideally you can split up this task by documenting features as you code them though this is not always practical. For you first set of documentation we recommend that you limit the scope to a few key aspects:
+Documenting a new project can be daunting, ideally you can split up this task by documenting features as you code them though this is not always practical. For the first set of documentation we recommend that you limit the scope to a few key aspects:
 
 * Your README (as described above)
 
 * Create one tutorial that walks new users through a common task or use of the software. This helps show the user what can be done and gets them thinking about how they might use your code.
 
-* Describe what you know is missing from the documentation (you might also created "stub" pages for these).
+* Describe what you know is missing from the documentation (you might also create "stub" pages for these).
 
-You don’t need to set any expectations as to when these will get written, it’s acceptable in open source to simply ensure users are aware of any shortcomings and then they can choose you use your code anyway and they are free to contribute any improved documentation.
+You don’t need to set any expectations as to when these will get written, it’s acceptable in open source to simply ensure users are aware of any shortcomings and then they can choose to use your code anyway and they are free to contribute any improved documentation.
 
 ### Structuring your documentation pages
 
@@ -189,7 +191,7 @@ It’s a good idea to use a consistent structure when you have documentation tha
 
 ### Writing style guide
 
-To keep your documentation easy to use and consistent the use of a writing guide is a good idea. Your agency may already have its own set of writing guides in which case you might use this. Alternatively you could look to reuse the [Govt.nz writing style guide](https://www.govt.nz/about/our-style-guide/) as it is a good example of ensuring writing is accessable and in plain English while allowing the use of technical terms which are unavoidable in software documention.
+To keep your documentation easy to use and consistent, the use of a writing guide is a good idea. Your agency may already have its own set of writing guides in which case you might use this. Alternatively you could look to reuse the [Govt.nz writing style guide](https://www.govt.nz/about/our-style-guide/) as it is a good example of ensuring writing is accessable and in plain English while allowing the use of technical terms which are unavoidable in software documention.
 
 **Other general points for technical writing styles are:**
 
@@ -201,7 +203,7 @@ To keep your documentation easy to use and consistent the use of a writing guide
 
 * Keep sentences short.
 
-* Avoid superlatives, keep technical writing clear and concise it’s about delivering information to your users.
+* Avoid superlatives, and keep technical writing clear and concise. It’s about delivering information to your users.
 
 * Use callouts for really important information.
 
@@ -209,7 +211,7 @@ To keep your documentation easy to use and consistent the use of a writing guide
 
 * Losing the reader by not getting to the point quickly.
 
-* Making the reader feel stupid by using lots of jargon or technical terms without first defining them (unless you're certain of your audience).
+* Confusing the reader by using lots of jargon or technical terms without first defining them (unless you're certain of your audience).
 
 * Not providing enough context to aid understanding.
 
@@ -225,4 +227,4 @@ A Creative Commons licence is more in line with existing government policy. NZGO
 
 In summary, use Creative Commons Attribution (CC BY 4.0) licence if you have licensed your software under an MIT licences and Creative Commons Attribution Sharealike (CC BY-SA 4.0) if you have released your software under a GPL license.
 
-For more detailed information on the open licensing of New Zealand Government copyright works see  the original [NZGOAL ](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/)framework.
+For more detailed information on the open licensing of New Zealand Government copyright works see the original [NZGOAL ](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/)framework.
