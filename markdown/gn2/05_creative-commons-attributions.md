@@ -32,3 +32,5 @@ Thanks to community contributions from:
  * David Craig
  
  * Amy Shand
+ 
+ * [Matt Peel](https://github.com/madmatt)
