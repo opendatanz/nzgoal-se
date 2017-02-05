@@ -1,14 +1,3 @@
----
-title: Understanding copyright and licensing
-description: Useful practices for government developers working with open source projects.
-creator: Cam Findlay <cfindlay@linz.govt.nz>
-publisher: Land Information New Zealand
-subject: open source, copyright, licensing, GPL, MIT,
-date: 2016-11-9
-language: en
-rights: CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
----
-{::options footnote_nr="14" /}
 
 ## Understanding copyright and licensing
 
@@ -38,7 +27,7 @@ Licensing is related to copyright but is a distinct concept. Licensing concerns 
 
 Open source licenses grant a set of rights normally reserved for the copyright holder (hence the term "all rights reserved" you often see in association with copyright) to another person. For instance, the right to use, copy, modify, or redistribute.
 
-This license is provided in writing along with the code (in the LICENCE file) and states the terms under which the code may be used by the world at large, they won’t have to ask permission specifically. Most common licence types are the “copyleft” and the “permissive” and there are many licences you can use that fit into these two categories. 
+This license is provided in writing along with the code (in the LICENCE file) and states the terms under which the code may be used by the world at large, they won’t have to ask permission specifically. Most common licence types are the “copyleft” and the “permissive” and there are many licences you can use that fit into these two categories.
 
 For government open source projects we recommend the use of one of two licenses, the GPL or the MIT. See [NZGOAL Review and release process](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-se/nzgoal-se-review-and-release-process/) which sets out in more detail the legal aspects of selecting and applying an open source licence.
 

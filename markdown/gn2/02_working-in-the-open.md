@@ -1,13 +1,3 @@
----
-title: Working in the open
-description: Useful practices for government developers working with open source projects.
-creator: Cam Findlay <cfindlay@linz.govt.nz>
-publisher: Land Information New Zealand
-subject: open source, configuration, git, version control, branching, testing, Continuous Integration, peer reviewing,
-date: 2016-11-9
-language: en
-rights: CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
----
 
 ## Working in the open
 
@@ -24,9 +14,9 @@ For example:
 
 * User account details
 
-An issue here is that if you are using version control, once something sensitive has been commented to the repository, it stays in the history forever. You can remove the project history and start with a fresh commit of code, however you will lose the project history by doing this.
+An issue here is that if you are using version control, once something sensitive has been committed to the repository, it stays in the history forever. You can remove the project history and start with a fresh commit of code, however you will lose the project history by doing this.
 
-A good practice to adhere to is building a configuration layer into the software that you write. In your software code you can then write in references to the variables contained within the configuration file (which is not stored in your codebase). This avoids publicly exposing the values themselves and makes the software code much safer to share under an open source licence. You might also provide an example configuration file that users can duplicate before they configure their own copy of the software.
+A good practice to adhere to is to build a configuration layer into the software that you write. In your software code you can then write in references to the variables contained within the configuration file (which is not stored in your codebase). This avoids publicly exposing the values themselves and makes the software code much safer to share under an open source licence. You might also provide an example configuration file that users can duplicate before they configure their own copy of the software.
 
 ### Release early and often
 
@@ -88,7 +78,14 @@ If you are new to Git version control we recommend working through one of the on
 
 #### Make commits small and self-contained
 
-When committing new code to your version control, make sure commits only relate to one feature or specific set of changes. Keep the commits as small as possible (while still achieving the outcome of the patch). An ideal commit is a cross-section of work including: the code for the patch, tests for the change (if relevant) and documentation relating to that change. As a government open source project maintainer, set a good example in your commits and ask other developers that contribute to do the same. It will help with peer review and maintenance of the project over time[^2].
+When committing new code to your version control, make sure commits only relate to one feature or specific set of changes. Keep the commits as small as possible (while still achieving the outcome of the patch).
+
+An ideal commit should include:
+ * The code for the patch.
+ * Tests for the change (if relevant).
+ * Documentation relating to that change.
+
+ As a government open source project maintainer, set a good example in your commits and ask other developers that contribute to do the same. It will help with peer review and maintenance of the project over time[^2].
 
 [^2]: See Costa, T. (2016). [Maintaining open source software.](https://thoughtbot.com/maintaining-open-source-projects-sample.pdf)
 
@@ -96,7 +93,7 @@ When committing new code to your version control, make sure commits only relate 
 
 Your commit messages act as an audit trail for your code so be sure that you write them in such a way that if you looked back over these in a year's time, they would still make sense to you. More importantly, would they make sense to any new team members that may join in the future?
 
-Write a commit message like you’re trying to explain it to your future self. Generally a good commit message contains the following[^3]:
+A good commit message contains the following[^3]:
 
 [^3]: See [more detailed explanation of commit messages](http://chris.beams.io/posts/git-commit/#why-not-how
 )
@@ -113,7 +110,7 @@ Write a commit message like you’re trying to explain it to your future self. G
 
 It's a good rule of thumb to keep your "master" branch in a production ready state. At any time you should be able to safely deploy or install the "master" and have the current stable version of your software running. This means that practices such as contributing new code directly to the master branch should be avoided. Use branches and pull requests to achieve code improvements.
 
-New features can be tested in separate branches without interrupting the main project releasability. People need the freedom to try new things without feeling like they're interfering with other's work.There are times when code needs to be isolated from the main project branch, for example getting a bug fixed or stabilising a new release without worrying about tracking the moving target of daily development activity. Developers need to be able to review and comment on experimental work, and treating branches publishable objects makes this possible.
+New features can be tested in separate branches without interrupting the project's ability to be released into production. People need the freedom to try new things without feeling like they're interfering with other's work. There are times when code needs to be isolated from the main project branch, for example getting a bug fixed or stabilising a new release without worrying about tracking the moving target of daily development activity. Developers need to be able to review and comment on experimental work, and treating branches publishable objects makes this possible.
 
 **Quick tips for branches**
 
@@ -136,7 +133,7 @@ New features can be tested in separate branches without interrupting the main pr
 
 Peer reviewing is an important process for teams building software. The benefits when peer review is carried out in public are magnified as the potential pool of people available to give constructive feedback is wider. This helps in a number of ways.
 
-* It can improve the quality of the software in a measurable way e.g. reduced bugs per month by a percentage because of peer reviewing.
+* It can improve the quality of the software in a measurable way (eg. reduced bugs per month by a percentage because of peer reviewing).
 
 * Keeps a record of past software architecture decisions (you can go back and discover why something was done, which is good for new team members to get up to speed on projects).
 
@@ -148,13 +145,15 @@ Peer reviewing is an important process for teams building software. The benefits
 
 * Feedback more likely to be applied if made in public.
 
+* Encourages community to grow around your code and will lead to more support over time.
+
 #### Carrying out a technical code review
 
 There are some things you can do to make the process of technical peer review smoother (both in your team and out in the wider open source community). These include:
 
 * Making sure you [write good commit messages](#what-makes-a-good-commit-message) to help the reviewer know what they are reviewing.
 
-* Don’t peer review your own work, make sure to engage your team and wider open source community..
+* Don’t peer review your own work, make sure to engage your team and wider open source community.
 
 * Open a pull request as a way to initiate peer review (allows comments directly on code).
 
@@ -218,7 +217,7 @@ The following is a high level technical walk-through the process of raising a pu
 
 #### When you review someone else's code
 
-* Review the code, not the person. 
+* Review the code, not the person.
 
 * Seek to understand why the change is necessary (fixes a bug, improves the user experience, refactoring of existing code).
 
@@ -236,11 +235,11 @@ The following is a high level technical walk-through the process of raising a pu
 
 ### Coordinated disclosure of security issues
 
-A coordinated disclosure is designed to improve security of software systems and protect the public. 
+A coordinated disclosure is designed to improve security of software systems and protect the public.
 
 It does this by ensuring:
 
- * That reporters of these issues are treated respectfully when they inform agencies of issues. 
+ * That reporters of these issues are treated respectfully when they inform agencies of issues.
  * That both parties (your agency and the reporter) work together in a responsible manner, in good faith and within the law to correct the issue.
  * That other user are informed appropriately about the issue so they can update their own systems.
 
@@ -285,7 +284,7 @@ Use the following as a starting point to include in your CONTRIBUTING file regar
 ```
 ### Security Issues
 
-Please don't file security issues in the bugtracker or publicly disclose them without first contacting us. We operate a Coordinated Disclosure policy and will work with you in good faith to responsibly fix and publicly disclose security issues appropriately.
+Please don't file security issues in the bug tracker or publicly disclose them without first contacting us. We operate a Coordinated Disclosure policy and will work with you in good faith to responsibly fix and publicly disclose security issues appropriately.
 
 Please read over our coordinated disclosure policy at: POLICY_URL
 
@@ -320,7 +319,7 @@ There are tools available to generate private/public key pairs, encrypt and decr
 
 * For Linux: [https://www.gnupg.org/index.html](https://www.gnupg.org/index.html)  
 
-If you have set up a encryption to allow reporters to securely communicate with you, you could also add the following in your CONTRIBUTING file (you might also include the generated public key itself in the documentation):
+If you have set up encryption to allow reporters to securely communicate with you, you could also add the following in your CONTRIBUTING file (you might also include the generated public key itself in the documentation):
 
 ```
 You can communicate securely with us by encrypting your email. Please use our public key available at: PUBLICKEY_URL.
@@ -354,9 +353,7 @@ Testing in any software project is useful as it helps ensure that software does 
 
 While we won’t talk specifically about how to write tests for specific applications (the scope depends on your project and is too wide to cover here), manually testing can be very time consuming so it is a good practice to set up an automated suite of tests. This helps determine if any potential changes to the code will cause it stop functioning as it is supposed to *before* changes make it into the released version of the code.
 
-This is called 'regression testing' (and there are a number of other types you may want to look into for your project including unit testing and behavioural testing).
-
-Regression testing becomes useful as the size and complexity of your project grows. There is a trade off of the time to write the tests versus code for the application itself. Here you need to use judgement and test appropriately for the size and importance of the features in your open source project.
+This is called 'regression testing' and becomes valuable as the size and complexity of your project grows. There is a trade off of the time to write the tests versus code for the application itself. Here you need to use judgement and test appropriately for the size and importance of the features in your open source project.
 
 It is common practice in open source projects to require that contributors ensure their changes pass any existing tests, before they are accepted. It’s also preferred that they contribute tests for new code they write and submit. Again, in this case be careful that requiring tests with every contribution doesn’t bottleneck the process of contribution itself (you want to encourage people's efforts not hinder them). You might want to explicitly describe what type of code changes do or do not require testing in your project documentation, so contributors know when they need to write these.
 

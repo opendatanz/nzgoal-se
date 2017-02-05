@@ -1,13 +1,3 @@
----
-title: Getting started
-description: Getting started with the technical aspects of releasing an open source project in government.
-creator: Cam Findlay <cfindlay@linz.govt.nz>
-publisher: Land Information New Zealand
-subject: open source, git, accounts, best practices,
-date: 2016-11-9
-language: en
-rights: CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
----
 
 ## Getting started
 
@@ -37,7 +27,7 @@ A key concept of using or maintaining an open source project is the "Don’t rep
     * [Ruby Gems](https://rubygems.org/) - Ruby code libraries
 
     * [PyPi](https://pypi.python.org/pypi) - Python code packages
-    
+
     * [Drupal Modules](https://www.drupal.org/project/project_module) - Extensions to Drupal CMS
 
  * You may find that parts of your feature exist already in existing libraries. If you find part of what you intended to build ask yourself if you could reuse it in part and extend it to develop the feature you need.
@@ -97,7 +87,7 @@ For example, the [govt.nz website team have a GitHub organisation](https://githu
 
 When working with external contractors or across agencies, giving them read or write access to your repository is encouraged. It facilitates the flow of ideas and builds stronger community support around your open source projects.
 
-Communicate the addition and removal of developer access to your staff/contractor induction and exit processes. Ideally, have someone like a team lead or IT manager that is savvy with code repository account management hold the administrator access to the organisation account, so that they can add or remove staff when required (otherwise you may need to document the process and make available to your HR team). Don’t give admin rights to the organisation account to anyone but your agency staff.
+Communicate the addition and removal of developer access to your staff/contractor induction and exit processes. Ideally, have someone like a team lead or IT manager that is savvy with code repository account management hold the administrator access to the organisation account, so that they can add or remove staff when required (it's also good practice to document the process and make available to your HR team). Don’t give admin rights to the organisation account to anyone but your agency staff.
 
 #### Individual user accounts
 

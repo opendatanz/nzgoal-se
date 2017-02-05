@@ -6,8 +6,11 @@
     "text/html; charset=utf-8">
     <meta http-equiv="Content-Style-Type" content="text/css">
     <meta name="generator" content="pandoc">
+    <meta name="date" content="2017-02-05">
     <title>
-      NZGOAL Software Extension - Guidance Note 2 (GN2)
+      NZGOAL Software Extension Guidance Note 2 (GN2) - Technical
+      guidance for developers working with government open source
+      projects.
     </title>
     <style type="text/css">
     code{white-space: pre;}
@@ -16,29 +19,16 @@
   <body>
     <div id="header">
       <h1 class="title">
-        NZGOAL Software Extension - Guidance Note 2 (GN2)
+        NZGOAL Software Extension Guidance Note 2 (GN2) - Technical
+        guidance for developers working with government open source
+        projects.
       </h1>
       <h3 class="date">
-        2016-11-9
+        2017-02-05
       </h3>
     </div>
     <div id="TOC">
       <ul>
-        <li>
-          <a href=
-          "#technical-practices-for-developers-working-with-open-source-projects-in-government">
-          Technical practices for developers working with open
-          source projects in government</a>
-        </li>
-        <li>
-          <a href=
-          "#if-you-wish-to-contribute-improvements-and-further-information-to-these-guidance-notes-you-can-do-so-via-the-open-data-nz-github-repository.">
-          If you wish to contribute improvements and further
-          information to these guidance notes you can do so via
-          the</a> <a href=
-          "https://github.com/opendatanz/nzgoal-se">Open Data NZ
-          GitHub repository</a>.
-        </li>
         <li>
           <a href="#getting-started">Getting started</a>
           <ul>
@@ -97,9 +87,6 @@
               disclosure of security issues</a>
             </li>
             <li>
-              <a href="#security-issues">Security Issues</a>
-            </li>
-            <li>
               <a href="#semantic-versioning">Semantic
               Versioning</a>
             </li>
@@ -108,20 +95,6 @@
               open source projects</a>
             </li>
           </ul>
-        </li>
-        <li>
-          <a href=
-          "#jenkins-is-a-self-hosted-open-source-ci-tool.-its-useful-when-you-are-testing-code-internally-or-if-you-are-hosting-your-own-code-repository-tools-for-your-projects.-assuming-you-have-an-instance-of-jenkins-running-to-set-up-your-project-to-work-you-include-jenkinsfile-file-in-your-project-and-then-follow-their-setup-guide-at-httpsjenkins.iodocbookpipelinejenkinsfilecreating-a-jenkinsfile">
-          Jenkins is a self hosted, open source CI tool. It’s
-          useful when you are testing code internally or if you are
-          hosting your own code repository tools for your projects.
-          Assuming you have an instance of Jenkins running, to set
-          up your project to work you include "JenkinsFile" file in
-          your project and then follow their setup guide at:</a>
-          <a href=
-          "https://jenkins.io/doc/book/pipeline/jenkinsfile/#creating-a-jenkinsfile"
-          class=
-          "uri">https://jenkins.io/doc/book/pipeline/jenkinsfile/#creating-a-jenkinsfile</a>
         </li>
         <li>
           <a href="#documenting-your-code">Documenting your
@@ -140,150 +113,101 @@
               <a href="#markdown-documentation">Markdown
               documentation</a>
             </li>
+            <li>
+              <a href=
+              "#what-documentation-should-i-include-with-my-code">What
+              documentation should I include with my code?</a>
+            </li>
+            <li>
+              <a href="#what-to-include-in-your-readme-file">What
+              to include in your README file</a>
+            </li>
+            <li>
+              <a href=
+              "#getting-started-with-project-documentation">Getting
+              started with project documentation</a>
+            </li>
+            <li>
+              <a href=
+              "#structuring-your-documentation-pages">Structuring
+              your documentation pages</a>
+            </li>
+            <li>
+              <a href="#writing-style-guide">Writing style
+              guide</a>
+            </li>
+            <li>
+              <a href="#licensing-your-documentation">Licensing
+              your documentation</a>
+            </li>
           </ul>
         </li>
         <li>
-          <a href="#my-documentation"><strong>My
-          documentation</strong></a>
+          <a href=
+          "#understanding-copyright-and-licensing">Understanding
+          copyright and licensing</a>
           <ul>
             <li>
-              <a href="#here-is-a-sub-heading"><strong>Here is a
-              sub heading</strong></a>
-              <ul>
-                <li>
-                  <a href="#and-a-sub-sub-heading"><strong>And a
-                  sub, sub-heading</strong></a>
-                </li>
-                <li>
-                  <a href=
-                  "#what-documentation-should-i-include-with-my-code">
-                  What documentation should I include with my
-                  code?</a>
-                </li>
-                <li>
-                  <a href=
-                  "#what-to-include-in-your-readme-file">What to
-                  include in your README file</a>
-                </li>
-                <li>
-                  <a href=
-                  "#your-first-release-of-documentation">Your first
-                  release of documentation</a>
-                </li>
-                <li>
-                  <a href=
-                  "#structuring-your-documentation-pages">Structuring
-                  your documentation pages</a>
-                </li>
-                <li>
-                  <a href="#writing-style-guide">Writing style
-                  guide</a>
-                </li>
-                <li>
-                  <a href="#licensing-your-documentation">Licensing
-                  your documentation</a>
-                </li>
-              </ul>
+              <a href="#copyright">Copyright</a>
+            </li>
+            <li>
+              <a href="#licensing">Licensing</a>
             </li>
             <li>
               <a href=
-              "#for-more-detailed-information-on-the-open-licensing-of-new-zealand-government-copyright-works-see-the-original-nzgoalframework.">
-              For more detailed information on the open licensing
-              of New Zealand Government copyright works see the
-              original</a> <a href=
-              "https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/">
-              NZGOAL</a>framework.
+              "#accepting-contributions-from-the-community">Accepting
+              contributions from the community</a>
             </li>
             <li>
               <a href=
-              "#understanding-copyright-and-licensing">Understanding
-              copyright and licensing</a>
-              <ul>
-                <li>
-                  <a href="#copyright">Copyright</a>
-                </li>
-                <li>
-                  <a href="#licensing">Licensing</a>
-                </li>
-                <li>
-                  <a href=
-                  "#accepting-contributions-from-the-community">Accepting
-                  contributions from the community</a>
-                </li>
-                <li>
-                  <a href=
-                  "#what-do-contractors-need-to-know-about-copyright-and-licensing">
-                  What do contractors need to know about copyright
-                  and licensing?</a>
-                </li>
-                <li>
-                  <a href=
-                  "#alternative-licensing-options-to-nzgoal-se">Alternative
-                  licensing options to NZGOAL-SE</a>
-                </li>
-              </ul>
+              "#what-do-contractors-need-to-know-about-copyright-and-licensing">
+              What do contractors need to know about copyright and
+              licensing?</a>
             </li>
             <li>
-              <a href="#httpchoosealicense.com"></a><a href=
-              "http://choosealicense.com/licenses/">http://choosealicense.com/</a>
-            </li>
-            <li>
-              <a href="#creative-commons-attributions">Creative
-              commons attributions</a>
-            </li>
-            <li>
-              <a href="#community-contributors">Community
-              contributors</a>
+              <a href=
+              "#alternative-licensing-options-to-nzgoal-se">Alternative
+              licensing options to NZGOAL-SE</a>
             </li>
           </ul>
         </li>
+        <li>
+          <a href="#creative-commons-attributions">Creative commons
+          attributions</a>
+        </li>
+        <li>
+          <a href="#community-contributors">Community
+          contributors</a>
+        </li>
       </ul>
     </div>
-    <h2 id=
-    "technical-practices-for-developers-working-with-open-source-projects-in-government">
-      Technical practices for developers working with open source
-      projects in government
-    </h2>
     <p>
       These guidance notes cover technical practices for developers
       working on government maintained open source software
       projects or when working with external open source projects
       with other developers as part of a wider open source
-      community. It follows on from the NZGOAL Software Extension
-      open source licensing policy for the New Zealand Government
-      as during the public consultation on this policy it was
-      raised as a need to help with the actual technical aspects of
-      releasing open source licensed software.
+      community. It follows on from the public consultation for the
+      NZGOAL Software Extension open source licensing policy for
+      the New Zealand Government. Guidance on the technical aspects
+      of releasing open source licensed software was raised as a
+      need.
     </p>
     <p>
       It’s important to note that alongside the technical
       considerations in this guidance note, you should also
       familiarise yourself with the communication and community
-      management aspects of open source which are available in a
-      separate guidance note. Part of developing an open licensed
-      project requires the ability to engage in dialogue about your
-      work, code out on the open, give and receive feedback and
-      interact with contributors in public while using modern
-      software development practices to produce and maintain the
-      project’s code base over time.
+      management aspects of open source. Part of developing an open
+      licensed project requires the ability to engage in dialogue
+      about your work, code out in the open, give and receive
+      feedback and interact with contributors in public while using
+      modern software development practices to produce and maintain
+      the project’s code base over time.
     </p>
-    <h2 id=
-    "if-you-wish-to-contribute-improvements-and-further-information-to-these-guidance-notes-you-can-do-so-via-the-open-data-nz-github-repository.">
+    <p>
       If you wish to contribute improvements and further
       information to these guidance notes you can do so via the
       <a href="https://github.com/opendatanz/nzgoal-se">Open Data
       NZ GitHub repository</a>.
-    </h2>
-    <p>
-      title: Getting started description: Getting started with the
-      technical aspects of releasing an open source project in
-      government. creator: Cam Findlay <a href=
-      "mailto:cfindlay@linz.govt.nz">cfindlay@linz.govt.nz</a>
-      publisher: Land Information New Zealand subject: open source,
-      git, accounts, best practices, date: 2016-11-9 language: en
-      rights: CC BY-SA 4.0 <a href=
-      "https://creativecommons.org/licenses/by-sa/4.0/" class=
-      "uri">https://creativecommons.org/licenses/by-sa/4.0/</a> ---
     </p>
     <h2 id="getting-started">
       Getting started
@@ -378,15 +302,21 @@
               Python code packages
             </p>
           </li>
+          <li>
+            <p>
+              <a href=
+              "https://www.drupal.org/project/project_module">Drupal
+              Modules</a> - Extensions to Drupal CMS
+            </p>
+          </li>
         </ul>
       </li>
       <li>
         <p>
-          Keep an open mind, you may find that parts of your
-          feature exist already in existing libraries. If you find
-          part of what you intended to build ask yourself if you
-          could reuse it in part part and build further on top of
-          it to develop the feature you need.
+          You may find that parts of your feature exist already in
+          existing libraries. If you find part of what you intended
+          to build ask yourself if you could reuse it in part and
+          extend it to develop the feature you need.
         </p>
       </li>
       <li>
@@ -433,8 +363,8 @@
       </li>
       <li>
         <p>
-          In the case of an abandoned repository of code, try and
-          at least contact the maintainer.
+          In the case of an abandoned repository of code, try to
+          contact the maintainer.
         </p>
         <ul>
           <li>
@@ -468,10 +398,10 @@
       collaborative development process. Agencies should look to
       make use of existing code management tools wherever possible
       (NZGOAL-SE advocates for this) to enable others to find and
-      reuse the code also to avoid the operational costs of running
-      such an ICT system. There are online repositories (both free
-      and paid) as well as self-hosted options available (should
-      you wish to operate your own code repository).
+      reuse the code to avoid the operational costs of running such
+      an ICT system. There are online repositories (both free and
+      paid) as well as self-hosted options available (should you
+      wish to operate your own code repository).
     </p>
     <p>
       Some of the available options include:
@@ -517,13 +447,12 @@
       </li>
     </ul>
     <p>
-      Which ever option you choose, you’ll want to ensure that it
-      is easy for external parties to interact with. If a
-      contributor has an important fix to your software and cannot
-      submit it or find the contact details for you as the
-      maintainer, then that work may never see the light of day and
-      the benefit of community contributions of open source is
-      lost.
+      Whichever option you choose, you’ll want to ensure that it is
+      easy for external parties to interact with. If a contributor
+      has an important fix to your software and cannot submit it or
+      find the contact details for you as the maintainer, then that
+      work may never see the light of day and the benefit of
+      community contributions to open source is lost.
     </p>
     <h4 id="setting-up-an-organisation-account">
       Setting up an organisation account
@@ -537,7 +466,7 @@
       developer accounts within that organisation.
     </p>
     <p>
-      Organisation account have the advantage of:
+      Organisation accounts have the advantage of:
     </p>
     <ul>
       <li>
@@ -566,7 +495,7 @@
       For example, the <a href="https://github.com/GOVTNZ">govt.nz
       website team have a GitHub organisation</a> grouping all the
       open source licensed code they have released in one place,
-      they assign individual developer access to these projects
+      and they assign individual developer access to these projects
       when needed.
     </p>
     <p>
@@ -576,15 +505,15 @@
       stronger community support around your open source projects.
     </p>
     <p>
-      Add the additional and removal of developer access to your
-      staff/contractor induction and exit processes. Ideally, have
-      someone like a team lead or IT manager that is savvy with
-      code repository account management hold the administrator
-      access to the organisation account so that they can add or
-      remove staff when required (otherwise you may need to
-      document the process and make available to your HR team).
-      Don’t give admin rights to the organisation account to anyone
-      but your agency staff.
+      Communicate the addition and removal of developer access to
+      your staff/contractor induction and exit processes. Ideally,
+      have someone like a team lead or IT manager that is savvy
+      with code repository account management hold the
+      administrator access to the organisation account, so that
+      they can add or remove staff when required (it's also good
+      practice to document the process and make available to your
+      HR team). Don’t give admin rights to the organisation account
+      to anyone but your agency staff.
     </p>
     <h4 id="individual-user-accounts">
       Individual user accounts
@@ -597,12 +526,12 @@
       the work history and shows others which code has come from
       the official government maintainer of the project. It’s
       important to maintain transparency when developing code in
-      the open and this helps everyone contributing to the project
+      the open. This helps everyone contributing to the project
       know who to contact when working with an open source project.
-      If you already have an account with the code management tool
-      in use for the project, rather than making a new account you
-      can often associate your “.govt.nz” email address to your
-      account as a secondary email.
+      If an individual already has an account with the code
+      management tool in use for the project, rather than making a
+      new account they can often associate their “.govt.nz” email
+      address to the account as a secondary email.
     </p>
     <p>
       If you are signing up for a new account:
@@ -629,14 +558,14 @@
       </li>
       <li>
         <p>
-          Request your team to be add you to the organisation
-          account that has been set up.
+          Ask your team to add you to the organisation account that
+          has been set up.
         </p>
       </li>
       <li>
         <p>
           Ensure that any notifications from the project go to your
-          ".govt.nz“ email .
+          ".govt.nz“ email.
         </p>
       </li>
       <li>
@@ -659,7 +588,7 @@
     <ul>
       <li>
         <p>
-          Your software code
+          Your software code.
         </p>
       </li>
       <li>
@@ -676,33 +605,19 @@
       </li>
       <li>
         <p>
-          Any supporting project metadata files (note a metadata
+          Any supporting project metadata files (note: a metadata
           standard and discovery portal has not yet been set to
-          catalogue NZ government open source projects. This may
-          develop in the future, if so we’ll update these guidance
-          notes when applicable).
+          catalogue NZ government open source projects. This may be
+          developed in the future. If so we’ll update these
+          guidance notes when applicable).
         </p>
       </li>
       <li>
-        <h2 id=
-        "tag-a-version-see-semantic-versioning-or-best-practices-established-already-in-the-project-or-framework-your-work-relates-to.">
+        <p>
           Tag a version (See <a href=
           "working-in-the-open#semantic%20versioning">Semantic
           Versioning</a> or best practices established already in
           the project or framework your work relates to).
-        </h2>
-        <p>
-          title: Working in the open description: Useful practices
-          for government developers working with open source
-          projects. creator: Cam Findlay <a href=
-          "mailto:cfindlay@linz.govt.nz">cfindlay@linz.govt.nz</a>
-          publisher: Land Information New Zealand subject: open
-          source, configuration, git, version control, branching,
-          testing, Continuous Integration, peer reviewing, date:
-          2016-11-9 language: en rights: CC BY-SA 4.0 <a href=
-          "https://creativecommons.org/licenses/by-sa/4.0/" class=
-          "uri">https://creativecommons.org/licenses/by-sa/4.0/</a>
-          ---
         </p>
       </li>
     </ul>
@@ -733,7 +648,7 @@
       </li>
       <li>
         <p>
-          Configuration setting specific to your production
+          Configuration settings specific to your production
           deployment
         </p>
       </li>
@@ -744,18 +659,19 @@
       </li>
     </ul>
     <p>
-      A issue here is that if you are using version control, once
-      one of these details has been commented to the repository, it
-      stays in the history forever (unless you remove the project
-      history and start with a fresh commit of code but you will
-      lose a wealth of project history information doing this).
+      An issue here is that if you are using version control, once
+      something sensitive has been committed to the repository, it
+      stays in the history forever. You can remove the project
+      history and start with a fresh commit of code, however you
+      will lose the project history by doing this.
     </p>
     <p>
-      A good practice to adhere to here is building a configuration
+      A good practice to adhere to is to build a configuration
       layer into the software that you write. In your software code
       you can then write in references to the variables contained
-      within the configuration file without exposing the values
-      themselves. This make the software code much safer to share
+      within the configuration file (which is not stored in your
+      codebase). This avoids publicly exposing the values
+      themselves and makes the software code much safer to share
       under an open source licence. You might also provide an
       example configuration file that users can duplicate before
       they configure their own copy of the software.
@@ -774,11 +690,11 @@
       quality of the code before it is put into production.
     </p>
     <p>
-      Government open source projects have potential to be harmed
-      by waiting for a particular event to occur before they are
-      made publicly available. The longer the project is run closed
-      prior to open sourcing it, the more difficult it will be to
-      open.
+      Government open source projects have the potential to be
+      harmed by waiting for a particular event to occur before they
+      are made publicly available. The longer the project is run
+      internally without open sourcing it, the more difficult it
+      will be to open.
     </p>
     <p>
       At each step in a project, developers face a choice:
@@ -800,9 +716,9 @@
     <p>
       Every time the latter is chosen, the project gets just a
       little bit harder to open source. Sometimes you can't help
-      choosing the latter occasionally. It's very difficult to give
-      a future event the same present-day weight as, say, fixing
-      the incoming bugs reported or finishing a new feature.
+      choosing the latter. It's very difficult to give a future
+      event the same present-day weight as, say, fixing the
+      incoming bugs reported or finishing a new feature.
     </p>
     <p>
       Everything in an open source project is part of the version
@@ -861,11 +777,12 @@
     <p>
       <a href="https://git-scm.com/">Git</a> has become one of the
       most widely used version control systems. Git is a
-      distributed version (DVCS) as it allows many developers to
-      work simultaneously on the same project code by allowing
-      multiple, distributed copies of the work and incremental
-      improvements to contributed to an agreed copy of the code
-      (usually in a publicly accessible code repository).
+      distributed version control system (DVCS) as it allows many
+      developers to work simultaneously on the same project code by
+      allowing multiple, distributed copies of the work and
+      incremental improvements to be contributed to an agreed copy
+      of the code (usually in a publicly accessible code
+      repository).
     </p>
     <p>
       It's a good idea to use a DVCS for government open source
@@ -879,22 +796,23 @@
     <ul>
       <li>
         <p>
-          everyone involved in the process has a full copy of the
-          code and its history
+          Everyone involved in the process has a full copy of the
+          code and its history.
         </p>
       </li>
       <li>
         <p>
-          it’s easier for developers to create ‘branches’ in their
+          It’s easier for developers to create ‘branches’ in their
           code to explore new features or approaches without
-          encroaching on others work
+          encroaching on others work.
         </p>
       </li>
       <li>
         <p>
-          developers can continue to work when the network is
-          unavailable, making small incremental commits, merging
-          their changes back with everyone else’s at a later date
+          Developers can continue to work when the network is
+          unavailable, making small incremental commits, and
+          merging their changes back with everyone else’s at a
+          later date.
         </p>
       </li>
     </ul>
@@ -930,13 +848,18 @@
       When committing new code to your version control, make sure
       commits only relate to one feature or specific set of
       changes. Keep the commits as small as possible (while still
-      achieving the outcome of the patch). An ideal commit is a
-      cross-section of work including: the code for the patch,
-      tests for the change (if relevant), documentation relating to
-      that change. As a government open source project maintainer,
-      set a good example in your commits and ask other developers
-      that contribute to do the same. It will help with peer review
-      and maintenance of the project over time<a href="#fn2" class=
+      achieving the outcome of the patch).
+    </p>
+    <p>
+      An ideal commit should include: * The code for the patch. *
+      Tests for the change (if relevant). * Documentation relating
+      to that change.
+    </p>
+    <p>
+      As a government open source project maintainer, set a good
+      example in your commits and ask other developers that
+      contribute to do the same. It will help with peer review and
+      maintenance of the project over time<a href="#fn2" class=
       "footnoteRef" id="fnref2" name="fnref2"><sup>2</sup></a>.
     </p>
     <h4 id="what-makes-a-good-commit-message">
@@ -944,16 +867,15 @@
     </h4>
     <p>
       Your commit messages act as an audit trail for your code so
-      be sure that if you looked back over these in a year's time,
-      they would still make sense to you. More importantly, would
-      they make sense to any new team members that may join in the
-      future?
+      be sure that you write them in such a way that if you looked
+      back over these in a year's time, they would still make sense
+      to you. More importantly, would they make sense to any new
+      team members that may join in the future?
     </p>
     <p>
-      Write a commit message like you’re trying to explain it to
-      your future self. Generally a good commit message contains
-      the following<a href="#fn3" class="footnoteRef" id="fnref3"
-      name="fnref3"><sup>3</sup></a>:
+      A good commit message contains the following<a href="#fn3"
+      class="footnoteRef" id="fnref3" name=
+      "fnref3"><sup>3</sup></a>:
     </p>
     <ul>
       <li>
@@ -994,15 +916,15 @@
     </p>
     <p>
       New features can be tested in separate branches without
-      interrupting the main project releasability. People need the
-      freedom to try new things without feeling like they're
-      interfering with other's' work.There are times when code
-      needs to be isolated from the main project branch, for
-      example getting a bug fixed or stabilising a new release
-      without worrying about tracking the moving target of daily
-      development activity. Developers need to be able to review
-      and comment on experimental work, treating branches as
-      first-class, publishable objects makes this possible.
+      interrupting the project's ability to be released into
+      production. People need the freedom to try new things without
+      feeling like they're interfering with other's work. There are
+      times when code needs to be isolated from the main project
+      branch, for example getting a bug fixed or stabilising a new
+      release without worrying about tracking the moving target of
+      daily development activity. Developers need to be able to
+      review and comment on experimental work, and treating
+      branches publishable objects makes this possible.
     </p>
     <p>
       <strong>Quick tips for branches</strong>
@@ -1015,8 +937,8 @@
       </li>
       <li>
         <p>
-          Encourage others on your team or contributing to the
-          project externally to use them.
+          Encourage others (whether on your team or contributing to
+          the project externally) to use them.
         </p>
       </li>
       <li>
@@ -1030,8 +952,8 @@
           Watch out for branches becoming a mechanism for dividing
           the development community's efforts (the eventual goal of
           branches should be to merge changes back into the master
-          and disappear, as soon as possible not hang around for a
-          long time).
+          and disappear as soon as possible, not to hang around for
+          a long time).
         </p>
       </li>
       <li>
@@ -1040,11 +962,12 @@
           to getting work completed. For example a large project
           might make use of a branching standard called
           "GitFlow"<a href="#fn4" class="footnoteRef" id="fnref4"
-          name="fnref4"><sup>4</sup></a>, this might add too much
-          undue process if the project is small (in which case you
-          might simply use feature branches<a href="#fn5" class=
-          "footnoteRef" id="fnref5" name="fnref5"><sup>5</sup></a>
-          and pull requests to merge to master).
+          name="fnref4"><sup>4</sup></a>, while this might add too
+          much undue process if the project is small (in which case
+          you might simply use feature branches<a href="#fn5"
+          class="footnoteRef" id="fnref5" name=
+          "fnref5"><sup>5</sup></a> and pull requests to merge to
+          master).
         </p>
       </li>
     </ul>
@@ -1065,23 +988,23 @@
       <li>
         <p>
           It can improve the quality of the software in a
-          measurable way eg reduced bugs per month by a percentage
-          because of peer reviewing.
+          measurable way (eg. reduced bugs per month by a
+          percentage because of peer reviewing).
         </p>
       </li>
       <li>
         <p>
           Keeps a record of past software architecture decisions
           (you can go back and discover why something was done,
-          this is good for new team members to get up to speed on
+          which is good for new team members to get up to speed on
           projects).
         </p>
       </li>
       <li>
         <p>
-          Keeps your software releasable, less chance of avoidable
-          bugs making it into your master branch if the peer review
-          picks it up before merging.
+          Keeps your software releasable, with less chance of
+          avoidable bugs making it into your master branch if the
+          peer review picks it up before merging.
         </p>
       </li>
       <li>
@@ -1099,6 +1022,12 @@
       <li>
         <p>
           Feedback more likely to be applied if made in public.
+        </p>
+      </li>
+      <li>
+        <p>
+          Encourages community to grow around your code and will
+          lead to more support over time.
         </p>
       </li>
     </ul>
@@ -1122,7 +1051,7 @@
       <li>
         <p>
           Don’t peer review your own work, make sure to engage your
-          team and wider open source community..
+          team and wider open source community.
         </p>
       </li>
       <li>
@@ -1162,7 +1091,7 @@
       </li>
       <li>
         <p>
-          Build a culture where catch bugs is a positive thing,
+          Build a culture where catching bugs is a positive thing;
           it’s about the software having less defects and serving
           users better.
         </p>
@@ -1175,10 +1104,8 @@
         </p>
       </li>
     </ul>
-    <h4 id=
-    "making-peer-review-request-in-an-open-source-project-in-public">
-      Making peer review request in an open source project in
-      public
+    <h4 id="making-a-request-for-peer-review-in-public">
+      Making a request for peer review in public
     </h4>
     <p>
       The following is a high level technical walk-through the
@@ -1199,8 +1126,8 @@
       </li>
       <li>
         <p>
-          Use this issues as the place to dialogue and work out
-          details of the new proposed feature. This avoids
+          Use this issue as the place to discuss and work out
+          details of the new proposed feature. This avoids the
           disappointment of your patch being rejected by the
           maintainers.
         </p>
@@ -1243,8 +1170,8 @@
       <li>
         <p>
           Once agreed, the maintainer will accept the pull request
-          to merge branch into the project and the new feature will
-          now be available, ready for a release.
+          to merge branch your into the project and the new feature
+          will now be available, ready for a release.
         </p>
       </li>
     </ol>
@@ -1254,7 +1181,7 @@
     <ul>
       <li>
         <p>
-          Be grateful for the reviewer's suggestions avoid
+          Be grateful for the reviewer's suggestions, and avoid
           discounting them outright.
         </p>
       </li>
@@ -1278,7 +1205,7 @@
       </li>
       <li>
         <p>
-          Do not squash commit until the branch is ready to merge
+          Do not squash commit until the branch is ready to merge,
           so reviewers can read individual updates based on earlier
           feedback.
         </p>
@@ -1295,7 +1222,7 @@
       </li>
       <li>
         <p>
-          If you’re using Continuous Integration wait until it
+          If you’re using Continuous Integration, wait until it
           tells you the tests pass before merging.
         </p>
       </li>
@@ -1310,6 +1237,11 @@
       When you review someone else's code
     </h4>
     <ul>
+      <li>
+        <p>
+          Review the code, not the person.
+        </p>
+      </li>
       <li>
         <p>
           Seek to understand why the change is necessary (fixes a
@@ -1359,14 +1291,23 @@
     </h3>
     <p>
       A coordinated disclosure is designed to improve security of
-      software systems and protect the public. It does this by
-      ensuring that reporters of these issues are treated
-      respectfully when they inform agencies of issues and that
-      both parties (your agency and the reporter) work together in
-      a responsible manner, in good faith and within the law to
-      correct the issue and then let others know about it so they
-      can update their own systems.
+      software systems and protect the public.
     </p>
+    <p>
+      It does this by ensuring:
+    </p>
+    <ul>
+      <li>That reporters of these issues are treated respectfully
+      when they inform agencies of issues.
+      </li>
+      <li>That both parties (your agency and the reporter) work
+      together in a responsible manner, in good faith and within
+      the law to correct the issue.
+      </li>
+      <li>That other user are informed appropriately about the
+      issue so they can update their own systems.
+      </li>
+    </ul>
     <p>
       It’s important to ensure that external contributors know how
       to correctly contact you if they discover a security
@@ -1421,6 +1362,20 @@
       </li>
       <li>
         <p>
+          Ensure your policy makes it clear that security reports
+          are sought after and that reporters acting in good faith
+          will not be prosecuted. Often the first reaction from
+          organisations (both public and private) is to look to
+          prosecute or litigate the issue to ensure the reporter
+          does not disclose details of the issue. This can often
+          mean that security researchers will find vulnerabilities
+          but not report them for fear of prosecution. Having a
+          policy that makes it clear this won't happen to them is
+          key to soliciting reports from outside researchers.
+        </p>
+      </li>
+      <li>
+        <p>
           Set up an email such as "security@AGENCY.govt.nz" that
           can be used to report issues (you may also look into
           ensuring this can be done securely by providing a public
@@ -1433,11 +1388,11 @@
       <li>
         <p>
           Respond promptly and in good faith to reporters of
-          security issues (within 2 days is suggested), inform them
-          as to what the next steps in the process are to get the
+          security issues (within 2 days is suggested), and inform
+          them what the next steps of the process are to get the
           issue resolved. Remember they have gone to the effort of
           letting you know about something important to your
-          security and privacy, work with them to get the issue
+          security and privacy, so work with them to get the issue
           resolved and both parties should take a "do no harm"
           approach.
         </p>
@@ -1446,10 +1401,10 @@
         <p>
           Once you agree with the reporter that there is an issue
           to be fixed, keep the reporter informed as your work on
-          the fix (a simple update email once a week to the
-          reporter would be appropriate) to show you’re acting and
-          haven’t gone silent on the matter. Try and stick to any
-          timeframes you set to build trust with the reporter.
+          the fix progresses (a simple update email once a week to
+          the reporter would be appropriate) to show you’re acting
+          and haven’t gone silent on the matter. Try and stick to
+          any timeframes you set to build trust with the reporter.
         </p>
       </li>
       <li>
@@ -1461,10 +1416,10 @@
       <li>
         <p>
           NZGOAL-SE suggests informing other agencies known to be
-          using your software, the CGIO, the GCPO and the Office of
-          the Privacy Commissioner so the widest number of users
-          get the opportunity to apply the fix to the software
-          before it becomes publicly disclosed.
+          using your software, the GCIO, the GCPO and the Office of
+          the Privacy Commissioner (if applicable) so the widest
+          number of users get the opportunity to apply the fix to
+          the software before it becomes publicly disclosed.
         </p>
       </li>
       <li>
@@ -1474,8 +1429,8 @@
           security patch version number as discussed in the
           <a href="#semantic-versioning">section on Semantic
           Versioning</a> along with an advisory note or CHANGELOG
-          in your project documentation informing users of the
-          known issue and prompting them to update.
+          entry in your project documentation informing users of
+          the known issue and prompting them to update.
         </p>
       </li>
       <li>
@@ -1493,68 +1448,29 @@
       CONTRIBUTING file regarding security issues (replace the
       content in upper case with your own details):
     </p>
-    <h3 id="security-issues">
-      Security Issues
-    </h3>
-    <p>
-      Please don't file security issues in the bugtracker or
-      publicly disclose them without first contacting us. We
-      operate a Coordinated Disclosure policy and will work with
-      you in good faith to responsibly fix and publicly disclose
-      security issues appropriately.
-    </p>
-    <p>
-      Please read over our coordinated disclosure policy at:
-      POLICY_URL
-    </p>
-    <h4 id="checklist-for-reporting">
-      Checklist for reporting
-    </h4>
-    <ul>
-      <li>
-        <p>
-          Don’t disclose the issue publicly
-        </p>
-      </li>
-      <li>
-        <p>
-          Document the issue to help us understand how to fix it
-        </p>
-      </li>
-      <li>
-        <p>
-          Read over our Coordinated Disclosure policy
-        </p>
-      </li>
-      <li>
-        <p>
-          Report the security issue to us directly via
-          security@AGENCY.govt.nz
-        </p>
-      </li>
-      <li>
-        <p>
-          Be professional and clear in your communications
-        </p>
-      </li>
-      <li>
-        <p>
-          Wait to hear back from us
-        </p>
-      </li>
-      <li>
-        <p>
-          Provide any follow up information if requested to help
-          resolve the issue
-        </p>
-      </li>
-      <li>
-        <p>
-          Work with us on timing and publishing of the security
-          issue.
-        </p>
-      </li>
-    </ul>
+    <pre><code>### Security Issues
+
+Please don't file security issues in the bug tracker or publicly disclose them without first contacting us. We operate a Coordinated Disclosure policy and will work with you in good faith to responsibly fix and publicly disclose security issues appropriately.
+
+Please read over our coordinated disclosure policy at: POLICY_URL
+
+#### Checklist for reporting
+
+* Don’t disclose the issue publicly
+
+* Document the issue to help us understand how to fix it
+
+* Read over our Coordinated Disclosure policy
+
+* Report the security issue to us directly via security@AGENCY.govt.nz
+
+* Be professional and clear in your communications
+
+* Wait to hear back from us
+
+* Provide any follow up information if requested to help resolve the issue
+
+* Work with us on timing and publishing of the security issue</code></pre>
     <h5 id="providing-encryption-for-secure-communication">
       Providing encryption for secure communication
     </h5>
@@ -1587,21 +1503,19 @@
       </li>
     </ul>
     <p>
-      If you have set up a encryption to allow reporters to
-      security communicate with you you could also add the
-      following in your CONTRIBUTING file (you might also include
-      the generated public key itself in the documentation):
+      If you have set up encryption to allow reporters to securely
+      communicate with you, you could also add the following in
+      your CONTRIBUTING file (you might also include the generated
+      public key itself in the documentation):
     </p>
-    <p>
-      You can communicate securely to us by encrypting your email,
-      please use our public key available at: PUBLICKEY_URL.
-    </p>
+    <pre>
+    <code>You can communicate securely with us by encrypting your email. Please use our public key available at: PUBLICKEY_URL.</code></pre>
     <h3 id="semantic-versioning">
       Semantic Versioning
     </h3>
     <p>
-      In order to indicate to other developers the status of
-      publicly released code, your project can adopt <a href=
+      In order to indicate the status of publicly released code to
+      other developers, your project can adopt <a href=
       "https://semver.org"><strong>Semantic Versioning
       (SemVer)</strong></a>, that is, version numbers that have a
       meaning.
@@ -1651,11 +1565,11 @@
       versions of the software released.
     </p>
     <p>
-      Putting out CKAN example together we can quickly get an
+      Putting the CKAN example together, we can quickly get an
       understanding as a developer that there have been have 2
-      major versions, 5 minor versions of the major version and 2
-      security patches to the latest minor version - hence version
-      <strong>2.5.2.</strong>
+      major versions, 5 minor versions of the current major version
+      and 2 security patches to the latest minor version - hence
+      version <strong>2.5.2.</strong>
     </p>
     <p>
       When first releasing an open source project publicly it is
@@ -1667,7 +1581,7 @@
       increment to 1.0.0.
     </p>
     <p>
-      SemVer tagging is widely practiced standard in the wider open
+      SemVer is a widely practiced standard in the wider open
       source software community and recommended for government open
       source projects to help communicate to external contributors
       valuable information about the project status.
@@ -1677,8 +1591,8 @@
     </h3>
     <p>
       Testing in any software project is useful as it helps ensure
-      that software does what it is supposed to do. In context of
-      an open source project, this is even more important as
+      that software does what it is supposed to do. In the context
+      of an open source project this is even more important, as
       contributors to the project may be external and have less
       context about the inner workings of the software than the
       original maintainers.
@@ -1694,29 +1608,25 @@
       of the code.
     </p>
     <p>
-      This is called often referred to as Regression testing (and
-      there are a number of other types you may want to look into
-      for your project including Unit testing and
-      Behavioural/functional testing).
-    </p>
-    <p>
-      Regression testing becomes useful as the size and complexity
-      of your project grows. There is a trade off of the time to
-      write the tests versus code for the application itself. Here
-      you need to use judgement and test appropriately for the size
-      and importance of the features in your open source project.
+      This is called 'regression testing' and becomes valuable as
+      the size and complexity of your project grows. There is a
+      trade off of the time to write the tests versus code for the
+      application itself. Here you need to use judgement and test
+      appropriately for the size and importance of the features in
+      your open source project.
     </p>
     <p>
       It is common practice in open source projects to require that
-      contributors ensure any existing tests pass before their
-      changes are accepted. It’s also preferred that they
+      contributors ensure their changes pass any existing tests,
+      before they are accepted. It’s also preferred that they
       contribute tests for new code they write and submit. Again,
       in this case be careful that requiring tests with every
       contribution doesn’t bottleneck the process of contribution
-      itself (you want to encourage not hinder people efforts). You
-      might want to describe what type of code changes do or do not
-      require testing explicitly in your project documentation so
-      contributors know when they need to write these.
+      itself (you want to encourage people's efforts not hinder
+      them). You might want to explicitly describe what type of
+      code changes do or do not require testing in your project
+      documentation, so contributors know when they need to write
+      these.
     </p>
     <h4 id="automating-your-testing">
       Automating your testing
@@ -1724,9 +1634,9 @@
     <p>
       Many existing public code repositories include or can
       integrate with automated regression testing tools (referred
-      Continuous Integration or CI). These can often be set up free
-      of charge for open source projects and help external
-      contributors see when a change they propose might affect the
+      to as Continuous Integration or CI). These can often be set
+      up free of charge for open source projects and help external
+      contributors see when a change they propose stops the
       software working as intended.
     </p>
     <p>
@@ -1734,11 +1644,11 @@
       development workflow, most CI tools run your tests whenever a
       new change is proposed via a branch or pull request. CI tools
       can also block the change from being merged into the code if
-      the tests are failing which avoids bugs making their way into
-      the software to begin with.
+      the tests are failing, which avoids bugs making their way
+      into the software to begin with.
     </p>
     <p>
-      The following are some available tools often used for
+      The following are some of the available tools often used for
       automated testing in open source projects.
     </p>
     <h5 id="travis-ci">
@@ -1781,8 +1691,7 @@
       <a href="https://jenkins.io/" class=
       "uri">https://jenkins.io/</a>
     </p>
-    <h2 id=
-    "jenkins-is-a-self-hosted-open-source-ci-tool.-its-useful-when-you-are-testing-code-internally-or-if-you-are-hosting-your-own-code-repository-tools-for-your-projects.-assuming-you-have-an-instance-of-jenkins-running-to-set-up-your-project-to-work-you-include-jenkinsfile-file-in-your-project-and-then-follow-their-setup-guide-at-httpsjenkins.iodocbookpipelinejenkinsfilecreating-a-jenkinsfile">
+    <p>
       Jenkins is a self hosted, open source CI tool. It’s useful
       when you are testing code internally or if you are hosting
       your own code repository tools for your projects. Assuming
@@ -1792,17 +1701,6 @@
       "https://jenkins.io/doc/book/pipeline/jenkinsfile/#creating-a-jenkinsfile"
       class=
       "uri">https://jenkins.io/doc/book/pipeline/jenkinsfile/#creating-a-jenkinsfile</a>
-    </h2>
-    <p>
-      title: Documenting your code description: How to document you
-      government open source project. creator: Cam Findlay <a href=
-      "mailto:cfindlay@linz.govt.nz">cfindlay@linz.govt.nz</a>
-      publisher: Land Information New Zealand subject: open source,
-      documentation, markdown, readme, date: 2016-11-9 language: en
-      rights: CC BY-SA 4.0 <a href=
-      "https://creativecommons.org/licenses/by-sa/4.0/" class=
-      "uri">https://creativecommons.org/licenses/by-sa/4.0/</a> ---
-      {::options footnote_nr="10" /}
     </p>
     <h2 id="documenting-your-code">
       Documenting your code
@@ -1822,20 +1720,20 @@
     <ul>
       <li>
         <p>
-          Document your code for your own future reference (because
-          it’s in the open others will benefit too), chances are
-          one day you’ll thank yourself (and your team).
+          Document your code for your own future reference, chances
+          are one day you’ll thank yourself (and your team).
+          Because it’s in the open others will benefit too!
         </p>
       </li>
       <li>
         <p>
           Some documentation is better than none. Leave
-          documentation "stubs" (pages with headings of known areas
-          not documented), this helps by providing a clear place to
-          contribute documentation and shows you are aware of what
-          is and isn’t complete. It is common practice in open
-          source to accept things as incomplete as long as this is
-          pointed out to users.
+          documentation "stubs" (pages with headings of known
+          undocumented areas). This helps by providing a clear
+          place to contribute documentation and shows you are aware
+          of what is and isn’t complete. It is common practice in
+          open source to accept things as incomplete as long as
+          this is pointed out to users.
         </p>
       </li>
       <li>
@@ -1893,8 +1791,8 @@
           instruct your user how to do something specific with your
           code. This might be a detailed walkthrough of getting
           started or how to accomplish a common coding task. They
-          should be short, easy to complete (and not too easy that
-          learning doesn’t occur) and should demonstrate what it’s
+          should be short, easy to complete (but not so easy that
+          learning does't occur) and should demonstrate what it’s
           like to work with your project’s code.
         </p>
       </li>
@@ -1905,20 +1803,20 @@
           inform users about the concepts and features you’ve
           included in your software. These might also include some
           code snippets to help explain concepts. Aim for
-          completeness, a user should be able to feel like they
+          completeness; a user should be able to feel like they
           have a good grasp on a particular aspect of your software
           after reading these guides.
         </p>
       </li>
       <li>
         <p>
-          <strong>Reference material</strong> - This details your
-          softwares public APIs (methods and classes) that
+          <strong>Reference material</strong> - This details the
+          public APIs (methods and classes) of the software that
           developers can make use of when adapting to suit their
           needs. Developers use these guides to look up the
           arguments and implementation specifics of your code so
-          the audience is likely more technical. Reference material
-          is not a substitute for good well written guides and
+          the audience is likely to be more technical. Reference
+          material is not a substitute for well written guides and
           tutorials.
         </p>
       </li>
@@ -1946,7 +1844,7 @@
     </p>
     <p>
       Markdown is a text file and saved with the file extension
-      ".md", you write your content using plain text and use a set
+      ".md". You write your content using plain text and use a set
       of plain text “marks” to represent the format of your
       document.
     </p>
@@ -1980,52 +1878,54 @@
       example the above Markdown would render as follows when
       viewed online as part of your code repository:
     </p>
-    <h1 id="my-documentation">
-      <strong>My documentation</strong>
-    </h1>
-    <p>
-      This is a paragraph of text talking about my work and how you
-      might make use of it as a developer. You’ll note paragraphs
-      need no extra formatting.
-    </p>
-    <ul>
-      <li>
-        <p>
-          Here I’ll make a bullet point
-        </p>
-      </li>
-      <li>
-        <p>
-          And another
-        </p>
-      </li>
-      <li>
-        <p>
-          One more
-        </p>
-      </li>
-    </ul>
-    <ol style="list-style-type: decimal">
-      <li>
-        <p>
-          An ordered list of numbers
-        </p>
-      </li>
-      <li>
-        <p>
-          Another number
-        </p>
-      </li>
-    </ol>
-    <h2 id="here-is-a-sub-heading">
-      <strong>Here is a sub heading</strong>
-    </h2>
-    <h3 id="and-a-sub-sub-heading">
-      <strong>And a sub, sub-heading</strong>
-    </h3>
-    <p>
-      <a href="https://ict.govt.nz/">Here is a link</a>
-    </p>
+    <blockquote>
+      <h1 id="my-documentation">
+        <strong>My documentation</strong>
+      </h1>
+      <p>
+        This is a paragraph of text talking about my work and how
+        you might make use of it as a developer. You’ll note
+        paragraphs need no extra formatting.
+      </p>
+      <ul>
+        <li>
+          <p>
+            Here I’ll make a bullet point
+          </p>
+        </li>
+        <li>
+          <p>
+            And another
+          </p>
+        </li>
+        <li>
+          <p>
+            One more
+          </p>
+        </li>
+      </ul>
+      <ol style="list-style-type: decimal">
+        <li>
+          <p>
+            An ordered list of numbers
+          </p>
+        </li>
+        <li>
+          <p>
+            Another number
+          </p>
+        </li>
+      </ol>
+      <h2 id="here-is-a-sub-heading">
+        <strong>Here is a sub heading</strong>
+      </h2>
+      <h3 id="and-a-sub-sub-heading">
+        <strong>And a sub, sub-heading</strong>
+      </h3>
+      <p>
+        <a href="https://ict.govt.nz/">Here is a link</a>
+      </p>
+    </blockquote>
     <p>
       There are several <a href=
       "https://daringfireball.net/projects/markdown/">guides</a>
@@ -2056,9 +1956,9 @@
       metadata is 3 dashes followed by key/value pairs at the top
       of your document before you start the first paragraph, closed
       with a final 3 dashes. Any metadata standard can be
-      represented, it would be suggested to use of a few commons
-      attributes like "title" and “description” and you might also
-      implement an existing open metadata standard such as <a href=
+      represented, but use of a few commons attributes like “Title”
+      and “Description” is recommended and you might also implement
+      an existing open metadata standard such as <a href=
       "http://dublincore.org/documents/usageguide/elements.shtml">Dublin
       Core</a>.
     </p>
@@ -2083,14 +1983,14 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
         <p>
           <strong>LICENSE.md</strong> - This should include the
           text of your chosen open source licence (from NZGOAL
-          Software Extension this will usually be MIT or GPL v3).
+          Software Extension; this will usually be MIT or GPL v3).
         </p>
       </li>
       <li>
         <p>
           <strong>README.md</strong> - This will likely be the
-          first piece of documentation your users read, depending
-          on the size of your project it may be the only
+          first piece of documentation your users read, and
+          depending on the size of your project it may be the only
           documentation you include. See below for what to include
           in your readme file.
         </p>
@@ -2109,7 +2009,7 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
       </li>
       <li>
         <p>
-          <strong>CHANGELOG.md</strong> - Includes a list of
+          <strong>CHANGELOG.md</strong> - This includes a list of
           changes you make to your code each time you release new
           versions. You might provide a link to an external
           changelog tracker in this file rather than store the
@@ -2155,8 +2055,8 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
       </li>
       <li>
         <p>
-          Installation instructions and "Getting started" section
-          to get the software setup or configured.
+          Installation instructions and a "Getting Started" section
+          to get the software set up or configured.
         </p>
       </li>
       <li>
@@ -2196,20 +2096,20 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
         </p>
       </li>
     </ul>
-    <h3 id="your-first-release-of-documentation">
-      Your first release of documentation
+    <h3 id="getting-started-with-project-documentation">
+      Getting started with project documentation
     </h3>
     <p>
       Documenting a new project can be daunting, ideally you can
       split up this task by documenting features as you code them
-      though this is not always practical. For you first set of
+      though this is not always practical. For the first set of
       documentation we recommend that you limit the scope to a few
       key aspects:
     </p>
     <ul>
       <li>
         <p>
-          Your README (as described above)
+          Your README (as described above).
         </p>
       </li>
       <li>
@@ -2223,7 +2123,7 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
       <li>
         <p>
           Describe what you know is missing from the documentation
-          (you might also created "stub" pages for these).
+          (you might also create "stub" pages for these).
         </p>
       </li>
     </ul>
@@ -2231,7 +2131,7 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
       You don’t need to set any expectations as to when these will
       get written, it’s acceptable in open source to simply ensure
       users are aware of any shortcomings and then they can choose
-      you use your code anyway and they are free to contribute any
+      to use your code anyway and they are free to contribute any
       improved documentation.
     </p>
     <h3 id="structuring-your-documentation-pages">
@@ -2283,15 +2183,15 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
       Writing style guide
     </h3>
     <p>
-      To keep your documentation easy to use and consistent the use
-      of a writing guide is a good idea. Your agency may already
-      have its own set of writing guides in which case you might
-      use this. Alternatively you could look to reuse the <a href=
-      "https://www.govt.nz/about/our-style-guide/">Govt.nz writing
-      style guide</a> as it is a good example of ensuring writing
-      is accessable and in plain English while allowing the use of
-      technical terms which are unavoidable in software
-      documention.
+      To keep your documentation easy to use and consistent, the
+      use of a writing guide is a good idea. Your agency may
+      already have its own set of writing guides in which case you
+      might use this. Alternatively you could look to reuse the
+      <a href="https://www.govt.nz/about/our-style-guide/">Govt.nz
+      writing style guide</a> as it is a good example of ensuring
+      writing is accessible and in plain English while allowing the
+      use of technical terms which are unavoidable in software
+      documentation.
     </p>
     <p>
       <strong>Other general points for technical writing styles
@@ -2321,8 +2221,8 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
       </li>
       <li>
         <p>
-          Avoid superlatives, keep technical writing clear and
-          concise it’s about delivering information to your users.
+          Avoid superlatives, and keep technical writing clear and
+          concise. It’s about delivering information to your users.
         </p>
       </li>
       <li>
@@ -2342,9 +2242,9 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
       </li>
       <li>
         <p>
-          Making the reader feel stupid by using lots of jargon or
-          technical terms without first defining them (unless
-          you're certain of your audience).
+          Confusing the reader by using lots of jargon or technical
+          terms without first defining them (unless you're certain
+          of your audience).
         </p>
       </li>
       <li>
@@ -2382,30 +2282,17 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
       appropriately and in line with current policy.
     </p>
     <p>
-      In summary, use Creative Commons Attribution (CC BY 4.0)
-      licence if you have licensed your software under an MIT
-      licences and Creative Commons Attribution Sharealike (CC
-      BY-SA 4.0) if you have released your software under a GPL
-      license.
+      In summary: * Use Creative Commons Attribution (CC BY 4.0)
+      licence if you have released your software using the MIT
+      licence. * Use Creative Commons Attribution Sharealike (CC
+      BY-SA 4.0) if you have released your software using the GPL
+      licence.
     </p>
-    <h2 id=
-    "for-more-detailed-information-on-the-open-licensing-of-new-zealand-government-copyright-works-see-the-original-nzgoalframework.">
+    <p>
       For more detailed information on the open licensing of New
       Zealand Government copyright works see the original <a href=
       "https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/">
-      NZGOAL</a>framework.
-    </h2>
-    <p>
-      title: Understanding copyright and licensing description:
-      Useful practices for government developers working with open
-      source projects. creator: Cam Findlay <a href=
-      "mailto:cfindlay@linz.govt.nz">cfindlay@linz.govt.nz</a>
-      publisher: Land Information New Zealand subject: open source,
-      copyright, licensing, GPL, MIT, date: 2016-11-9 language: en
-      rights: CC BY-SA 4.0 <a href=
-      "https://creativecommons.org/licenses/by-sa/4.0/" class=
-      "uri">https://creativecommons.org/licenses/by-sa/4.0/</a> ---
-      {::options footnote_nr="14" /}
+      NZGOAL</a> framework.
     </p>
     <h2 id="understanding-copyright-and-licensing">
       Understanding copyright and licensing
@@ -2444,12 +2331,14 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
     <p>
       When you create work while employed or are commissioned to
       write software (as a contractor) then the owner of the
-      copyright is the entity that you did the work on behalf of,
-      you don’t personally hold the copyright in this situation.
+      copyright is generally the entity that you did the work on
+      behalf of, you don’t personally hold the copyright in this
+      situation (unless it has been specifically written into your
+      contract that you do).
     </p>
     <p>
       In terms of code created in or on behalf of the New Zealand
-      Government (the "Crown"), unless contracted out of ( that is,
+      Government (the "Crown"), unless contracted out of (that is,
       arrangements made in the contract to alter the default):
     </p>
     <p>
@@ -2468,10 +2357,10 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
     <p>
       Other agencies could make use of this Crown Copyright code,
       however Crown Copyright doesn’t apply to some organisations
-      in Government. Crown Entities and State-owned Enterprises for
+      in Government. Crown Entities and State-Owned Enterprises for
       example are excluded from Crown Copyright when they create
       works (in this case the Crown Entity itself is the copyright
-      owner). In this situation , in order for the widest reuse
+      owner). In this situation, in order for the widest reuse
       across NZ Government in the simplest way, you can license the
       code using open source licences as set out in NZGOAL Software
       Extension.
@@ -2497,10 +2386,10 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
     </p>
     <p>
       This license is provided in writing along with the code (in
-      the LICENSE file) and states the terms under which the code
-      may be used to the world at large, you don’t have to ask
+      the LICENCE file) and states the terms under which the code
+      may be used by the world at large, they won’t have to ask
       permission specifically. Most common licence types are the
-      "copyleft" and the “permissive” and there are many licences
+      “copyleft” and the “permissive” and there are many licences
       you can use that fit into these two categories.
     </p>
     <p>
@@ -2535,7 +2424,7 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
     <code>The source code for this [name of project or software] is licensed under the [insert name of applicable free and open source software licence]. By contributing source code to this [name of project or software], you are agreeing to license your contributions under and on the terms of the [insert name of same licence]. Please note that your licence is irrevocable and royalty-free. You or your licensors retain any copyright in your contributions while allowing others to re-use the source code in any way they like as long as they meet the requirements of the licence.</code></pre>
     <p>
       Alternatively, the project maintainer may request that
-      copyright be assigned to them at such time they will license
+      copyright be assigned to them. At such time they will license
       the code under the same terms as the repository so the
       contributor can still make use of their contributions along
       with all other users. Note, NZGOAL Software Extension
@@ -2545,10 +2434,10 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
     </p>
     <p>
       Either way the copyright is managed for contributions, the
-      rights and freedoms of the shared code remain the same, all
-      can reuse, copy, modify and redistribute because of the
-      overall open source licence the project is released under
-      allows this.
+      rights and freedoms of the shared code remain the same - all
+      can reuse, copy, modify and redistribute because the overall
+      open source licence the project is released under allows
+      this.
     </p>
     <h3 id=
     "what-do-contractors-need-to-know-about-copyright-and-licensing">
@@ -2560,9 +2449,9 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
       agencies, it's important to be aware that unless you have
       explicitly stated in your services contract that you will be
       the owner of any copyright material you produce while working
-      for the New Zealand public sector then the agency that
-      commissions you to do the work, owns the copyright in the
-      work you produce for them for the duration of the contract.
+      for the New Zealand public sector, then the agency that
+      commissions you to do the work owns the copyright of the work
+      you produce for them for the duration of the contract.
     </p>
     <p>
       This is stated in legislation under the New Zealand Copyright
@@ -2764,20 +2653,9 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
       <a href="https://opensource.org/licenses/category" class=
       "uri">https://opensource.org/licenses/category</a>
     </p>
-    <h2 id="httpchoosealicense.com">
+    <p>
       <a href=
       "http://choosealicense.com/licenses/">http://choosealicense.com/</a>
-    </h2>
-    <p>
-      title: Creative commons attributions description: Reused
-      content under CC licensing and contributions from the
-      community. creator: Cam Findlay <a href=
-      "mailto:cfindlay@linz.govt.nz">cfindlay@linz.govt.nz</a>
-      publisher: Land Information New Zealand subject: open source,
-      creative commons, date: 2016-11-9 language: en rights: CC
-      BY-SA 4.0 <a href=
-      "https://creativecommons.org/licenses/by-sa/4.0/" class=
-      "uri">https://creativecommons.org/licenses/by-sa/4.0/</a> ---
     </p>
     <h2 id="creative-commons-attributions">
       Creative commons attributions
@@ -2855,6 +2733,16 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
       <li>
         <p>
           David Craig
+        </p>
+      </li>
+      <li>
+        <p>
+          Amy Shand
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/madmatt">Matt Peel</a>
         </p>
       </li>
     </ul>

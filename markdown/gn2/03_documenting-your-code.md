@@ -1,14 +1,3 @@
----
-title: Documenting your code
-description: How to document you government open source project.
-creator: Cam Findlay <cfindlay@linz.govt.nz>
-publisher: Land Information New Zealand
-subject: open source, documentation, markdown, readme,
-date: 2016-11-9
-language: en
-rights: CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
----
-{::options footnote_nr="10" /}
 
 ## Documenting your code
 Documentation is an important part of releasing your work as open source. This helps users get started, understand what your code does and how they might make use of it. Good documentation clearly answers questions that users have - either by informing or by instructing them.[^10]
@@ -161,11 +150,11 @@ rights: CC BY 4.0 [https://creativecommons.org/licenses/by/4.0/](https://creativ
 
 * How others can contribute to the project - include a link to your CONTRIBUTING file.
 
-### Your first release of documentation
+### Getting started with project documentation
 
 Documenting a new project can be daunting, ideally you can split up this task by documenting features as you code them though this is not always practical. For the first set of documentation we recommend that you limit the scope to a few key aspects:
 
-* Your README (as described above)
+* Your README (as described above).
 
 * Create one tutorial that walks new users through a common task or use of the software. This helps show the user what can be done and gets them thinking about how they might use your code.
 
@@ -191,7 +180,7 @@ It’s a good idea to use a consistent structure when you have documentation tha
 
 ### Writing style guide
 
-To keep your documentation easy to use and consistent, the use of a writing guide is a good idea. Your agency may already have its own set of writing guides in which case you might use this. Alternatively you could look to reuse the [Govt.nz writing style guide](https://www.govt.nz/about/our-style-guide/) as it is a good example of ensuring writing is accessable and in plain English while allowing the use of technical terms which are unavoidable in software documention.
+To keep your documentation easy to use and consistent, the use of a writing guide is a good idea. Your agency may already have its own set of writing guides in which case you might use this. Alternatively you could look to reuse the [Govt.nz writing style guide](https://www.govt.nz/about/our-style-guide/) as it is a good example of ensuring writing is accessible and in plain English while allowing the use of technical terms which are unavoidable in software documentation.
 
 **Other general points for technical writing styles are:**
 
@@ -225,6 +214,8 @@ Your software documentation is a separate copyright work to your software code. 
 
 A Creative Commons licence is more in line with existing government policy. NZGOAL Software Extension includes a [section on how to licence your software documentation](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/nzgoal-se/nzgoal-se-review-and-release-process/#licensing-of-accompanying-documentation) appropriately and in line with current policy.
 
-In summary, use Creative Commons Attribution (CC BY 4.0) licence if you have licensed your software under an MIT licences and Creative Commons Attribution Sharealike (CC BY-SA 4.0) if you have released your software under a GPL license.
+In summary:
+ * Use Creative Commons Attribution (CC BY 4.0) licence if you have released your software using the MIT licence.
+ * Use Creative Commons Attribution Sharealike (CC BY-SA 4.0) if you have released your software using the GPL licence.
 
-For more detailed information on the open licensing of New Zealand Government copyright works see the original [NZGOAL ](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/)framework.
+For more detailed information on the open licensing of New Zealand Government copyright works see the original [NZGOAL ](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/) framework.
