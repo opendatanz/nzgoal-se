@@ -1,13 +1,3 @@
----
-title: Creative commons attributions
-description: Reused content under CC licensing and contributions from the community.
-creator: Cam Findlay <cfindlay@linz.govt.nz>
-publisher: Land Information New Zealand
-subject: open source, creative commons,
-date: 2016-11-9
-language: en
-rights: CC BY-SA 4.0 [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
----
 
 ## Creative commons attributions
 
@@ -30,7 +20,7 @@ Thanks to community contributions from:
  * Rich Churcher
 
  * David Craig
- 
+
  * Amy Shand
- 
+
  * [Matt Peel](https://github.com/madmatt)
